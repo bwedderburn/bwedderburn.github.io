@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="canonical" href="https://bwedderburn.github.io/projects/amp-bench-kit/">
+  <meta name="description" content="Amp Bench Kit: Brian's Python toolkit for function-generator control, oscilloscope capture, and LabJack data acquisition through GUI and command-line workflows.">
+  <meta name="theme-color" content="#143348">
+  <title>Amp Bench Kit | Brian</title>
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap"><a class="identity" href="../../" aria-label="Brian, portfolio home"><span class="identity-mark" aria-hidden="true"></span><span>Brian<span class="identity-detail">Controls &amp; embedded software</span></span></a><nav aria-label="Main navigation"><a href="../../#projects">Projects</a><a href="../../#approach">Approach</a><a href="../../#contact">Contact</a><a href="https://github.com/bwedderburn">GitHub</a></nav></header>
+  <main id="main">
+    <div class="wrap"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../../">Portfolio</a><span aria-hidden="true">/</span><span aria-current="page">Amp Bench Kit</span></nav></div>
+    <section class="case-hero wrap" aria-labelledby="case-title"><div><p class="project-kind">Instrument automation</p><h1 id="case-title">Bring the bench into one workflow.</h1><p class="lead">Amp Bench Kit combines signal generation, waveform capture, and data acquisition in a Python toolkit with GUI and command-line interfaces.</p><div class="actions"><a class="button primary" href="https://bwedderburn.github.io/amp-benchkit/">Read the documentation</a><a class="text-link" href="https://github.com/bwedderburn/amp-benchkit">Source code</a></div></div><figure class="case-figure bench-case-figure"><img src="../../assets/bench-flow.svg" alt="Conceptual measurement workflow with a generator, amplifier under test, oscilloscope, and data acquisition connected through a Python toolkit." width="660" height="350"><figcaption>A conceptual measurement workflow, independent of a specific bench setup.</figcaption></figure></section>
+    <div class="case-facts wrap"><div><span>Application</span><strong>Python / Qt</strong></div><div><span>Instrument links</span><strong>Serial, VISA / SCPI, LabJack</strong></div><div><span>Workflows</span><strong>GUI &amp; command line</strong></div></div>
+    <section class="case-section wrap" aria-labelledby="problem-title"><div><p class="section-context">The engineering problem</p><h2 id="problem-title">Make repeatable bench tasks easier to run.</h2></div><div><p>Amplifier measurements often involve several instruments and repeated sequences: configure a source, capture a waveform, collect data, and examine the result.</p><p>Amp Bench Kit brings those operations into shared workflows, with instrument helpers and a common interface for manual work and scripted sequences.</p></div></section>
+    <section class="case-section wrap" aria-labelledby="implementation-title"><div><p class="section-context">Implementation</p><h2 id="implementation-title">Connect, capture, examine.</h2></div><div class="interface-list"><article><h3>Signal generation</h3><p>Helpers for the FeelTech FY3200S function generator support source configuration and signal-generation tasks through its serial interface.</p></article><article><h3>Waveform capture</h3><p>VISA / SCPI workflows connect to a Tektronix TDS2024B oscilloscope for instrument control and waveform capture.</p></article><article><h3>Data acquisition</h3><p>LabJack U3 / U3-HV support brings analog and digital I/O into the same bench toolkit.</p></article><article><h3>Measurement workflows</h3><p>The toolkit includes frequency-sweep and waveform-analysis helpers, including RMS, peak-to-peak, and THD calculations.</p></article></div></section>
+    <section class="case-section wrap" aria-labelledby="development-title"><div><p class="section-context">Development</p><h2 id="development-title">Work without a connected bench.</h2></div><div><p>Simulated hardware modes let contributors explore workflows and test software behavior without connecting the instruments.</p><p>Those checks support development. Measurement accuracy, calibration, and behavior on a particular bench still depend on the instruments and setup used.</p><div class="actions"><a class="text-link" href="https://bwedderburn.github.io/amp-benchkit/getting-started/">Getting started</a><a class="text-link" href="https://bwedderburn.github.io/amp-benchkit/testing/">Testing documentation</a></div></div></section>
+    <section class="related-project wrap"><p>Explore embedded controls</p><h2><a href="../bm83/">BM83 audio control system</a></h2><p>An ESP32-S3 controller coordinating audio, a touchscreen, and wireless remotes.</p></section>
+  </main>
+  <footer class="site-footer wrap"><a href="../../">Brian’s portfolio</a><a href="https://github.com/bwedderburn">github.com/bwedderburn</a><p>2026</p></footer>
+</body>
+</html>

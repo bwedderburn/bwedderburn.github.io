@@ -1,0 +1,35 @@
+Portfolio sources and notices
+
+Original portfolio code, diagrams and BM83 demo adaptations:
+Copyright (c) 2026 Brian Wedderburn. See LICENSE.txt.
+
+GitHub Universe 2026 badge model and existing printed artwork:
+Public asset host: https://badger.github.io/simulator/models/github-mona-badge.glb
+Original showcase: https://leereilly.net/h4x0r3d-badge/#hardware
+Source/provenance: https://github.com/badger/badger.github.io/blob/main/public/simulator/THIRD_PARTY.md
+Reviewed SHA-256: 4245c5e8a42bc9ef7f52e1c2d5e5ea54f84287a1df8dc0e53dbf89f0fdefca6b
+The public demo loads this asset from its existing publisher. The GLB is not
+included in the portfolio repository or licensed under this project's MIT grant.
+The upstream notice identifies the source and modifications without asserting
+a new model/artwork license. No public-domain dedication is claimed here.
+GitHub and Pimoroni are credited for the badge, platform and existing marks.
+Their appearance depicts the actual badge on which the BM83 app was developed.
+
+Three.js 0.186.1 and bundled loader/control utilities:
+MIT License. Full notice: assets/vendor/three/LICENSE.txt
+Source: https://github.com/mrdoob/three.js
+
+Adapted HYB26 renderer software:
+MIT License. Full notice: assets/hyb26-model/LICENSE-UPSTREAM.txt
+Source: https://github.com/badger/badger.github.io
+The software notice does not grant rights to a separately sourced model.
+The code notice is retained independently of the externally hosted model.
+
+Album covers:
+Five original AI-generated images made for this portfolio's fictional catalog:
+Universe After Hours, Control Loop, Midnight on the Bus, Setpoint After Dark,
+and Phase Margin. No audio recordings are included. Original generation prompts
+requested no third-party mascots, characters, logos or named-artist imitation.
+
+GitHub and other product names identify the referenced platforms and hardware.
+This portfolio is Brian's independent work and does not claim sponsorship.

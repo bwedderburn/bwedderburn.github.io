@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="510" viewBox="0 0 620 510" role="img" aria-labelledby="title desc">
+  <title id="title">From signal to interface</title><desc id="desc">An original conceptual engineering illustration of signal inputs, an embedded controller, a display, and the feedback path between them.</desc>
+  <defs><pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#a2c7d4" stroke-opacity=".12"/></pattern></defs>
+  <rect width="620" height="510" rx="8" fill="#143348"/><rect width="620" height="510" rx="8" fill="url(#grid)"/>
+  <g font-family="Segoe UI,Arial,sans-serif"><text x="38" y="48" fill="#eaf4f7" font-size="19">From signal to response</text><text x="38" y="73" fill="#aac9d8" font-size="13">Interfaces that connect hardware and software</text>
+  <path d="M70 204H152V150H256M364 150H464V204H544M310 202V285M464 280V371H145V280" fill="none" stroke="#709fae" stroke-width="3"/>
+  <path d="M70 204H152V150H256" fill="none" stroke="#f3b77c" stroke-width="3"/><circle cx="152" cy="150" r="5" fill="#f3b77c"/><circle cx="464" cy="371" r="5" fill="#69b5b7"/>
+  <rect x="235" y="108" width="150" height="100" rx="8" fill="#285166" stroke="#8eb3c3" stroke-width="1.5"/><rect x="252" y="123" width="116" height="70" rx="3" fill="#193c50"/><text x="310" y="153" fill="#eef7fa" text-anchor="middle" font-size="17">Controller</text><text x="310" y="177" fill="#b5d7df" text-anchor="middle" font-size="12">Commands &amp; state</text>
+  <g stroke="#8eb3c3" stroke-width="3"><path d="M250 100v8M270 100v8M290 100v8M310 100v8M330 100v8M350 100v8M370 100v8M250 208v8M270 208v8M290 208v8M310 208v8M330 208v8M350 208v8M370 208v8"/></g>
+  <rect x="38" y="192" width="139" height="96" rx="7" fill="#1e4256" stroke="#709fae"/><text x="56" y="219" fill="#eef7fa" font-size="14">Signal input</text><path d="M56 252H68L76 235L89 267L103 235L117 267L126 252H158" fill="none" stroke="#f3b77c" stroke-width="2.5" stroke-linejoin="round"/>
+  <rect x="416" y="192" width="164" height="121" rx="9" fill="#d6e6ec"/><rect x="428" y="204" width="140" height="90" rx="4" fill="#1a3d50"/><text x="443" y="229" fill="#f4fafb" font-size="13">Interface</text><path d="M443 246H549M443 259H510" stroke="#8cbdc6" stroke-width="4"/><circle cx="448" cy="280" r="4" fill="#f3b77c"/><path d="M461 280H549" stroke="#598695" stroke-width="3"/><path d="M461 280H501" stroke="#f3b77c" stroke-width="3"/>
+  <rect x="248" y="281" width="124" height="48" rx="5" fill="#285166" stroke="#709fae"/><circle cx="270" cy="305" r="5" fill="#79c3bb"/><text x="288" y="310" fill="#e9f6f8" font-size="13">Feedback</text>
+  <circle cx="145" cy="371" r="7" fill="#143348" stroke="#69b5b7" stroke-width="3"/><circle cx="152" cy="204" r="5" fill="#f3b77c"/>
+  <text x="38" y="438" fill="#f3b77c" font-size="15">Read the input.</text><text x="218" y="438" fill="#e6f3f7" font-size="15">Track the state.</text><text x="399" y="438" fill="#a6d7d2" font-size="15">Show the response.</text><path d="M38 459H582" stroke="#507486"/><text x="38" y="485" fill="#abc6d3" font-size="12">Conceptual system illustration</text>
+  </g>
+</svg>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" data-badge-model-src="https://badger.github.io/simulator/models/github-mona-badge.glb">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="canonical" href="https://bwedderburn.github.io/demos/bm83/">
+  <meta name="description" content="Explore a detailed 3D BM83 badge remote with simulated controls, a fictional track catalog, and original AI-generated album artwork.">
+  <meta name="theme-color" content="#143348">
+  <title>BM83 badge remote — interactive demo | Brian</title>
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/styles.css">
+  <link rel="stylesheet" href="../../assets/bm83-demo.css">
+  <script type="module" src="../../assets/bm83-demo.mjs"></script>
+</head>
+<body class="demo-page">
+  <a class="skip-link" href="#main">Skip to demo</a>
+  <header class="site-header wrap demo-page-header"><a class="identity" href="../../" aria-label="Brian, portfolio home"><span class="identity-mark" aria-hidden="true"></span><span>Brian<span class="identity-detail">Controls &amp; embedded software</span></span></a><nav aria-label="Main navigation"><a href="../../projects/bm83/">BM83 case study</a><a href="../../#projects">All projects</a><a href="https://github.com/bwedderburn">GitHub</a></nav></header>
+  <main id="main" class="demo-shell wrap">
+    <div class="demo-title-row"><div><p class="section-context">The orbital workshop sessions</p><h1>BM83 badge remote</h1><p>Interactive demo — simulated playback</p></div><a class="text-link demo-back-link" href="../../projects/bm83/">Back to the case study</a></div>
+    <noscript><p class="demo-notice">Enable JavaScript to use the interactive demo. You can still <a href="../../projects/bm83/">read the BM83 case study</a>.</p></noscript>
+    <div id="demo-app" class="demo-app" aria-label="BM83 remote demo">
+      <section class="demo-stage-section" aria-label="Remote model and view controls">
+        <div class="demo-stage-toolbar"><span id="view-status">Preparing 3D view…</span><div><button id="flat-toggle" type="button" aria-pressed="false">Screen view</button><button id="reset-view" type="button">Reset view</button></div></div>
+        <div class="demo-stage" id="model-stage" aria-label="3D remote. Drag to rotate, scroll to zoom, or use the view controls below.">
+          <div id="model-host"></div>
+          <canvas id="flat-screen" width="640" height="480" role="img" aria-label="BM83 display with the current track, artwork, volume, and playback state" hidden></canvas>
+          <p id="model-loading" class="model-loading">Loading the studio remote…</p>
+        </div>
+        <p class="stage-hint">Drag to rotate. Scroll to zoom. Press the badge buttons or use the controls alongside it.</p>
+        <div class="view-actions"><button type="button" id="front-view">Front</button><button type="button" id="rear-view">Rear</button><button type="button" id="flip-view">Turn upside down</button><button type="button" id="motion-toggle" aria-pressed="false">Start motion</button><button type="button" id="capture-screen">Save screen image</button></div>
+        <details class="pose-settings"><summary>Adjust the pose</summary><div class="pose-grid"><label>Pitch <output aria-live="off" id="pitch-value" for="pitch">0°</output><input id="pitch" type="range" min="-85" max="85" value="0" step="1"></label><label>Roll <output aria-live="off" id="roll-value" for="roll">0°</output><input id="roll" type="range" min="-180" max="180" value="0" step="1"></label><label>Yaw <output aria-live="off" id="yaw-value" for="yaw">0°</output><input id="yaw" type="range" min="-180" max="180" value="0" step="1"></label><label>Zoom <output aria-live="off" id="zoom-value" for="zoom">100%</output><input id="zoom" type="range" min="70" max="145" value="100" step="1"></label></div></details>
+      </section>
+      <section class="demo-player" aria-labelledby="track-title">
+        <div class="now-playing-art"><img id="track-artwork" alt="" width="1024" height="1024"><span class="cover-caption">Original AI-generated artwork</span></div>
+        <div class="track-heading"><p id="track-album">Conference Sessions</p><h2 id="track-title">Control Loop</h2><p id="track-artist">BM83 Demo</p></div>
+        <label class="seek-control" for="position">Track position <output aria-live="off" id="position-label" for="position">1:11 / 3:15</output><input id="position" type="range" min="0" max="195" value="71" step="1"></label>
+        <div class="transport" aria-label="Playback controls"><button type="button" data-action="previous">Previous</button><button type="button" data-action="play" id="play-button" class="transport-play">Play</button><button type="button" data-action="next">Next</button></div>
+        <div class="volume-controls"><label for="volume">Volume <output aria-live="off" id="volume-value" for="volume">55%</output></label><div><button type="button" data-action="volume-down" aria-label="Hold to lower volume">−</button><input id="volume" type="range" min="0" max="100" value="55" step="1"><button type="button" data-action="volume-up" aria-label="Hold to raise volume">+</button><button type="button" data-action="mute" id="mute-button" aria-pressed="false">Mute</button></div></div>
+        <div class="player-utilities"><button type="button" data-action="settings" id="settings-button" aria-expanded="false" aria-controls="demo-settings">Settings</button><button type="button" data-action="home">Home</button><button type="button" data-action="power" id="power-button" aria-pressed="true">Power off</button><button type="button" id="reset-demo">Reset demo</button></div>
+        <div id="demo-settings" class="demo-settings" hidden><label for="equalizer">Demo equalizer</label><select id="equalizer"><option value="FLAT">Flat</option><option value="ROCK">Rock</option><option value="POP">Pop</option><option value="JAZZ">Jazz</option><option value="CLASSICAL">Classical</option></select><p>Changes the displayed setting. Playback and volume are simulated.</p></div>
+        <p id="demo-announcement" class="demo-announcement" role="status" aria-live="polite">Control Loop selected. Playback is paused.</p>
+      </section>
+    </div>
+    <section class="demo-catalog" aria-labelledby="catalog-title"><div class="catalog-heading"><h2 id="catalog-title">The session tracks</h2><p>Five fictional tracks. Five original covers.</p></div><div id="track-list" class="track-list"></div></section>
+    <div class="demo-footnote"><p>All playback is simulated; these tracks have no audio recordings. This is a demonstration of my app on the GitHub Universe 2026 badge.</p><details><summary>Keyboard controls and credits</summary><p>With the demo focused: Space plays or pauses; left/right arrows change track; up/down arrows adjust volume; M mutes; S opens settings; Escape returns home. Sliders and other form controls retain their normal keyboard behavior.</p><p>The badge keeps its existing Mona artwork, GitHub logo and controls. The five album covers are original generated artwork. The public 3D view loads the badge model from the official simulator’s host; it requires an internet connection. The renderer uses <a href="../../assets/vendor/three/LICENSE.txt">Three.js under its MIT license</a> and retains the <a href="../../assets/hyb26-model/LICENSE-UPSTREAM.txt">HYB26 software notice</a>. See <a href="../../credits/">sources and credits</a>. Using this demo makes no AI requests.</p></details></div>
+  </main>
+</body>
+</html>
