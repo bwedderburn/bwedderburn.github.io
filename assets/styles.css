@@ -96,6 +96,9 @@ p + p { margin-top: 1rem; }
 .contact-section .section-context { color: var(--copper-bright); }
 .contact-section a:focus-visible { outline-color: var(--copper-bright); }
 .contact-section p:not(.section-context) { max-width: 54ch; font-size: .95rem; }
+.contact-actions { display: flex; flex-direction: column; align-items: flex-start; gap: .85rem; flex-shrink: 0; max-width: 100%; }
+.contact-actions .button { max-width: 100%; }
+.contact-actions .text-link:hover { color: var(--copper-bright); }
 .site-footer { display: flex; align-items: center; justify-content: space-between; gap: 1rem 2rem; padding-block: 2.7rem; font-size: .76rem; color: var(--muted); }
 .footer-divider { margin-inline: .5rem; color: #8ca3b1; }
 .breadcrumbs { display: flex; gap: .7rem; flex-wrap: wrap; font-size: .8rem; margin-top: 2rem; color: var(--muted); }
