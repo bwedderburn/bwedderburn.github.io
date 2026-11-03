@@ -1,0 +1,896 @@
+{
+  "schema": 1,
+  "scope": "canonical-capitals-browser-runtime",
+  "world": 195,
+  "us": 56,
+  "maps": 31,
+  "appFiles": [
+    "assets/maps/africa.png",
+    "assets/maps/africa_central.png",
+    "assets/maps/africa_east.png",
+    "assets/maps/africa_north.png",
+    "assets/maps/africa_south.png",
+    "assets/maps/africa_west.png",
+    "assets/maps/antarctica.png",
+    "assets/maps/asia.png",
+    "assets/maps/asia_central.png",
+    "assets/maps/asia_east.png",
+    "assets/maps/asia_south.png",
+    "assets/maps/asia_southeast.png",
+    "assets/maps/asia_west.png",
+    "assets/maps/caribbean.png",
+    "assets/maps/central_america.png",
+    "assets/maps/europe.png",
+    "assets/maps/europe_detail.png",
+    "assets/maps/indian_ocean.png",
+    "assets/maps/north_america.png",
+    "assets/maps/oceania.png",
+    "assets/maps/oceania_east.png",
+    "assets/maps/oceania_west.png",
+    "assets/maps/south_america.png",
+    "assets/maps/us.png",
+    "assets/maps/us_alaska.png",
+    "assets/maps/us_caribbean.png",
+    "assets/maps/us_east.png",
+    "assets/maps/us_hawaii.png",
+    "assets/maps/us_pacific.png",
+    "assets/maps/us_samoa.png",
+    "assets/maps/world.png",
+    "atlas.py",
+    "catalog.py",
+    "explore.py",
+    "icon.png",
+    "layout.py",
+    "progress.py",
+    "quiz.py",
+    "__init__.py"
+  ],
+  "files": [
+    {
+      "path": "asyncify/micropython.mjs",
+      "bytes": 89988,
+      "sha256": "c1664165cabcbcb5aca5ac0e72ca8aace383ec30c455d526325563921f6c9e74",
+      "kind": "runtime"
+    },
+    {
+      "path": "asyncify/micropython.wasm",
+      "bytes": 1854557,
+      "sha256": "34660284e9edb22c4c682e87afe52cc700bd8b65595e872e83d669721c237522",
+      "kind": "runtime"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 2332,
+      "sha256": "8e5acd7835bc605171b1d039383c4e874575ec7570e39c96fac26774eee63451",
+      "kind": "runtime"
+    },
+    {
+      "path": "THIRD_PARTY.md",
+      "bytes": 7307,
+      "sha256": "a4edf9cf8b33e08cd9a29903406cda75872b5d02821fbc053e0dd7e06ada39aa",
+      "kind": "runtime"
+    },
+    {
+      "path": "licenses/emscripten.txt",
+      "bytes": 5091,
+      "sha256": "2fd38dc06e484cdd7a3f1e2f6577f5d53062052a2fd85131b56b89fbd673731c",
+      "kind": "license"
+    },
+    {
+      "path": "licenses/iconfont-ppf.txt",
+      "bytes": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "kind": "license"
+    },
+    {
+      "path": "licenses/jpegdec.txt",
+      "bytes": 933,
+      "sha256": "4fb75f8b69c040c62e128dd0cc535c48156a35bcfeee2c0aab027e05def57a39",
+      "kind": "license"
+    },
+    {
+      "path": "licenses/llvm-compiler-rt.txt",
+      "bytes": 16708,
+      "sha256": "1a8f1058753f1ba890de984e48f0242a3a5c29a6a8f2ed9fd813f36985387e8d",
+      "kind": "license"
+    },
+    {
+      "path": "licenses/llvm-libcxx.txt",
+      "bytes": 16703,
+      "sha256": "539dd7aed86e8a4f12cbdd0e6c50c189c7d74847e4fecc64ce2c6ee3a01da38b",
+      "kind": "license"
+    },
+    {
+      "path": "licenses/llvm-libcxxabi.txt",
+      "bytes": 16706,
+      "sha256": "e2b35be49f7284a45b7baca8fc7b3ab7440e7902392b2528a457816b5bb2a15c",
+      "kind": "license"
+    },
+    {
+      "path": "licenses/micropython-lib.txt",
+      "bytes": 14363,
+      "sha256": "a38cf48836aa313254cdcf3de9fb7c24da4a2eab75ead2cc0cecd998336e7800",
+      "kind": "license"
+    },
+    {
+      "path": "licenses/MicroPython.txt",
+      "bytes": 3419,
+      "sha256": "80d3459978572b5bbb1dd274a98b01a625aeff467588ad69cefdf7eb607c1306",
+      "kind": "license"
+    },
+    {
+      "path": "licenses/musl.txt",
+      "bytes": 6196,
+      "sha256": "b870108ec5e7790e9f9919064f1b9421d62d5f9b0e6c230c6adf7ea2da62e97b",
+      "kind": "license"
+    },
+    {
+      "path": "licenses/pngdec.txt",
+      "bytes": 11418,
+      "sha256": "b7a33e776db5a334d5162c4126ad4222f7e171a04bb177d2df49cb3d5612bd88",
+      "kind": "license"
+    },
+    {
+      "path": "licenses/qrcodegen.txt",
+      "bytes": 1168,
+      "sha256": "2769a1bc499524c52fcfb8032b3238ed1e449e0f10550467687dc60541cc10cc",
+      "kind": "license"
+    },
+    {
+      "path": "licenses/re1.5.txt",
+      "bytes": 1637,
+      "sha256": "c706d4f9c518c06c602d725e8a79042e6e152de9a279e06f4d52344d7e9dad34",
+      "kind": "license"
+    },
+    {
+      "path": "licenses/sha256.txt",
+      "bytes": 352,
+      "sha256": "4d3f1976e093fb511d5c442c057b605b0d7761bb83120f6dc4e089806e1afd09",
+      "kind": "license"
+    },
+    {
+      "path": "licenses/three.txt",
+      "bytes": 1081,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "kind": "license"
+    },
+    {
+      "path": "licenses/uzlib.txt",
+      "bytes": 3524,
+      "sha256": "41adb476777d33caf072126aaba3908a1f4468736aab6570759619e41d4ca59e",
+      "kind": "license"
+    },
+    {
+      "path": "licenses/zlib.txt",
+      "bytes": 1329,
+      "sha256": "5b305a8fcbfac28f3238dfe6db82016dbc72b986be3034e843648f89ffc2bfb5",
+      "kind": "license"
+    },
+    {
+      "path": "filesystem/badgeware/__init__.py",
+      "bytes": 5749,
+      "sha256": "1efcaf1df7c0c054ee15d46f0519126be29d15eb635c5c8cd20f970dd5365711",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/badgeware/badge.py",
+      "bytes": 6606,
+      "sha256": "8424d209e7cd55f5263d6874b18426d754615362a02094c9c969dec918a12c6f",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/badgeware/filesystem.py",
+      "bytes": 362,
+      "sha256": "2ef1a9d3eb0071ec17565ca80ddcf0ec9d149b7afff8514c2504fd03393b6aa6",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/badgeware/link.py",
+      "bytes": 1852,
+      "sha256": "18c0a368644fb3cb27cb2500be56fdeb29633c4ba0c37f7a7b219abf9b8e817c",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/badgeware/math.py",
+      "bytes": 367,
+      "sha256": "279f670a8835797067baecf212b1622f526c41043af38dd8c76e38b0321f1caa",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/badgeware/memory.py",
+      "bytes": 518,
+      "sha256": "2e77e7e805dbfeb9ed919918ac9c89eea2d58ecd6daef46106bab087390077b4",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/badgeware/rtc.py",
+      "bytes": 2175,
+      "sha256": "07dd47e1be3861332491c29ff4d4cb19679b5527ac3ca87d6bd3646f9fc07943",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/badgeware/state.py",
+      "bytes": 1114,
+      "sha256": "272486aca16436396ada7b76bd84739f0b4a1967258a07fb591a169d49c7d017",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/badgeware/text.py",
+      "bytes": 3410,
+      "sha256": "8b509b2a0e3b800ca8f3e2454b12f73797061be956617b1247f7196689083f53",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/brand.py",
+      "bytes": 714,
+      "sha256": "1934ddcf9caf2a9abb8fb1b45deb3215491ec2dac538f673fa78cb00b103f7b8",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/breakout_bme280.py",
+      "bytes": 363,
+      "sha256": "7f316b04df1d1104dd40f9a10750202ea3e27c44607266f3eaaaa15beafe8876",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/breakout_ltr559.py",
+      "bytes": 256,
+      "sha256": "ca32c61f9c51d4f75a6709c9a248ceda21fd0d5bfca342f43f5069ce8f944445",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/editor_support.py",
+      "bytes": 7189,
+      "sha256": "693c207eb01a1335bdaedb5418e9f9539b1ce253ca1b09bd4f21b669dd100925",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/hints.py",
+      "bytes": 829,
+      "sha256": "e89c6669e7dea050994fa72d550215d1ed56e23b64726276593e99079a7117d8",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/lsm6ds3.py",
+      "bytes": 501,
+      "sha256": "6828d5127fb27090a81429e0a411846dfb21744d23125c5e049df22bbc1941c5",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/missing_details.py",
+      "bytes": 964,
+      "sha256": "8d139149eb9df41586af9ed870fc74fed3c98ba05931fb695b1eab610202f9bb",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/ntptime.py",
+      "bytes": 86,
+      "sha256": "8363437f78eb9513c36a2ebddd4893eac7c8a94f792b34043feb890947dee2d5",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/pairing.py",
+      "bytes": 815,
+      "sha256": "1d7c33dcfc5d6341d2c1b51a3e398608dbec515c8ec0fec8bbb444b7bddae7ec",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/pcf85063a.py",
+      "bytes": 307,
+      "sha256": "2b3f56748cb61f5256dfd2ef66630f1bbc01e2c5f93a88d1ffc6bf3241138e75",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/powman.py",
+      "bytes": 327,
+      "sha256": "46f039d40cf6046ac6c2cc959e83c7f11527b4272bea75a7bed30a84cd8ac370",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/qwstpad.py",
+      "bytes": 133,
+      "sha256": "a465f7ee4a61815a9ddbb7df5d585663c873a7b851438ad8c9ed81e78ea4b06d",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/requests.py",
+      "bytes": 207,
+      "sha256": "d3326245f2d164d028a2134563e02f36de17ddfb3b128bd63f93f6ba765f058e",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/absolute.ppf",
+      "bytes": 10800,
+      "sha256": "27b8c9cc4afc53d74bf318013b14938544770e0e0b807a481ce0875819b48b4d",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/ark.ppf",
+      "bytes": 7970,
+      "sha256": "adece36965923617fff7095761d9cc337e55d2cd7c9f00e260e4cb082f0e932f",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/awesome.ppf",
+      "bytes": 9668,
+      "sha256": "1208a7fb45b9dba68bbdf18c5228cdf352d119deec09daac9c368527bfeb4839",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/bacteria.ppf",
+      "bytes": 13064,
+      "sha256": "284eda8beba2804bf60e1de707a6c492e8388fc1a26647435d6669c56799954b",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/badgeware.ppf",
+      "bytes": 9668,
+      "sha256": "6bcc0519c8c5c4f27de38f3f4069ae52d03e2f648cf7468659e4c3c58b9ec89a",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/badgewaremax.ppf",
+      "bytes": 13064,
+      "sha256": "83d57e8cefea16290cb38007c8f9a5c7224a98905e22da77a3f8d40b0eecef6b",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/compass.ppf",
+      "bytes": 10800,
+      "sha256": "bcb10d97ccc6272c3cd2ab6e847d2a021c4c20bb32cc85e048496195447f4ea6",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/corset.ppf",
+      "bytes": 10234,
+      "sha256": "ded998829e8fb5690807280163ffdd2becdb99bcc0f08b942d66ccfafd9950fe",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/cosmetics.ppf",
+      "bytes": 1338,
+      "sha256": "06984addb49737d27de1a05fd0970eee78063fb7ea63e948c91ae290e6db48b0",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/cosmetics_outline.ppf",
+      "bytes": 1338,
+      "sha256": "dd314355471fde7f99dbd1df5e63707f9f2f3cd166222028c017b0b6efe789b0",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/curse.ppf",
+      "bytes": 13064,
+      "sha256": "7ed2b7dea7bfae87a384855a4cd95c4744fcd83feaf2f8a7fcb46939f0f0cc0a",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/desert.ppf",
+      "bytes": 7404,
+      "sha256": "7080fb8d8e895ce34cbc250fe8d1fdb156fcfded2ee0877fa9f034b216483d18",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/emoji.ppf",
+      "bytes": 958,
+      "sha256": "e1eb7290fcf09aed89cd7479e5697d040811c4e6cdb6b70f2ba31a39757e1aa0",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/emoji_outline.ppf",
+      "bytes": 958,
+      "sha256": "aca37bd6fb0528138f546cdb87dbe2f0648eea7fa40aa9e0f9d8603180eb33cc",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/fear.ppf",
+      "bytes": 11366,
+      "sha256": "76e725641958c73a2b6121a8ec1183ac91120628873a1d70a53ca754e83ffbbb",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/food.ppf",
+      "bytes": 1680,
+      "sha256": "667c54782c287d20b62532701049726286c922327ec49da5c7e47cd55080363e",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/food_outline.ppf",
+      "bytes": 1680,
+      "sha256": "d15a490b2d7effa23f4e2f68d92bff51781b726ba8a43de83c71b2c319d2d9ae",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/futile.ppf",
+      "bytes": 22120,
+      "sha256": "a78612f2833611ec7f6073235c2de63c4b541e4da2db00d65ad0d65d74c3e534",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/hats.ppf",
+      "bytes": 1870,
+      "sha256": "8a8e6d9f440cfba356b11a6936c57f42674366e035d5fe19723a1b83ff8f9a35",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/hats_outline.ppf",
+      "bytes": 1870,
+      "sha256": "9911294c762774a12adb95be26cff76625c4942b6ad73c6ac116f2cbfe41e200",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/holotype.ppf",
+      "bytes": 10234,
+      "sha256": "c85ff49063c0812b391551402208f1bd0a9366205c5afaac0a2cb339772b672e",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/hungry.ppf",
+      "bytes": 10234,
+      "sha256": "06d92823e48665757eef2614f86d6d4ff2953feab9f1f03b01781b488d2577b1",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/ignore.ppf",
+      "bytes": 25516,
+      "sha256": "15288efe5140374f622782e3ba3308b145fa81fb7261bea8f34927db0beb696c",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/kobold.ppf",
+      "bytes": 8536,
+      "sha256": "d8703c4ce1b129aa8cbb52a921233b75380340b7eb0a472d521f3b4deec6657a",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/lookout.ppf",
+      "bytes": 9668,
+      "sha256": "d2c560f099a6e81dd7fa55be76781f54dc6961827744d0be181ca5204b0683be",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/loser.ppf",
+      "bytes": 5140,
+      "sha256": "f130d727616a1b3d02e9b2297bcfb48fe90761e2195993bf4a0837c089191445",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/manticore.ppf",
+      "bytes": 14762,
+      "sha256": "61649cce63e0a2f35147e2dbc766e4b610fa92bad231538cc59138da06b364cb",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/match.ppf",
+      "bytes": 8536,
+      "sha256": "7a505272c0081f01f0fbc5a5c24cedc4a2ebff42eb0f05616bdac693a50977e9",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/memo.ppf",
+      "bytes": 10234,
+      "sha256": "fa4c4007ae23b5d66a5564dbc8918a620554726fdc638cb2a246489e416b409e",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/more.ppf",
+      "bytes": 27214,
+      "sha256": "fd05be1cba5e55bff11d5223aefdb7f09e1d24e6abddcf994800b7e250663f60",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/nope.ppf",
+      "bytes": 9102,
+      "sha256": "1d8b1037243eb0e17a8be0ddfb5f8606a739fc28c0fb1fcc07a908309ba4b6d9",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/outflank.ppf",
+      "bytes": 11366,
+      "sha256": "15002a734d77407b8d1f3cce590d76d903a171c3d5a87088a5b9fd7e48cf417f",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/saga.ppf",
+      "bytes": 10234,
+      "sha256": "acfe6ce9560010a0eb446487f8d14ac8e8a16d43e169ab4db6afc4664a11ce84",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/salty.ppf",
+      "bytes": 11366,
+      "sha256": "a1c7fbfbb57928bcdc82358ebd695f831e6aeac2722e106c5e5172e1012edcfa",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/sins.ppf",
+      "bytes": 8536,
+      "sha256": "59d57500a5628faaab14f295b405715404e4331b85ec25dda9629ddf0db42d75",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/smart.ppf",
+      "bytes": 10800,
+      "sha256": "2e11d00933bfbf520480d8f4307f24aaeced9dfd00d8726aa96a2a95c216709f",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/teatime.ppf",
+      "bytes": 5140,
+      "sha256": "ad8309a6286d762ac342484e0205715d18f23fca10d1ff92be8c25aedcdf4b7c",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/tools_crafting.ppf",
+      "bytes": 6202,
+      "sha256": "ee3f0999146c949d3a8c57417f015ad781cce10d6ecf8157be1dd06771eb961a",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/tools_crafting_outline.ppf",
+      "bytes": 6202,
+      "sha256": "62454b0bec2e4ac65cb853a3e856d510999d9e2db4794028359306da34321c5c",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/torch.ppf",
+      "bytes": 7970,
+      "sha256": "ed7e36cc91ccaccd79aac5b8388b45bc32328511391804e29edf33154b461fbb",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/travel.ppf",
+      "bytes": 4188,
+      "sha256": "0dea5b98311a3dcfef779090a41055e49fe7e785b8f315c430aff0588382bbff",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/travel_outline.ppf",
+      "bytes": 4188,
+      "sha256": "e787081c974f9b3e76da68babe0a4926c7bd5ebf2eb44b1a46a77ba221df5270",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/troll.ppf",
+      "bytes": 14196,
+      "sha256": "644b19251c06c9ed5bd4e534b7ec623559b273859aa6fd43a43988105ea7b2cc",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/unfair.ppf",
+      "bytes": 9668,
+      "sha256": "2de84ddf0c28b2d4eae0ec5dce13bb3b20a0203458ae260c0bfe0b12df7fba75",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/vest.ppf",
+      "bytes": 10234,
+      "sha256": "3d681f19bef1078e7b7b3ed266eb486df8f04758ed7fd93e1c6c422b36a1bb42",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/weather.ppf",
+      "bytes": 1186,
+      "sha256": "6374612956ccf533525f9f8e3a6032bb8275cebb563da5dff6702caeaa483b18",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/weather_outline.ppf",
+      "bytes": 1186,
+      "sha256": "a1b3b1853670b5205c5a0c6158a2e1a6a5b7a4af138d68fbbeabe1eea26439d1",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/winds.ppf",
+      "bytes": 8536,
+      "sha256": "f15d846666593ea278981629ae6fbfd10f31accee4b400aa1fc1569a761e073b",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/yesterday.ppf",
+      "bytes": 10800,
+      "sha256": "81421dda612528542a102c13d867f45c03c201ff7d4c3af0dbf570fdc13fb700",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/yolk.ppf",
+      "bytes": 7970,
+      "sha256": "e23a22be693f41e9a5a2761e7bacedd398bc6f265a65ddfc87b37ca496ae9210",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/rom/fonts/ziplock.ppf",
+      "bytes": 13630,
+      "sha256": "ee2fa666f597d1eb30ada1e7945d5685fe725eea87b36c35c57f5cda60e410aa",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/sparkle.py",
+      "bytes": 4669,
+      "sha256": "65e1a374daab0e026b5338ab30b6f20c14495adbaed828142acb303a24e0014e",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/system/assets/fonts/MonaSans-Medium.af",
+      "bytes": 66270,
+      "sha256": "4d8fcbac2c778f41842d610b18409b4c21bf73758405da785ef968f3c5337e09",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/system/assets/fonts/licences/OFL.txt",
+      "bytes": 4407,
+      "sha256": "74ba064d03f1f1c4a952da936c3eb71866c34404916734de3cae73b34357e59e",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "filesystem/wifi.py",
+      "bytes": 255,
+      "sha256": "e4e3f8eeefa292518a22f26624b1773badac4f15f7ca51a28376b2ca1167791a",
+      "kind": "firmware-support"
+    },
+    {
+      "path": "app/assets/maps/africa.png",
+      "bytes": 6567,
+      "sha256": "fc22034ad36ee85117e8d76ead078243f4ea87bf414b5308be003473e7de2f00",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/assets/maps/africa_central.png",
+      "bytes": 5187,
+      "sha256": "4e0bf452190354f2f7201cd1e009630579a2a227548d74a648edb6718918d703",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/assets/maps/africa_east.png",
+      "bytes": 4982,
+      "sha256": "f6c9fc9b29c829d2c7335b01c00de3d0626b272ffaec9db0265d1afd9e17bb87",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/assets/maps/africa_north.png",
+      "bytes": 7816,
+      "sha256": "8a97dd0b9602bb8898170e010683778fc9b155ae688a90fde2525161a1a3d950",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/assets/maps/africa_south.png",
+      "bytes": 4400,
+      "sha256": "ed4dc6e3caa876abb6c6a0dcd89ffea73c4a34cfb6dbe8cba87f17377d917d7f",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/assets/maps/africa_west.png",
+      "bytes": 5584,
+      "sha256": "9a09f61f5f8f53be2dbe72d008acc72bb75aed61684c408a9d75232055a8ea2d",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/assets/maps/antarctica.png",
+      "bytes": 3515,
+      "sha256": "d8c35e5b88c09fbf95d840708194fff6a831ff8d9dfa7399417fd2d54f14647c",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/assets/maps/asia.png",
+      "bytes": 9703,
+      "sha256": "5e8356e2eef99c66aed2007fabad0d9c4bbb2b3a356a66e2cca09613ef42a96e",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/assets/maps/asia_central.png",
+      "bytes": 5799,
+      "sha256": "a7bbcc785b2f648d21dc764e35812d59b39a43a3878eea73d26366e30996f739",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/assets/maps/asia_east.png",
+      "bytes": 5454,
+      "sha256": "3a483a9de333e8784ae4c1beafad8c3b2e7551dd012db9cd516684eba581b711",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/assets/maps/asia_south.png",
+      "bytes": 3911,
+      "sha256": "fcf9f544f704045e235c2b86dbb9a5fe5d5f3b0b3014645c2ba679d01a45610e",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/assets/maps/asia_southeast.png",
+      "bytes": 7049,
+      "sha256": "a82e6cadd47f53bfc9d9d04f6434f5b1d46acf5d7177349e019db17cde44e42f",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/assets/maps/asia_west.png",
+      "bytes": 6371,
+      "sha256": "7ab5e9fab0c2d32f3c50c79f6c787e5997a41b743d2aab815670924176d237ca",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/assets/maps/caribbean.png",
+      "bytes": 5384,
+      "sha256": "b35fa6adb569c916290bb78a1d9fa061b564940da5c708bd5597ae90a5deb4e5",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/assets/maps/central_america.png",
+      "bytes": 5060,
+      "sha256": "14ecd65f0d84ac6d8f4dd582a27ce8733b19bdc4a2058feeb86643cc0cf1431e",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/assets/maps/europe.png",
+      "bytes": 8513,
+      "sha256": "8400954daea5c28eae0a9bca8f18c441e3d17444d405de375c9a296f3873fea0",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/assets/maps/europe_detail.png",
+      "bytes": 9731,
+      "sha256": "a21836f5b1b343834a9ad379e5f9ad81b3d4ac06e1dac0bf93cc462124729cac",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/assets/maps/indian_ocean.png",
+      "bytes": 2176,
+      "sha256": "e34fb672d72e78858c126cbc2dadb29e8e8cbdef676515539feaeb5bf916abd9",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/assets/maps/MAPS-SOURCES.json",
+      "bytes": 3905,
+      "sha256": "f06649420c11ecb1b3db237bcea7c4b3901d000019365301820267e119ac438c",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/assets/maps/north_america.png",
+      "bytes": 5938,
+      "sha256": "9e42514380cb25b1cfd4f2c9a94f81047ebcd7fb19f2e33afa2d623dbc0ec338",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/assets/maps/oceania.png",
+      "bytes": 4421,
+      "sha256": "1e602b9f5ee9907392501632aab7b7d1a7ad57efbf95547c38522b6bcec97938",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/assets/maps/oceania_east.png",
+      "bytes": 1441,
+      "sha256": "f41975b9c0289bb485d6ed8c4281612bc440c4249c0e5c8867de7976853ecf6d",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/assets/maps/oceania_west.png",
+      "bytes": 2958,
+      "sha256": "8261b73bd925af565422d8ccf69af6bf2cbb9f3a623a531a9e781f85aa42f235",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/assets/maps/south_america.png",
+      "bytes": 3608,
+      "sha256": "1823b87ba5906836e1ec2cfbfa9f5b10ac3c92553bb71a83bcf6d11e500630cb",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/assets/maps/us.png",
+      "bytes": 7220,
+      "sha256": "e24a340fc6449538211f7dc01741420d35c193e5642fd70e6119f0cab62fc9f6",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/assets/maps/us_alaska.png",
+      "bytes": 4395,
+      "sha256": "f65fa27422f8e17a93597abdc68c283f60ca1d36cde210a0a929c9485163f6ae",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/assets/maps/us_caribbean.png",
+      "bytes": 1427,
+      "sha256": "5c1b89e9990e5c131d6345ec0f6e1c5c35a805910defdb6de0e2b166a62f1888",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/assets/maps/us_east.png",
+      "bytes": 4607,
+      "sha256": "0c5f6dadc9477e5c3f5dd19f342f58ff67c519664a9f567f03e92fae3729f44a",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/assets/maps/us_hawaii.png",
+      "bytes": 1548,
+      "sha256": "365aad61fddf4e10e50b4d69cb457e18fbbb0e084b1aaa5ffb53128efbc804b7",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/assets/maps/us_pacific.png",
+      "bytes": 684,
+      "sha256": "8c6195479f4c683eac2297fcf943a9255ce0b2d4fac568b47eddc72c630d16fc",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/assets/maps/us_samoa.png",
+      "bytes": 776,
+      "sha256": "be5577076ef9c76e7807eb0490eb4e8f343c5fc4c41cf8385c2918ea24e86f36",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/assets/maps/world.png",
+      "bytes": 11001,
+      "sha256": "3cc8bbf228406c6694143b92b0b96ac740582a1e9233f017d0f869fbfaf464f9",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/atlas.py",
+      "bytes": 7540,
+      "sha256": "6b99600e7f2307c9762ecd79e1054c7dc7a691179ab082c4e8a3243246867899",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/catalog.py",
+      "bytes": 111466,
+      "sha256": "936dea2d6d23f8e33a6ca99d537e3789258e066ddf9d2ac11e255841e24813f7",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/data/catalog-input.json",
+      "bytes": 113307,
+      "sha256": "7285b5a566c2773914fc3e10015fbcc690ee5fb8a1f46359c4b9837228ad6320",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/DATA-SOURCES.md",
+      "bytes": 13438,
+      "sha256": "46709723745333aaac0be6cf71ed3b1348cd1779e77e187b4213dc80ac993070",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/explore.py",
+      "bytes": 3755,
+      "sha256": "7fb97c2f5b006e4abb2110d94d75b880a377e90f3c23261ef8c772fce76f9f89",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/icon.png",
+      "bytes": 422,
+      "sha256": "93a0f70292dac0d52bd653d21c4fd0c48fcd751997e0e1f91a83147f746df531",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/layout.py",
+      "bytes": 3350,
+      "sha256": "503e800f3f175bc5f0d2195e57e99f34765e5cbb277ac54e6bad0af78a256f89",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/MAP-ATTRIBUTION.md",
+      "bytes": 4226,
+      "sha256": "5a642669e657ac597ffeac4f5a31bb453ed49cdeebb3f61b62dc51fb2b470808",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/progress.py",
+      "bytes": 6123,
+      "sha256": "ed996686ba76e1da0aba487d89528dc99f62d38f93edf7e35c4765d62771e34a",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/quiz.py",
+      "bytes": 11602,
+      "sha256": "7293814442502451f34c2124910228fa032715efe8778f812f2ac9fc35ce7d52",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/README.md",
+      "bytes": 4905,
+      "sha256": "33fb9411ff116cb129a7c1e8d9ccf2c8401bf4ece2b69a1f18e5603cdbd140a2",
+      "kind": "canonical-capitals"
+    },
+    {
+      "path": "app/__init__.py",
+      "bytes": 32213,
+      "sha256": "457dafe6bac577f61bec7e5aa9c873ad591fbadfef42efadfaa658db4c1ee34c",
+      "kind": "canonical-capitals"
+    }
+  ]
+}

@@ -33,3 +33,14 @@ requested no third-party mascots, characters, logos or named-artist imitation.
 
 GitHub and other product names identify the referenced platforms and hardware.
 This portfolio is Brian's independent work and does not claim sponsorship.
+
+World Capitals browser demo:
+The canonical app, catalog and 31 maps are staged without application changes.
+GeoNames catalog inputs: CC BY 4.0, https://www.geonames.org/ and
+https://creativecommons.org/licenses/by/4.0/ . Editorial corrections, coverage
+and role-specific capital questions: assets/capitals-runtime/app/DATA-SOURCES.md
+Natural Earth map inputs: public domain, https://www.naturalearthdata.com/
+Map projection, simplification, attribution: assets/capitals-runtime/app/MAP-ATTRIBUTION.md
+MicroPython WASM, badge support code, fonts and compiled dependencies retain
+their full notices under assets/capitals-runtime/LICENSE, THIRD_PARTY.md and
+licenses/. SOURCE-MANIFEST.json records exact source bytes and provenance.

@@ -1,0 +1,58 @@
+{
+  "provider": "Natural Earth",
+  "license": "Public domain",
+  "terms": "https://www.naturalearthdata.com/about/terms-of-use/",
+  "source_revision": "ca96624a56bd078437bca8184e78163e5039ad19",
+  "retrieved_on": "2026-10-29",
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_50m_admin_0_countries.geojson",
+      "sha256": "3e458fc036ad0a66411f2c1e6cac49c5d7bfb81cb1123bc513b22511a2b7fdeb"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_50m_admin_1_states_provinces.geojson",
+      "sha256": "69a0e06e640b2d505858ae1cb63034e4677f3000b35a98e16312932b98c426b9"
+    }
+  ],
+  "projection": "Equidistant cylindrical, cosine-adjusted at page centre; 4px margin",
+  "size": [
+    320,
+    150
+  ],
+  "pillow_version": "13.0.0",
+  "atlas_sha256": "6b99600e7f2307c9762ecd79e1054c7dc7a691179ab082c4e8a3243246867899",
+  "builder_sha256": "beb43b0f884b7dbb46074263b8b8a7c079bd55e7e03ddfdaa048b424dc4eb878",
+  "files_sha256": {
+    "world.png": "3cc8bbf228406c6694143b92b0b96ac740582a1e9233f017d0f869fbfaf464f9",
+    "africa.png": "fc22034ad36ee85117e8d76ead078243f4ea87bf414b5308be003473e7de2f00",
+    "africa_north.png": "8a97dd0b9602bb8898170e010683778fc9b155ae688a90fde2525161a1a3d950",
+    "africa_west.png": "9a09f61f5f8f53be2dbe72d008acc72bb75aed61684c408a9d75232055a8ea2d",
+    "africa_central.png": "4e0bf452190354f2f7201cd1e009630579a2a227548d74a648edb6718918d703",
+    "africa_east.png": "f6c9fc9b29c829d2c7335b01c00de3d0626b272ffaec9db0265d1afd9e17bb87",
+    "africa_south.png": "ed4dc6e3caa876abb6c6a0dcd89ffea73c4a34cfb6dbe8cba87f17377d917d7f",
+    "asia.png": "5e8356e2eef99c66aed2007fabad0d9c4bbb2b3a356a66e2cca09613ef42a96e",
+    "asia_west.png": "7ab5e9fab0c2d32f3c50c79f6c787e5997a41b743d2aab815670924176d237ca",
+    "asia_central.png": "a7bbcc785b2f648d21dc764e35812d59b39a43a3878eea73d26366e30996f739",
+    "asia_south.png": "fcf9f544f704045e235c2b86dbb9a5fe5d5f3b0b3014645c2ba679d01a45610e",
+    "asia_southeast.png": "a82e6cadd47f53bfc9d9d04f6434f5b1d46acf5d7177349e019db17cde44e42f",
+    "asia_east.png": "3a483a9de333e8784ae4c1beafad8c3b2e7551dd012db9cd516684eba581b711",
+    "europe.png": "8400954daea5c28eae0a9bca8f18c441e3d17444d405de375c9a296f3873fea0",
+    "europe_detail.png": "a21836f5b1b343834a9ad379e5f9ad81b3d4ac06e1dac0bf93cc462124729cac",
+    "north_america.png": "9e42514380cb25b1cfd4f2c9a94f81047ebcd7fb19f2e33afa2d623dbc0ec338",
+    "central_america.png": "14ecd65f0d84ac6d8f4dd582a27ce8733b19bdc4a2058feeb86643cc0cf1431e",
+    "caribbean.png": "b35fa6adb569c916290bb78a1d9fa061b564940da5c708bd5597ae90a5deb4e5",
+    "south_america.png": "1823b87ba5906836e1ec2cfbfa9f5b10ac3c92553bb71a83bcf6d11e500630cb",
+    "oceania.png": "1e602b9f5ee9907392501632aab7b7d1a7ad57efbf95547c38522b6bcec97938",
+    "oceania_west.png": "8261b73bd925af565422d8ccf69af6bf2cbb9f3a623a531a9e781f85aa42f235",
+    "oceania_east.png": "f41975b9c0289bb485d6ed8c4281612bc440c4249c0e5c8867de7976853ecf6d",
+    "indian_ocean.png": "e34fb672d72e78858c126cbc2dadb29e8e8cbdef676515539feaeb5bf916abd9",
+    "antarctica.png": "d8c35e5b88c09fbf95d840708194fff6a831ff8d9dfa7399417fd2d54f14647c",
+    "us.png": "e24a340fc6449538211f7dc01741420d35c193e5642fd70e6119f0cab62fc9f6",
+    "us_east.png": "0c5f6dadc9477e5c3f5dd19f342f58ff67c519664a9f567f03e92fae3729f44a",
+    "us_alaska.png": "f65fa27422f8e17a93597abdc68c283f60ca1d36cde210a0a929c9485163f6ae",
+    "us_hawaii.png": "365aad61fddf4e10e50b4d69cb457e18fbbb0e084b1aaa5ffb53128efbc804b7",
+    "us_caribbean.png": "5c1b89e9990e5c131d6345ec0f6e1c5c35a805910defdb6de0e2b166a62f1888",
+    "us_pacific.png": "8c6195479f4c683eac2297fcf943a9255ce0b2d4fac568b47eddc72c630d16fc",
+    "us_samoa.png": "be5577076ef9c76e7807eb0490eb4e8f343c5fc4c41cf8385c2918ea24e86f36"
+  }
+}

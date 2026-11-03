@@ -1,0 +1,16 @@
+# Keep allowlisted source snapshots and compiled/font assets byte-identical to
+# SOURCE-MANIFEST.json on both Windows and POSIX checkouts.
+/app/** -text
+/asyncify/** -text
+/filesystem/** -text
+/licenses/** -text
+/LICENSE -text
+/THIRD_PARTY.md -text
+# Retain the original whitespace in these two upstream snapshots.
+/filesystem/lsm6ds3.py whitespace=-blank-at-eol,-blank-at-eof
+/filesystem/system/assets/fonts/licences/OFL.txt whitespace=-blank-at-eol
+/SOURCE-MANIFEST.json text eol=lf
+/runtime.mjs text eol=lf
+/worker.mjs text eol=lf
+/launcher.py text eol=lf
+/README.md text eol=lf

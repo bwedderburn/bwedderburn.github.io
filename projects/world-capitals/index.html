@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="canonical" href="https://bwedderburn.github.io/projects/world-capitals/">
+  <meta name="description" content="A functional World Capitals atlas and quiz for the GitHub Universe badge, with an interactive 3D browser simulator.">
+  <meta name="theme-color" content="#143348">
+  <title>World Capitals badge atlas | Brian</title>
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/styles.css">
+  <link rel="stylesheet" href="../../assets/bm83-demo.css">
+  <link rel="stylesheet" href="../../assets/capitals-demo.css">
+  <script type="module" src="../../assets/capitals-embed.mjs"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap"><a class="identity" href="../../" aria-label="Brian, portfolio home"><span class="identity-mark" aria-hidden="true"></span><span>Brian<span class="identity-detail">Controls &amp; embedded software</span></span></a><nav aria-label="Main navigation"><a href="../../#projects">Projects</a><a href="../../#approach">Approach</a><a href="../../#contact">Contact</a><a href="https://github.com/bwedderburn">GitHub</a></nav></header>
+  <main id="main">
+    <div class="wrap"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../../">Portfolio</a><span aria-hidden="true">/</span><span aria-current="page">World Capitals</span></nav></div>
+    <section class="case-hero wrap" aria-labelledby="case-title"><div><p class="project-kind">Maps, learning &amp; embedded interfaces</p><h1 id="case-title">A world atlas.<br>A badge-sized interface.</h1><p class="lead">Explore countries and U.S. places, find their capitals on offline maps, and test what you remember with a short quiz.</p><div class="actions"><a class="button primary" href="#badge-demo">Try the badge app</a><a class="text-link" href="https://github.com/bwedderburn/github-universe-2026/tree/main/badge/apps/capitals">Browse the app source</a></div></div><figure class="capitals-map-figure"><img src="../../assets/capitals-world.png" alt="The app's bundled flat world overview, showing geographic outlines on a dark background." width="640" height="300"><figcaption>One of 31 bundled map pages. In Explore, the selected place has a visible locator.</figcaption></figure></section>
+    <div class="case-facts wrap"><div><span>World scope</span><strong>195 countries</strong></div><div><span>United States</span><strong>50 states + 6 other places</strong></div><div><span>Two ways to learn</span><strong>Explore &amp; Quiz</strong></div></div>
+    <section class="case-section wrap" aria-labelledby="explore-title"><div><p class="section-context">Explore</p><h2 id="explore-title">Maps and lists that stay together.</h2></div><div><p>Start with a readable list, open the selected place on a map, then read its detail card. Move between world, continent and regional pages, including locators for small islands and an Antarctica explanation page.</p><p>The United States scope includes all 50 states, Alaska and Hawaii map pages, the five inhabited territories and Washington, D.C. Territories and the federal district keep their correct labels.</p></div></section>
+    <section class="case-section wrap" aria-labelledby="quiz-title"><div><p class="section-context">Quiz</p><h2 id="quiz-title">Five questions, then keep going.</h2></div><div><p>Choose Random or Alphabetical order independently for World and United States. Each short round continues the same pass, so the full selected pool is reachable without repeating questions before exhaustion.</p><p>Four choices stay readable, answers remain hidden until checking, and feedback explains capital roles where a generic question would be misleading. Results show the score and missed answers. Browser settings and progress are separate from the physical badge.</p></div></section>
+    <section id="badge-demo" class="demo-section wrap" aria-labelledby="demo-title"><div class="demo-intro"><p class="section-context">Interactive badge app</p><h2 id="demo-title">Open the functional 3D badge.</h2><p>Use the actual Universe badge's buttons and touch pads to explore the atlas and play a round. The model keeps its existing Mona artwork and GitHub logo; the display runs the existing Capitals app.</p><div class="actions"><button type="button" class="button primary" data-launch-capitals>Launch World Capitals</button><a class="text-link" href="../../demos/capitals/">Open full simulator</a></div></div><div class="demo-embed-top" hidden><h2>World Capitals badge app</h2><a class="text-link" href="../../demos/capitals/">Open full simulator</a></div><div class="demo-mount" hidden></div></section>
+    <section class="case-section wrap" aria-labelledby="source-title"><div><p class="section-context">Data and evidence</p><h2 id="source-title">A defined catalog, with sources.</h2></div><div><p>The dated World catalog covers 193 UN member states and two observer states. The U.S. pool contains 56 places. Proper names, capital-role questions and source notes come from the existing badge catalog, dated October 29, 2026.</p><p>GeoNames data retains its CC BY attribution; map pages are built from Natural Earth public-domain geography. Existing host tests check complete coverage, quiz sequences, persistence migration, map locators and layout. The browser review is separate from physical badge acceptance.</p><div class="actions"><a class="text-link" href="../../assets/capitals-runtime/app/DATA-SOURCES.md">Geography sources</a><a class="text-link" href="../../assets/capitals-runtime/app/MAP-ATTRIBUTION.md">Map attribution</a></div></div></section>
+    <section class="related-project wrap"><p>Another app on the same badge</p><h2><a href="../bm83/">BM83 badge remote</a></h2><p>Audio controls, metadata, and original album artwork in a separate interactive demo.</p></section>
+  </main>
+  <footer class="site-footer wrap"><a href="../../">Brian’s portfolio</a><a href="../../credits/">Sources and credits</a><a href="https://github.com/bwedderburn">github.com/bwedderburn</a><p>2026</p></footer>
+</body>
+</html>

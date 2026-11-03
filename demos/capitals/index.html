@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" data-badge-model-src="https://badger.github.io/simulator/models/github-mona-badge.glb">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="canonical" href="https://bwedderburn.github.io/demos/capitals/">
+  <meta name="description" content="Explore the world and practice capitals with a functional 3D GitHub Universe badge app. Explore the atlas and play a quiz in your browser.">
+  <meta name="theme-color" content="#143348">
+  <title>World Capitals — interactive badge atlas | Brian</title>
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/styles.css">
+  <link rel="stylesheet" href="../../assets/bm83-demo.css">
+  <link rel="stylesheet" href="../../assets/capitals-demo.css">
+  <script type="module" src="../../assets/capitals-demo.mjs"></script>
+</head>
+<body class="demo-page capitals-page">
+  <a class="skip-link" href="#main">Skip to atlas</a>
+  <header class="site-header wrap demo-page-header"><a class="identity" href="../../" aria-label="Brian, portfolio home"><span class="identity-mark" aria-hidden="true"></span><span>Brian<span class="identity-detail">Controls &amp; embedded software</span></span></a><nav aria-label="Main navigation"><a href="../../projects/world-capitals/">World Capitals</a><a href="../../#projects">All projects</a><a href="https://github.com/bwedderburn">GitHub</a></nav></header>
+  <main id="main" class="demo-shell wrap" tabindex="-1">
+    <div class="demo-title-row"><div><p class="section-context">A world to explore</p><h1>World Capitals</h1><p>A working atlas and quiz on the Universe badge.</p></div><a class="text-link demo-back-link" href="../../projects/world-capitals/">About this project</a></div>
+    <p id="runtime-status" class="capitals-runtime-status" role="status">Loading the badge app…</p>
+    <details id="runtime-error" class="capitals-error" hidden><summary>Startup details</summary><pre id="runtime-error-text"></pre></details>
+    <noscript><p>JavaScript is required for the interactive atlas. You can still read the <a href="../../projects/world-capitals/">project description</a>.</p></noscript>
+    <div class="capitals-app" id="capitals-app">
+      <section class="demo-stage-section" aria-label="Badge model and display">
+        <div class="demo-stage-toolbar"><span id="view-status">Preparing 3D view…</span><div><button id="flat-toggle" type="button" aria-pressed="false">Screen view</button><button id="reset-view" type="button">Reset view</button></div></div>
+        <div class="demo-stage capitals-stage" id="model-stage"><div id="model-host" aria-label="Actual Universe badge. Drag to rotate, scroll to zoom, and press its controls."></div><canvas id="capitals-screen" width="320" height="240" role="img" aria-label="World Capitals badge display. The current screen is also described alongside the badge." hidden></canvas><p id="model-loading" class="model-loading">Loading the Universe badge…</p></div>
+        <p class="stage-hint">Press the badge buttons or touch pads. Drag to rotate; scroll to zoom.</p>
+        <div class="view-actions"><button type="button" id="front-view">Front</button><button type="button" id="rear-view">Rear</button><button type="button" id="flip-view">Turn upside down</button><button type="button" id="motion-toggle" aria-pressed="false">Start motion</button></div>
+        <details class="pose-settings"><summary>Adjust the pose</summary><div class="pose-grid"><label>Pitch <output id="pitch-value" for="pitch">−8°</output><input id="pitch" type="range" min="-85" max="85" value="-8" step="1"></label><label>Roll <output id="roll-value" for="roll">−5°</output><input id="roll" type="range" min="-180" max="180" value="-5" step="1"></label><label>Yaw <output id="yaw-value" for="yaw">−16°</output><input id="yaw" type="range" min="-180" max="180" value="-16" step="1"></label><label>Zoom <output id="zoom-value" for="zoom">100%</output><input id="zoom" type="range" min="70" max="145" value="100" step="1"></label></div></details>
+      </section>
+      <section class="capitals-console" aria-labelledby="screen-title">
+        <div class="capitals-screen-heading"><p id="screen-context">Atlas and quiz</p><h2 id="screen-title">Opening World Capitals</h2><p id="screen-summary">195 World entries. 50 states, five territories, and Washington, D.C.</p></div>
+        <div id="screen-lines" class="capitals-screen-lines" aria-live="polite" aria-atomic="true"></div>
+        <div id="screen-options" class="capitals-options" aria-label="Current screen options"></div>
+        <p id="screen-feedback" class="capitals-feedback" role="status" hidden></p>
+        <p id="screen-hint" class="capitals-hint">Use Up and Down to choose, then Select.</p>
+        <div class="capitals-navigation" aria-label="Badge navigation">
+          <button type="button" data-control="up" class="capitals-up" disabled>Up</button>
+          <button type="button" data-control="left" class="capitals-left" disabled>Left</button>
+          <button type="button" data-control="select" class="capitals-select" disabled>Select</button>
+          <button type="button" data-control="right" class="capitals-right" disabled>Right</button>
+          <button type="button" data-control="down" class="capitals-down" disabled>Down</button>
+        </div>
+        <div class="capitals-utilities"><button type="button" data-control="back" disabled>Back</button><button type="button" data-control="home" disabled>Home</button><button type="button" id="reopen-app" disabled>Reopen app</button></div>
+        <p class="capitals-input-help">Arrow keys navigate. Enter selects. Escape goes back; H returns home. You can also tap a screen option above.</p>
+      </section>
+    </div>
+    <div class="capitals-review-note"><strong>Browser demo</strong><p>Explore real maps, open a place card, or play a five-question round. Browser progress is saved separately from the physical badge.</p><button type="button" id="reset-progress" disabled>Reset browser progress</button></div>
+    <details class="capitals-about"><summary>Controls, coverage and sources</summary><p>World covers 193 UN members and the two observer states. United States covers all 50 states, five inhabited territories and the federal district. The catalog is dated October 29, 2026. Questions preserve named capital roles and explanatory notes.</p><p>Explore starts with a list: Up/Down select and Left/Right change page. Select opens a map, then a detail card. On maps, Up/Down change map page and Left/Right move between places. Back returns to the previous view. Home returns to the badge launcher. The Menu pad remains present; the Capitals app does not assign it an additional action.</p><p>Random and Alphabetical orders are saved independently for World and United States. Five-question rounds continue the same pass. Correct answers appear after checking, with missed answers available in the results.</p><p>The actual badge model retains its printed appearance and source credits. This browser demo runs the existing badge app in the browser; it does not connect to hardware, use microphone permission, or make AI requests. See the <a href="../../assets/capitals-runtime/app/DATA-SOURCES.md">geography sources</a>, <a href="../../assets/capitals-runtime/app/MAP-ATTRIBUTION.md">map attribution</a>, and <a href="../../assets/capitals-runtime/README.md">runtime notes</a>.</p></details>
+  </main>
+</body>
+</html>

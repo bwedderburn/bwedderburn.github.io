@@ -1,0 +1,4856 @@
+{
+  "checked": "2026-10-29",
+  "coordinate_type": "GeoNames capital/seat settlement representative point; not a country centroid or exact government-building location.",
+  "world_scope": "193 UN member states plus observer states Palestine and Holy See (mapped to VA/Vatican City).",
+  "world": [
+    {
+      "id": "AD",
+      "name": "Andorra",
+      "capital": "Andorra la Vella",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "place_id": "3041563",
+      "note": "",
+      "question": "Capital of Andorra?"
+    },
+    {
+      "id": "AE",
+      "name": "United Arab Emirates",
+      "capital": "Abu Dhabi",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "place_id": "292968",
+      "note": "",
+      "question": "Capital of United Arab Emirates?"
+    },
+    {
+      "id": "AF",
+      "name": "Afghanistan",
+      "capital": "Kabul",
+      "region": "Asia",
+      "subregion": "Southern Asia",
+      "place_id": "1138958",
+      "note": "",
+      "question": "Capital of Afghanistan?"
+    },
+    {
+      "id": "AG",
+      "name": "Antigua and Barbuda",
+      "capital": "St. John's",
+      "region": "North America",
+      "subregion": "Caribbean",
+      "place_id": "3576022",
+      "note": "",
+      "question": "Capital of Antigua and Barbuda?",
+      "aliases": [
+        "Saint John's",
+        "Saint John’s"
+      ]
+    },
+    {
+      "id": "AL",
+      "name": "Albania",
+      "capital": "Tirana",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "place_id": "3183875",
+      "note": "",
+      "question": "Capital of Albania?"
+    },
+    {
+      "id": "AM",
+      "name": "Armenia",
+      "capital": "Yerevan",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "place_id": "616052",
+      "note": "",
+      "question": "Capital of Armenia?"
+    },
+    {
+      "id": "AO",
+      "name": "Angola",
+      "capital": "Luanda",
+      "region": "Africa",
+      "subregion": "Middle Africa",
+      "place_id": "2240449",
+      "note": "",
+      "question": "Capital of Angola?"
+    },
+    {
+      "id": "AR",
+      "name": "Argentina",
+      "capital": "Buenos Aires",
+      "region": "South America",
+      "subregion": "South America",
+      "place_id": "3435910",
+      "note": "",
+      "question": "Capital of Argentina?"
+    },
+    {
+      "id": "AT",
+      "name": "Austria",
+      "capital": "Vienna",
+      "region": "Europe",
+      "subregion": "Western Europe",
+      "place_id": "2761369",
+      "note": "",
+      "question": "Capital of Austria?"
+    },
+    {
+      "id": "AU",
+      "name": "Australia",
+      "capital": "Canberra",
+      "region": "Oceania",
+      "subregion": "Australia and New Zealand",
+      "place_id": "2172517",
+      "note": "",
+      "question": "Capital of Australia?"
+    },
+    {
+      "id": "AZ",
+      "name": "Azerbaijan",
+      "capital": "Baku",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "place_id": "587084",
+      "note": "",
+      "question": "Capital of Azerbaijan?"
+    },
+    {
+      "id": "BA",
+      "name": "Bosnia and Herzegovina",
+      "capital": "Sarajevo",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "place_id": "3191281",
+      "note": "",
+      "question": "Capital of Bosnia and Herzegovina?"
+    },
+    {
+      "id": "BB",
+      "name": "Barbados",
+      "capital": "Bridgetown",
+      "region": "North America",
+      "subregion": "Caribbean",
+      "place_id": "3374036",
+      "note": "",
+      "question": "Capital of Barbados?"
+    },
+    {
+      "id": "BD",
+      "name": "Bangladesh",
+      "capital": "Dhaka",
+      "region": "Asia",
+      "subregion": "Southern Asia",
+      "place_id": "1185241",
+      "note": "",
+      "question": "Capital of Bangladesh?"
+    },
+    {
+      "id": "BE",
+      "name": "Belgium",
+      "capital": "Brussels",
+      "region": "Europe",
+      "subregion": "Western Europe",
+      "place_id": "2800866",
+      "note": "",
+      "question": "Capital of Belgium?"
+    },
+    {
+      "id": "BF",
+      "name": "Burkina Faso",
+      "capital": "Ouagadougou",
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "place_id": "2357048",
+      "note": "",
+      "question": "Capital of Burkina Faso?"
+    },
+    {
+      "id": "BG",
+      "name": "Bulgaria",
+      "capital": "Sofia",
+      "region": "Europe",
+      "subregion": "Eastern Europe",
+      "place_id": "727011",
+      "note": "",
+      "question": "Capital of Bulgaria?"
+    },
+    {
+      "id": "BH",
+      "name": "Bahrain",
+      "capital": "Manama",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "place_id": "290340",
+      "note": "",
+      "question": "Capital of Bahrain?"
+    },
+    {
+      "id": "BI",
+      "name": "Burundi",
+      "capital": "Gitega",
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "place_id": "426272",
+      "note": "Gitega is the political capital; Bujumbura is the economic capital.",
+      "question": "Political capital of Burundi?"
+    },
+    {
+      "id": "BJ",
+      "name": "Benin",
+      "capital": "Porto-Novo",
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "place_id": "2392087",
+      "note": "Porto-Novo is the official capital; Cotonou is the seat of government.",
+      "question": "Official capital of Benin?"
+    },
+    {
+      "id": "BN",
+      "name": "Brunei",
+      "capital": "Bandar Seri Begawan",
+      "region": "Asia",
+      "subregion": "South-eastern Asia",
+      "place_id": "1820906",
+      "note": "",
+      "question": "Capital of Brunei?"
+    },
+    {
+      "id": "BO",
+      "name": "Bolivia",
+      "capital": "Sucre",
+      "region": "South America",
+      "subregion": "South America",
+      "place_id": "3903987",
+      "note": "Sucre is the constitutional capital; La Paz is the seat of government.",
+      "question": "Constitutional capital of Bolivia?"
+    },
+    {
+      "id": "BR",
+      "name": "Brazil",
+      "capital": "Brasília",
+      "region": "South America",
+      "subregion": "South America",
+      "place_id": "3469058",
+      "note": "",
+      "question": "Capital of Brazil?"
+    },
+    {
+      "id": "BS",
+      "name": "Bahamas",
+      "capital": "Nassau",
+      "region": "North America",
+      "subregion": "Caribbean",
+      "place_id": "3571824",
+      "note": "",
+      "question": "Capital of Bahamas?"
+    },
+    {
+      "id": "BT",
+      "name": "Bhutan",
+      "capital": "Thimphu",
+      "region": "Asia",
+      "subregion": "Southern Asia",
+      "place_id": "1252416",
+      "note": "",
+      "question": "Capital of Bhutan?"
+    },
+    {
+      "id": "BW",
+      "name": "Botswana",
+      "capital": "Gaborone",
+      "region": "Africa",
+      "subregion": "Southern Africa",
+      "place_id": "933773",
+      "note": "",
+      "question": "Capital of Botswana?"
+    },
+    {
+      "id": "BY",
+      "name": "Belarus",
+      "capital": "Minsk",
+      "region": "Europe",
+      "subregion": "Eastern Europe",
+      "place_id": "625144",
+      "note": "",
+      "question": "Capital of Belarus?"
+    },
+    {
+      "id": "BZ",
+      "name": "Belize",
+      "capital": "Belmopan",
+      "region": "North America",
+      "subregion": "Central America",
+      "place_id": "3582672",
+      "note": "",
+      "question": "Capital of Belize?"
+    },
+    {
+      "id": "CA",
+      "name": "Canada",
+      "capital": "Ottawa",
+      "region": "North America",
+      "subregion": "Northern America",
+      "place_id": "6094817",
+      "note": "",
+      "question": "Capital of Canada?"
+    },
+    {
+      "id": "CD",
+      "name": "DR Congo",
+      "capital": "Kinshasa",
+      "region": "Africa",
+      "subregion": "Middle Africa",
+      "place_id": "2314302",
+      "note": "",
+      "question": "Capital of DR Congo?"
+    },
+    {
+      "id": "CF",
+      "name": "Central African Republic",
+      "capital": "Bangui",
+      "region": "Africa",
+      "subregion": "Middle Africa",
+      "place_id": "2389853",
+      "note": "",
+      "question": "Capital of Central African Republic?"
+    },
+    {
+      "id": "CG",
+      "name": "Republic of the Congo",
+      "capital": "Brazzaville",
+      "region": "Africa",
+      "subregion": "Middle Africa",
+      "place_id": "2260535",
+      "note": "",
+      "question": "Capital of Republic of the Congo?"
+    },
+    {
+      "id": "CH",
+      "name": "Switzerland",
+      "capital": "Bern",
+      "region": "Europe",
+      "subregion": "Western Europe",
+      "place_id": "2661552",
+      "note": "Bern is the federal city and seat of government, not a formally designated capital.",
+      "question": "Federal city of Switzerland?",
+      "aliases": [
+        "Berne"
+      ]
+    },
+    {
+      "id": "CI",
+      "name": "Côte d'Ivoire",
+      "capital": "Yamoussoukro",
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "place_id": "2279755",
+      "note": "Yamoussoukro is the political capital; Abidjan is the economic capital.",
+      "question": "Political capital of Côte d'Ivoire?"
+    },
+    {
+      "id": "CL",
+      "name": "Chile",
+      "capital": "Santiago",
+      "region": "South America",
+      "subregion": "South America",
+      "place_id": "3871336",
+      "note": "",
+      "question": "Capital of Chile?"
+    },
+    {
+      "id": "CM",
+      "name": "Cameroon",
+      "capital": "Yaoundé",
+      "region": "Africa",
+      "subregion": "Middle Africa",
+      "place_id": "2220957",
+      "note": "",
+      "question": "Capital of Cameroon?"
+    },
+    {
+      "id": "CN",
+      "name": "China",
+      "capital": "Beijing",
+      "region": "Asia",
+      "subregion": "Eastern Asia",
+      "place_id": "1816670",
+      "note": "",
+      "question": "Capital of China?"
+    },
+    {
+      "id": "CO",
+      "name": "Colombia",
+      "capital": "Bogotá",
+      "region": "South America",
+      "subregion": "South America",
+      "place_id": "3688689",
+      "note": "",
+      "question": "Capital of Colombia?"
+    },
+    {
+      "id": "CR",
+      "name": "Costa Rica",
+      "capital": "San José",
+      "region": "North America",
+      "subregion": "Central America",
+      "place_id": "3621849",
+      "note": "",
+      "question": "Capital of Costa Rica?"
+    },
+    {
+      "id": "CU",
+      "name": "Cuba",
+      "capital": "Havana",
+      "region": "North America",
+      "subregion": "Caribbean",
+      "place_id": "3553478",
+      "note": "",
+      "question": "Capital of Cuba?"
+    },
+    {
+      "id": "CV",
+      "name": "Cabo Verde",
+      "capital": "Praia",
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "place_id": "3374333",
+      "note": "",
+      "question": "Capital of Cabo Verde?"
+    },
+    {
+      "id": "CY",
+      "name": "Cyprus",
+      "capital": "Nicosia",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "place_id": "146268",
+      "note": "",
+      "question": "Capital of Cyprus?"
+    },
+    {
+      "id": "CZ",
+      "name": "Czechia",
+      "capital": "Prague",
+      "region": "Europe",
+      "subregion": "Eastern Europe",
+      "place_id": "3067696",
+      "note": "",
+      "question": "Capital of Czechia?"
+    },
+    {
+      "id": "DE",
+      "name": "Germany",
+      "capital": "Berlin",
+      "region": "Europe",
+      "subregion": "Western Europe",
+      "place_id": "2950159",
+      "note": "",
+      "question": "Capital of Germany?"
+    },
+    {
+      "id": "DJ",
+      "name": "Djibouti",
+      "capital": "Djibouti",
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "place_id": "223817",
+      "note": "",
+      "question": "Capital of Djibouti?"
+    },
+    {
+      "id": "DK",
+      "name": "Denmark",
+      "capital": "Copenhagen",
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "place_id": "2618425",
+      "note": "",
+      "question": "Capital of Denmark?"
+    },
+    {
+      "id": "DM",
+      "name": "Dominica",
+      "capital": "Roseau",
+      "region": "North America",
+      "subregion": "Caribbean",
+      "place_id": "3575635",
+      "note": "",
+      "question": "Capital of Dominica?"
+    },
+    {
+      "id": "DO",
+      "name": "Dominican Republic",
+      "capital": "Santo Domingo",
+      "region": "North America",
+      "subregion": "Caribbean",
+      "place_id": "3492908",
+      "note": "",
+      "question": "Capital of Dominican Republic?"
+    },
+    {
+      "id": "DZ",
+      "name": "Algeria",
+      "capital": "Algiers",
+      "region": "Africa",
+      "subregion": "Northern Africa",
+      "place_id": "2507480",
+      "note": "",
+      "question": "Capital of Algeria?"
+    },
+    {
+      "id": "EC",
+      "name": "Ecuador",
+      "capital": "Quito",
+      "region": "South America",
+      "subregion": "South America",
+      "place_id": "3652462",
+      "note": "",
+      "question": "Capital of Ecuador?"
+    },
+    {
+      "id": "EE",
+      "name": "Estonia",
+      "capital": "Tallinn",
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "place_id": "588409",
+      "note": "",
+      "question": "Capital of Estonia?"
+    },
+    {
+      "id": "EG",
+      "name": "Egypt",
+      "capital": "Cairo",
+      "region": "Africa",
+      "subregion": "Northern Africa",
+      "place_id": "360630",
+      "note": "Cairo is named in Constitution Article 222; government offices moved to the New Capital.",
+      "question": "Constitutional capital of Egypt?"
+    },
+    {
+      "id": "ER",
+      "name": "Eritrea",
+      "capital": "Asmara",
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "place_id": "343300",
+      "note": "",
+      "question": "Capital of Eritrea?"
+    },
+    {
+      "id": "ES",
+      "name": "Spain",
+      "capital": "Madrid",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "place_id": "3117735",
+      "note": "",
+      "question": "Capital of Spain?"
+    },
+    {
+      "id": "ET",
+      "name": "Ethiopia",
+      "capital": "Addis Ababa",
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "place_id": "344979",
+      "note": "",
+      "question": "Capital of Ethiopia?"
+    },
+    {
+      "id": "FI",
+      "name": "Finland",
+      "capital": "Helsinki",
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "place_id": "658225",
+      "note": "",
+      "question": "Capital of Finland?"
+    },
+    {
+      "id": "FJ",
+      "name": "Fiji",
+      "capital": "Suva",
+      "region": "Oceania",
+      "subregion": "Melanesia",
+      "place_id": "2198148",
+      "note": "",
+      "question": "Capital of Fiji?"
+    },
+    {
+      "id": "FM",
+      "name": "Micronesia",
+      "capital": "Palikir",
+      "region": "Oceania",
+      "subregion": "Micronesia",
+      "place_id": "2081986",
+      "note": "",
+      "question": "Capital of Micronesia?"
+    },
+    {
+      "id": "FR",
+      "name": "France",
+      "capital": "Paris",
+      "region": "Europe",
+      "subregion": "Western Europe",
+      "place_id": "2988507",
+      "note": "",
+      "question": "Capital of France?"
+    },
+    {
+      "id": "GA",
+      "name": "Gabon",
+      "capital": "Libreville",
+      "region": "Africa",
+      "subregion": "Middle Africa",
+      "place_id": "2399697",
+      "note": "",
+      "question": "Capital of Gabon?"
+    },
+    {
+      "id": "GB",
+      "name": "United Kingdom",
+      "capital": "London",
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "place_id": "2643743",
+      "note": "",
+      "question": "Capital of United Kingdom?"
+    },
+    {
+      "id": "GD",
+      "name": "Grenada",
+      "capital": "St. George's",
+      "region": "North America",
+      "subregion": "Caribbean",
+      "place_id": "3579925",
+      "note": "",
+      "question": "Capital of Grenada?",
+      "aliases": [
+        "Saint George's"
+      ]
+    },
+    {
+      "id": "GE",
+      "name": "Georgia",
+      "capital": "Tbilisi",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "place_id": "611717",
+      "note": "",
+      "question": "Capital of Georgia?"
+    },
+    {
+      "id": "GH",
+      "name": "Ghana",
+      "capital": "Accra",
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "place_id": "2306104",
+      "note": "",
+      "question": "Capital of Ghana?"
+    },
+    {
+      "id": "GM",
+      "name": "Gambia",
+      "capital": "Banjul",
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "place_id": "2413876",
+      "note": "",
+      "question": "Capital of Gambia?"
+    },
+    {
+      "id": "GN",
+      "name": "Guinea",
+      "capital": "Conakry",
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "place_id": "2422465",
+      "note": "",
+      "question": "Capital of Guinea?"
+    },
+    {
+      "id": "GQ",
+      "name": "Equatorial Guinea",
+      "capital": "Ciudad de la Paz",
+      "region": "Africa",
+      "subregion": "Middle Africa",
+      "place_id": "12226438",
+      "note": "Ciudad de la Paz was proclaimed capital on 2 January 2026, replacing Malabo.",
+      "question": "Capital of Equatorial Guinea?"
+    },
+    {
+      "id": "GR",
+      "name": "Greece",
+      "capital": "Athens",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "place_id": "264371",
+      "note": "",
+      "question": "Capital of Greece?"
+    },
+    {
+      "id": "GT",
+      "name": "Guatemala",
+      "capital": "Guatemala City",
+      "region": "North America",
+      "subregion": "Central America",
+      "place_id": "3598132",
+      "note": "",
+      "question": "Capital of Guatemala?"
+    },
+    {
+      "id": "GW",
+      "name": "Guinea-Bissau",
+      "capital": "Bissau",
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "place_id": "2374775",
+      "note": "",
+      "question": "Capital of Guinea-Bissau?"
+    },
+    {
+      "id": "GY",
+      "name": "Guyana",
+      "capital": "Georgetown",
+      "region": "South America",
+      "subregion": "South America",
+      "place_id": "3378644",
+      "note": "",
+      "question": "Capital of Guyana?"
+    },
+    {
+      "id": "HN",
+      "name": "Honduras",
+      "capital": "Tegucigalpa",
+      "region": "North America",
+      "subregion": "Central America",
+      "place_id": "3600949",
+      "note": "",
+      "question": "Capital of Honduras?"
+    },
+    {
+      "id": "HR",
+      "name": "Croatia",
+      "capital": "Zagreb",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "place_id": "3186886",
+      "note": "",
+      "question": "Capital of Croatia?"
+    },
+    {
+      "id": "HT",
+      "name": "Haiti",
+      "capital": "Port-au-Prince",
+      "region": "North America",
+      "subregion": "Caribbean",
+      "place_id": "3718426",
+      "note": "",
+      "question": "Capital of Haiti?"
+    },
+    {
+      "id": "HU",
+      "name": "Hungary",
+      "capital": "Budapest",
+      "region": "Europe",
+      "subregion": "Eastern Europe",
+      "place_id": "3054643",
+      "note": "",
+      "question": "Capital of Hungary?"
+    },
+    {
+      "id": "ID",
+      "name": "Indonesia",
+      "capital": "Jakarta",
+      "region": "Asia",
+      "subregion": "South-eastern Asia",
+      "place_id": "1642911",
+      "note": "Jakarta remains capital pending a presidential transfer decree. Nusantara is planned.",
+      "question": "Indonesia's capital pending transfer?"
+    },
+    {
+      "id": "IE",
+      "name": "Ireland",
+      "capital": "Dublin",
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "place_id": "2964574",
+      "note": "",
+      "question": "Capital of Ireland?"
+    },
+    {
+      "id": "IL",
+      "name": "Israel",
+      "capital": "Jerusalem",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "place_id": "281184",
+      "note": "Israel declares Jerusalem its capital. The city's status is internationally disputed.",
+      "question": "Israel's declared capital?"
+    },
+    {
+      "id": "IN",
+      "name": "India",
+      "capital": "New Delhi",
+      "region": "Asia",
+      "subregion": "Southern Asia",
+      "place_id": "1261481",
+      "note": "",
+      "question": "Capital of India?"
+    },
+    {
+      "id": "IQ",
+      "name": "Iraq",
+      "capital": "Baghdad",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "place_id": "98182",
+      "note": "",
+      "question": "Capital of Iraq?"
+    },
+    {
+      "id": "IR",
+      "name": "Iran",
+      "capital": "Tehran",
+      "region": "Asia",
+      "subregion": "Southern Asia",
+      "place_id": "112931",
+      "note": "",
+      "question": "Capital of Iran?"
+    },
+    {
+      "id": "IS",
+      "name": "Iceland",
+      "capital": "Reykjavík",
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "place_id": "3413829",
+      "note": "",
+      "question": "Capital of Iceland?"
+    },
+    {
+      "id": "IT",
+      "name": "Italy",
+      "capital": "Rome",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "place_id": "3169070",
+      "note": "",
+      "question": "Capital of Italy?"
+    },
+    {
+      "id": "JM",
+      "name": "Jamaica",
+      "capital": "Kingston",
+      "region": "North America",
+      "subregion": "Caribbean",
+      "place_id": "3489854",
+      "note": "",
+      "question": "Capital of Jamaica?"
+    },
+    {
+      "id": "JO",
+      "name": "Jordan",
+      "capital": "Amman",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "place_id": "250441",
+      "note": "",
+      "question": "Capital of Jordan?"
+    },
+    {
+      "id": "JP",
+      "name": "Japan",
+      "capital": "Tokyo",
+      "region": "Asia",
+      "subregion": "Eastern Asia",
+      "place_id": "1850147",
+      "note": "",
+      "question": "Capital of Japan?"
+    },
+    {
+      "id": "KE",
+      "name": "Kenya",
+      "capital": "Nairobi",
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "place_id": "184745",
+      "note": "",
+      "question": "Capital of Kenya?"
+    },
+    {
+      "id": "KG",
+      "name": "Kyrgyzstan",
+      "capital": "Bishkek",
+      "region": "Asia",
+      "subregion": "Central Asia",
+      "place_id": "1528675",
+      "note": "",
+      "question": "Capital of Kyrgyzstan?"
+    },
+    {
+      "id": "KH",
+      "name": "Cambodia",
+      "capital": "Phnom Penh",
+      "region": "Asia",
+      "subregion": "South-eastern Asia",
+      "place_id": "1821306",
+      "note": "",
+      "question": "Capital of Cambodia?"
+    },
+    {
+      "id": "KI",
+      "name": "Kiribati",
+      "capital": "South Tarawa",
+      "region": "Oceania",
+      "subregion": "Micronesia",
+      "place_id": "2110257",
+      "note": "South Tarawa is the capital area on Tarawa atoll.",
+      "question": "Capital area of Kiribati?",
+      "aliases": [
+        "Tarawa"
+      ]
+    },
+    {
+      "id": "KM",
+      "name": "Comoros",
+      "capital": "Moroni",
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "place_id": "921772",
+      "note": "",
+      "question": "Capital of Comoros?"
+    },
+    {
+      "id": "KN",
+      "name": "Saint Kitts and Nevis",
+      "capital": "Basseterre",
+      "region": "North America",
+      "subregion": "Caribbean",
+      "place_id": "3575551",
+      "note": "",
+      "question": "Capital of Saint Kitts and Nevis?"
+    },
+    {
+      "id": "KP",
+      "name": "North Korea",
+      "capital": "Pyongyang",
+      "region": "Asia",
+      "subregion": "Eastern Asia",
+      "place_id": "1871859",
+      "note": "",
+      "question": "Capital of North Korea?"
+    },
+    {
+      "id": "KR",
+      "name": "South Korea",
+      "capital": "Seoul",
+      "region": "Asia",
+      "subregion": "Eastern Asia",
+      "place_id": "1835848",
+      "note": "",
+      "question": "Capital of South Korea?"
+    },
+    {
+      "id": "KW",
+      "name": "Kuwait",
+      "capital": "Kuwait City",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "place_id": "285787",
+      "note": "",
+      "question": "Capital of Kuwait?"
+    },
+    {
+      "id": "KZ",
+      "name": "Kazakhstan",
+      "capital": "Astana",
+      "region": "Asia",
+      "subregion": "Central Asia",
+      "place_id": "1526273",
+      "note": "",
+      "question": "Capital of Kazakhstan?"
+    },
+    {
+      "id": "LA",
+      "name": "Laos",
+      "capital": "Vientiane",
+      "region": "Asia",
+      "subregion": "South-eastern Asia",
+      "place_id": "1651944",
+      "note": "",
+      "question": "Capital of Laos?"
+    },
+    {
+      "id": "LB",
+      "name": "Lebanon",
+      "capital": "Beirut",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "place_id": "276781",
+      "note": "",
+      "question": "Capital of Lebanon?"
+    },
+    {
+      "id": "LC",
+      "name": "Saint Lucia",
+      "capital": "Castries",
+      "region": "North America",
+      "subregion": "Caribbean",
+      "place_id": "3576812",
+      "note": "",
+      "question": "Capital of Saint Lucia?"
+    },
+    {
+      "id": "LI",
+      "name": "Liechtenstein",
+      "capital": "Vaduz",
+      "region": "Europe",
+      "subregion": "Western Europe",
+      "place_id": "3042030",
+      "note": "",
+      "question": "Capital of Liechtenstein?"
+    },
+    {
+      "id": "LK",
+      "name": "Sri Lanka",
+      "capital": "Sri Jayewardenepura Kotte",
+      "region": "Asia",
+      "subregion": "Southern Asia",
+      "place_id": "1238992",
+      "note": "Sri Jayewardenepura Kotte houses Parliament; Colombo is the commercial capital.",
+      "question": "Parliament city of Sri Lanka?",
+      "aliases": [
+        "Sri Jayawardenepura Kotte",
+        "Kotte"
+      ]
+    },
+    {
+      "id": "LR",
+      "name": "Liberia",
+      "capital": "Monrovia",
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "place_id": "2274895",
+      "note": "",
+      "question": "Capital of Liberia?"
+    },
+    {
+      "id": "LS",
+      "name": "Lesotho",
+      "capital": "Maseru",
+      "region": "Africa",
+      "subregion": "Southern Africa",
+      "place_id": "932505",
+      "note": "",
+      "question": "Capital of Lesotho?"
+    },
+    {
+      "id": "LT",
+      "name": "Lithuania",
+      "capital": "Vilnius",
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "place_id": "593116",
+      "note": "",
+      "question": "Capital of Lithuania?"
+    },
+    {
+      "id": "LU",
+      "name": "Luxembourg",
+      "capital": "Luxembourg",
+      "region": "Europe",
+      "subregion": "Western Europe",
+      "place_id": "2960316",
+      "note": "",
+      "question": "Capital of Luxembourg?"
+    },
+    {
+      "id": "LV",
+      "name": "Latvia",
+      "capital": "Riga",
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "place_id": "456172",
+      "note": "",
+      "question": "Capital of Latvia?"
+    },
+    {
+      "id": "LY",
+      "name": "Libya",
+      "capital": "Tripoli",
+      "region": "Africa",
+      "subregion": "Northern Africa",
+      "place_id": "2210247",
+      "note": "",
+      "question": "Capital of Libya?"
+    },
+    {
+      "id": "MA",
+      "name": "Morocco",
+      "capital": "Rabat",
+      "region": "Africa",
+      "subregion": "Northern Africa",
+      "place_id": "2538475",
+      "note": "",
+      "question": "Capital of Morocco?"
+    },
+    {
+      "id": "MC",
+      "name": "Monaco",
+      "capital": "Monaco",
+      "region": "Europe",
+      "subregion": "Western Europe",
+      "place_id": "2993458",
+      "note": "",
+      "question": "Capital of Monaco?"
+    },
+    {
+      "id": "MD",
+      "name": "Moldova",
+      "capital": "Chișinău",
+      "region": "Europe",
+      "subregion": "Eastern Europe",
+      "place_id": "618426",
+      "note": "",
+      "question": "Capital of Moldova?",
+      "aliases": [
+        "Chisinau",
+        "Chişinău"
+      ]
+    },
+    {
+      "id": "ME",
+      "name": "Montenegro",
+      "capital": "Podgorica",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "place_id": "3193044",
+      "note": "",
+      "question": "Capital of Montenegro?"
+    },
+    {
+      "id": "MG",
+      "name": "Madagascar",
+      "capital": "Antananarivo",
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "place_id": "1070940",
+      "note": "",
+      "question": "Capital of Madagascar?"
+    },
+    {
+      "id": "MH",
+      "name": "Marshall Islands",
+      "capital": "Majuro",
+      "region": "Oceania",
+      "subregion": "Micronesia",
+      "place_id": "2113779",
+      "note": "",
+      "question": "Capital of Marshall Islands?"
+    },
+    {
+      "id": "MK",
+      "name": "North Macedonia",
+      "capital": "Skopje",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "place_id": "785842",
+      "note": "",
+      "question": "Capital of North Macedonia?"
+    },
+    {
+      "id": "ML",
+      "name": "Mali",
+      "capital": "Bamako",
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "place_id": "2460596",
+      "note": "",
+      "question": "Capital of Mali?"
+    },
+    {
+      "id": "MM",
+      "name": "Myanmar",
+      "capital": "Nay Pyi Taw",
+      "region": "Asia",
+      "subregion": "South-eastern Asia",
+      "place_id": "6611854",
+      "note": "",
+      "aliases": [
+        "Naypyidaw",
+        "Naypyitaw"
+      ],
+      "question": "Capital of Myanmar?"
+    },
+    {
+      "id": "MN",
+      "name": "Mongolia",
+      "capital": "Ulaanbaatar",
+      "region": "Asia",
+      "subregion": "Eastern Asia",
+      "place_id": "2028462",
+      "note": "",
+      "question": "Capital of Mongolia?",
+      "aliases": [
+        "Ulan Bator"
+      ]
+    },
+    {
+      "id": "MR",
+      "name": "Mauritania",
+      "capital": "Nouakchott",
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "place_id": "2377450",
+      "note": "",
+      "question": "Capital of Mauritania?"
+    },
+    {
+      "id": "MT",
+      "name": "Malta",
+      "capital": "Valletta",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "place_id": "2562305",
+      "note": "",
+      "question": "Capital of Malta?"
+    },
+    {
+      "id": "MU",
+      "name": "Mauritius",
+      "capital": "Port Louis",
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "place_id": "934154",
+      "note": "",
+      "question": "Capital of Mauritius?"
+    },
+    {
+      "id": "MV",
+      "name": "Maldives",
+      "capital": "Malé",
+      "region": "Asia",
+      "subregion": "Southern Asia",
+      "place_id": "1282027",
+      "note": "",
+      "question": "Capital of Maldives?",
+      "aliases": [
+        "Male"
+      ]
+    },
+    {
+      "id": "MW",
+      "name": "Malawi",
+      "capital": "Lilongwe",
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "place_id": "927967",
+      "note": "",
+      "question": "Capital of Malawi?"
+    },
+    {
+      "id": "MX",
+      "name": "Mexico",
+      "capital": "Mexico City",
+      "region": "North America",
+      "subregion": "Central America",
+      "place_id": "3530597",
+      "note": "",
+      "question": "Capital of Mexico?"
+    },
+    {
+      "id": "MY",
+      "name": "Malaysia",
+      "capital": "Kuala Lumpur",
+      "region": "Asia",
+      "subregion": "South-eastern Asia",
+      "place_id": "1735161",
+      "note": "Kuala Lumpur is the national capital; Putrajaya is the administrative capital.",
+      "question": "National capital of Malaysia?"
+    },
+    {
+      "id": "MZ",
+      "name": "Mozambique",
+      "capital": "Maputo",
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "place_id": "1040652",
+      "note": "",
+      "question": "Capital of Mozambique?"
+    },
+    {
+      "id": "NA",
+      "name": "Namibia",
+      "capital": "Windhoek",
+      "region": "Africa",
+      "subregion": "Southern Africa",
+      "place_id": "3352136",
+      "note": "",
+      "question": "Capital of Namibia?"
+    },
+    {
+      "id": "NE",
+      "name": "Niger",
+      "capital": "Niamey",
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "place_id": "2440485",
+      "note": "",
+      "question": "Capital of Niger?"
+    },
+    {
+      "id": "NG",
+      "name": "Nigeria",
+      "capital": "Abuja",
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "place_id": "2352778",
+      "note": "",
+      "question": "Capital of Nigeria?"
+    },
+    {
+      "id": "NI",
+      "name": "Nicaragua",
+      "capital": "Managua",
+      "region": "North America",
+      "subregion": "Central America",
+      "place_id": "3617763",
+      "note": "",
+      "question": "Capital of Nicaragua?"
+    },
+    {
+      "id": "NL",
+      "name": "Netherlands",
+      "capital": "Amsterdam",
+      "region": "Europe",
+      "subregion": "Western Europe",
+      "place_id": "2759794",
+      "note": "Amsterdam is the constitutional capital; The Hague is the seat of government.",
+      "question": "Constitutional capital of Netherlands?"
+    },
+    {
+      "id": "NO",
+      "name": "Norway",
+      "capital": "Oslo",
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "place_id": "3143244",
+      "note": "",
+      "question": "Capital of Norway?"
+    },
+    {
+      "id": "NP",
+      "name": "Nepal",
+      "capital": "Kathmandu",
+      "region": "Asia",
+      "subregion": "Southern Asia",
+      "place_id": "1283240",
+      "note": "",
+      "question": "Capital of Nepal?"
+    },
+    {
+      "id": "NR",
+      "name": "Nauru",
+      "capital": "Yaren",
+      "region": "Oceania",
+      "subregion": "Micronesia",
+      "place_id": "7626461",
+      "note": "Nauru has no official capital city. Government offices are in Yaren District.",
+      "question": "Government district of Nauru?"
+    },
+    {
+      "id": "NZ",
+      "name": "New Zealand",
+      "capital": "Wellington",
+      "region": "Oceania",
+      "subregion": "Australia and New Zealand",
+      "place_id": "2179537",
+      "note": "",
+      "question": "Capital of New Zealand?"
+    },
+    {
+      "id": "OM",
+      "name": "Oman",
+      "capital": "Muscat",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "place_id": "287286",
+      "note": "",
+      "question": "Capital of Oman?"
+    },
+    {
+      "id": "PA",
+      "name": "Panama",
+      "capital": "Panama City",
+      "region": "North America",
+      "subregion": "Central America",
+      "place_id": "3703443",
+      "note": "",
+      "question": "Capital of Panama?"
+    },
+    {
+      "id": "PE",
+      "name": "Peru",
+      "capital": "Lima",
+      "region": "South America",
+      "subregion": "South America",
+      "place_id": "3936456",
+      "note": "",
+      "question": "Capital of Peru?"
+    },
+    {
+      "id": "PG",
+      "name": "Papua New Guinea",
+      "capital": "Port Moresby",
+      "region": "Oceania",
+      "subregion": "Melanesia",
+      "place_id": "2088122",
+      "note": "",
+      "question": "Capital of Papua New Guinea?"
+    },
+    {
+      "id": "PH",
+      "name": "Philippines",
+      "capital": "Manila",
+      "region": "Asia",
+      "subregion": "South-eastern Asia",
+      "place_id": "1701668",
+      "note": "",
+      "question": "Capital of Philippines?"
+    },
+    {
+      "id": "PK",
+      "name": "Pakistan",
+      "capital": "Islamabad",
+      "region": "Asia",
+      "subregion": "Southern Asia",
+      "place_id": "1176615",
+      "note": "",
+      "question": "Capital of Pakistan?"
+    },
+    {
+      "id": "PL",
+      "name": "Poland",
+      "capital": "Warsaw",
+      "region": "Europe",
+      "subregion": "Eastern Europe",
+      "place_id": "756135",
+      "note": "",
+      "question": "Capital of Poland?"
+    },
+    {
+      "id": "PS",
+      "name": "Palestine",
+      "capital": "East Jerusalem",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "place_id": "7303419",
+      "note": "East Jerusalem is the claimed capital; Ramallah is the administrative seat. Status disputed.",
+      "question": "Palestine's claimed capital?"
+    },
+    {
+      "id": "PT",
+      "name": "Portugal",
+      "capital": "Lisbon",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "place_id": "2267057",
+      "note": "",
+      "question": "Capital of Portugal?"
+    },
+    {
+      "id": "PW",
+      "name": "Palau",
+      "capital": "Ngerulmud",
+      "region": "Oceania",
+      "subregion": "Micronesia",
+      "place_id": "8063361",
+      "note": "",
+      "question": "Capital of Palau?"
+    },
+    {
+      "id": "PY",
+      "name": "Paraguay",
+      "capital": "Asunción",
+      "region": "South America",
+      "subregion": "South America",
+      "place_id": "3439389",
+      "note": "",
+      "question": "Capital of Paraguay?"
+    },
+    {
+      "id": "QA",
+      "name": "Qatar",
+      "capital": "Doha",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "place_id": "290030",
+      "note": "",
+      "question": "Capital of Qatar?"
+    },
+    {
+      "id": "RO",
+      "name": "Romania",
+      "capital": "Bucharest",
+      "region": "Europe",
+      "subregion": "Eastern Europe",
+      "place_id": "683506",
+      "note": "",
+      "question": "Capital of Romania?"
+    },
+    {
+      "id": "RS",
+      "name": "Serbia",
+      "capital": "Belgrade",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "place_id": "792680",
+      "note": "",
+      "question": "Capital of Serbia?"
+    },
+    {
+      "id": "RU",
+      "name": "Russia",
+      "capital": "Moscow",
+      "region": "Europe",
+      "subregion": "Eastern Europe",
+      "place_id": "524901",
+      "note": "",
+      "question": "Capital of Russia?"
+    },
+    {
+      "id": "RW",
+      "name": "Rwanda",
+      "capital": "Kigali",
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "place_id": "202061",
+      "note": "",
+      "question": "Capital of Rwanda?"
+    },
+    {
+      "id": "SA",
+      "name": "Saudi Arabia",
+      "capital": "Riyadh",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "place_id": "108410",
+      "note": "",
+      "question": "Capital of Saudi Arabia?"
+    },
+    {
+      "id": "SB",
+      "name": "Solomon Islands",
+      "capital": "Honiara",
+      "region": "Oceania",
+      "subregion": "Melanesia",
+      "place_id": "2108502",
+      "note": "",
+      "question": "Capital of Solomon Islands?"
+    },
+    {
+      "id": "SC",
+      "name": "Seychelles",
+      "capital": "Victoria",
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "place_id": "241131",
+      "note": "",
+      "question": "Capital of Seychelles?"
+    },
+    {
+      "id": "SD",
+      "name": "Sudan",
+      "capital": "Khartoum",
+      "region": "Africa",
+      "subregion": "Northern Africa",
+      "place_id": "379252",
+      "note": "",
+      "question": "Capital of Sudan?"
+    },
+    {
+      "id": "SE",
+      "name": "Sweden",
+      "capital": "Stockholm",
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "place_id": "2673730",
+      "note": "",
+      "question": "Capital of Sweden?"
+    },
+    {
+      "id": "SG",
+      "name": "Singapore",
+      "capital": "Singapore",
+      "region": "Asia",
+      "subregion": "South-eastern Asia",
+      "place_id": "1880252",
+      "note": "",
+      "question": "Capital of Singapore?"
+    },
+    {
+      "id": "SI",
+      "name": "Slovenia",
+      "capital": "Ljubljana",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "place_id": "3196359",
+      "note": "",
+      "question": "Capital of Slovenia?"
+    },
+    {
+      "id": "SK",
+      "name": "Slovakia",
+      "capital": "Bratislava",
+      "region": "Europe",
+      "subregion": "Eastern Europe",
+      "place_id": "3060972",
+      "note": "",
+      "question": "Capital of Slovakia?"
+    },
+    {
+      "id": "SL",
+      "name": "Sierra Leone",
+      "capital": "Freetown",
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "place_id": "2409306",
+      "note": "",
+      "question": "Capital of Sierra Leone?"
+    },
+    {
+      "id": "SM",
+      "name": "San Marino",
+      "capital": "San Marino",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "place_id": "3168070",
+      "note": "",
+      "question": "Capital of San Marino?"
+    },
+    {
+      "id": "SN",
+      "name": "Senegal",
+      "capital": "Dakar",
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "place_id": "2253354",
+      "note": "",
+      "question": "Capital of Senegal?"
+    },
+    {
+      "id": "SO",
+      "name": "Somalia",
+      "capital": "Mogadishu",
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "place_id": "53654",
+      "note": "",
+      "question": "Capital of Somalia?"
+    },
+    {
+      "id": "SR",
+      "name": "Suriname",
+      "capital": "Paramaribo",
+      "region": "South America",
+      "subregion": "South America",
+      "place_id": "3383330",
+      "note": "",
+      "question": "Capital of Suriname?"
+    },
+    {
+      "id": "SS",
+      "name": "South Sudan",
+      "capital": "Juba",
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "place_id": "373303",
+      "note": "",
+      "question": "Capital of South Sudan?"
+    },
+    {
+      "id": "ST",
+      "name": "São Tomé and Príncipe",
+      "capital": "São Tomé",
+      "region": "Africa",
+      "subregion": "Middle Africa",
+      "place_id": "2410763",
+      "note": "",
+      "question": "Capital of São Tomé and Príncipe?"
+    },
+    {
+      "id": "SV",
+      "name": "El Salvador",
+      "capital": "San Salvador",
+      "region": "North America",
+      "subregion": "Central America",
+      "place_id": "3583361",
+      "note": "",
+      "question": "Capital of El Salvador?"
+    },
+    {
+      "id": "SY",
+      "name": "Syria",
+      "capital": "Damascus",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "place_id": "170654",
+      "note": "",
+      "question": "Capital of Syria?"
+    },
+    {
+      "id": "SZ",
+      "name": "Eswatini",
+      "capital": "Mbabane",
+      "region": "Africa",
+      "subregion": "Southern Africa",
+      "place_id": "934985",
+      "note": "Mbabane is administrative; Lobamba is the royal and legislative capital.",
+      "question": "Administrative capital of Eswatini?"
+    },
+    {
+      "id": "TD",
+      "name": "Chad",
+      "capital": "N'Djamena",
+      "region": "Africa",
+      "subregion": "Middle Africa",
+      "place_id": "2427123",
+      "note": "",
+      "question": "Capital of Chad?"
+    },
+    {
+      "id": "TG",
+      "name": "Togo",
+      "capital": "Lomé",
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "place_id": "2365267",
+      "note": "",
+      "question": "Capital of Togo?"
+    },
+    {
+      "id": "TH",
+      "name": "Thailand",
+      "capital": "Bangkok",
+      "region": "Asia",
+      "subregion": "South-eastern Asia",
+      "place_id": "1609350",
+      "note": "",
+      "question": "Capital of Thailand?"
+    },
+    {
+      "id": "TJ",
+      "name": "Tajikistan",
+      "capital": "Dushanbe",
+      "region": "Asia",
+      "subregion": "Central Asia",
+      "place_id": "1221874",
+      "note": "",
+      "question": "Capital of Tajikistan?"
+    },
+    {
+      "id": "TL",
+      "name": "Timor-Leste",
+      "capital": "Dili",
+      "region": "Asia",
+      "subregion": "South-eastern Asia",
+      "place_id": "1645457",
+      "note": "",
+      "question": "Capital of Timor-Leste?"
+    },
+    {
+      "id": "TM",
+      "name": "Turkmenistan",
+      "capital": "Ashgabat",
+      "region": "Asia",
+      "subregion": "Central Asia",
+      "place_id": "162183",
+      "note": "",
+      "question": "Capital of Turkmenistan?"
+    },
+    {
+      "id": "TN",
+      "name": "Tunisia",
+      "capital": "Tunis",
+      "region": "Africa",
+      "subregion": "Northern Africa",
+      "place_id": "2464470",
+      "note": "",
+      "question": "Capital of Tunisia?"
+    },
+    {
+      "id": "TO",
+      "name": "Tonga",
+      "capital": "Nuku'alofa",
+      "region": "Oceania",
+      "subregion": "Polynesia",
+      "place_id": "4032402",
+      "note": "",
+      "question": "Capital of Tonga?",
+      "aliases": [
+        "Nuku‘alofa"
+      ]
+    },
+    {
+      "id": "TR",
+      "name": "Türkiye",
+      "capital": "Ankara",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "place_id": "323786",
+      "note": "",
+      "question": "Capital of Türkiye?"
+    },
+    {
+      "id": "TT",
+      "name": "Trinidad and Tobago",
+      "capital": "Port of Spain",
+      "region": "North America",
+      "subregion": "Caribbean",
+      "place_id": "3573890",
+      "note": "",
+      "question": "Capital of Trinidad and Tobago?"
+    },
+    {
+      "id": "TV",
+      "name": "Tuvalu",
+      "capital": "Funafuti",
+      "region": "Oceania",
+      "subregion": "Polynesia",
+      "place_id": "2110394",
+      "note": "Funafuti is the capital atoll; government offices are on Fongafale islet.",
+      "question": "Capital of Tuvalu?"
+    },
+    {
+      "id": "TZ",
+      "name": "Tanzania",
+      "capital": "Dodoma",
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "place_id": "160196",
+      "note": "Dodoma is the capital; Dar es Salaam is the former capital and main commercial city.",
+      "question": "Capital of Tanzania?"
+    },
+    {
+      "id": "UA",
+      "name": "Ukraine",
+      "capital": "Kyiv",
+      "region": "Europe",
+      "subregion": "Eastern Europe",
+      "place_id": "703448",
+      "note": "",
+      "question": "Capital of Ukraine?"
+    },
+    {
+      "id": "UG",
+      "name": "Uganda",
+      "capital": "Kampala",
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "place_id": "232422",
+      "note": "",
+      "question": "Capital of Uganda?"
+    },
+    {
+      "id": "US",
+      "name": "United States",
+      "capital": "Washington, D.C.",
+      "region": "North America",
+      "subregion": "Northern America",
+      "place_id": "4140963",
+      "note": "",
+      "aliases": [
+        "Washington",
+        "Washington DC"
+      ],
+      "question": "Capital of United States?"
+    },
+    {
+      "id": "UY",
+      "name": "Uruguay",
+      "capital": "Montevideo",
+      "region": "South America",
+      "subregion": "South America",
+      "place_id": "3441575",
+      "note": "",
+      "question": "Capital of Uruguay?"
+    },
+    {
+      "id": "UZ",
+      "name": "Uzbekistan",
+      "capital": "Tashkent",
+      "region": "Asia",
+      "subregion": "Central Asia",
+      "place_id": "1512569",
+      "note": "",
+      "question": "Capital of Uzbekistan?"
+    },
+    {
+      "id": "VA",
+      "name": "Vatican City",
+      "capital": "Vatican City",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "place_id": "6691831",
+      "note": "The Holy See is the UN observer; Vatican City is its territorial city-state.",
+      "question": "City-state of the Holy See?"
+    },
+    {
+      "id": "VC",
+      "name": "Saint Vincent and the Grenadines",
+      "capital": "Kingstown",
+      "region": "North America",
+      "subregion": "Caribbean",
+      "place_id": "3577887",
+      "note": "",
+      "question": "Capital of Saint Vincent and the Grenadines?"
+    },
+    {
+      "id": "VE",
+      "name": "Venezuela",
+      "capital": "Caracas",
+      "region": "South America",
+      "subregion": "South America",
+      "place_id": "3646738",
+      "note": "",
+      "question": "Capital of Venezuela?"
+    },
+    {
+      "id": "VN",
+      "name": "Vietnam",
+      "capital": "Hanoi",
+      "region": "Asia",
+      "subregion": "South-eastern Asia",
+      "place_id": "1581130",
+      "note": "",
+      "question": "Capital of Vietnam?"
+    },
+    {
+      "id": "VU",
+      "name": "Vanuatu",
+      "capital": "Port-Vila",
+      "region": "Oceania",
+      "subregion": "Melanesia",
+      "place_id": "2135171",
+      "note": "",
+      "question": "Capital of Vanuatu?"
+    },
+    {
+      "id": "WS",
+      "name": "Samoa",
+      "capital": "Apia",
+      "region": "Oceania",
+      "subregion": "Polynesia",
+      "place_id": "4035413",
+      "note": "",
+      "question": "Capital of Samoa?"
+    },
+    {
+      "id": "YE",
+      "name": "Yemen",
+      "capital": "Sana'a",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "place_id": "71137",
+      "note": "Sana'a is the constitutional capital; Aden serves as an interim government seat.",
+      "question": "Constitutional capital of Yemen?",
+      "aliases": [
+        "Sanaa",
+        "Sana’a"
+      ]
+    },
+    {
+      "id": "ZA",
+      "name": "South Africa",
+      "capital": "Pretoria",
+      "region": "Africa",
+      "subregion": "Southern Africa",
+      "place_id": "964137",
+      "note": "Pretoria: administrative. Cape Town: legislative. Bloemfontein: judicial.",
+      "question": "Administrative capital of South Africa?"
+    },
+    {
+      "id": "ZM",
+      "name": "Zambia",
+      "capital": "Lusaka",
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "place_id": "909137",
+      "note": "",
+      "question": "Capital of Zambia?"
+    },
+    {
+      "id": "ZW",
+      "name": "Zimbabwe",
+      "capital": "Harare",
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "place_id": "890299",
+      "note": "",
+      "question": "Capital of Zimbabwe?"
+    }
+  ],
+  "states": [
+    {
+      "id": "US-AL",
+      "name": "Alabama",
+      "capital": "Montgomery",
+      "region": "South",
+      "subregion": "South",
+      "place_id": "4076784",
+      "note": "",
+      "question": "Capital of Alabama?"
+    },
+    {
+      "id": "US-AK",
+      "name": "Alaska",
+      "capital": "Juneau",
+      "region": "West",
+      "subregion": "West",
+      "place_id": "5554072",
+      "note": "",
+      "question": "Capital of Alaska?"
+    },
+    {
+      "id": "US-AZ",
+      "name": "Arizona",
+      "capital": "Phoenix",
+      "region": "West",
+      "subregion": "West",
+      "place_id": "5308655",
+      "note": "",
+      "question": "Capital of Arizona?"
+    },
+    {
+      "id": "US-AR",
+      "name": "Arkansas",
+      "capital": "Little Rock",
+      "region": "South",
+      "subregion": "South",
+      "place_id": "4119403",
+      "note": "",
+      "question": "Capital of Arkansas?"
+    },
+    {
+      "id": "US-CA",
+      "name": "California",
+      "capital": "Sacramento",
+      "region": "West",
+      "subregion": "West",
+      "place_id": "5389489",
+      "note": "",
+      "question": "Capital of California?"
+    },
+    {
+      "id": "US-CO",
+      "name": "Colorado",
+      "capital": "Denver",
+      "region": "West",
+      "subregion": "West",
+      "place_id": "5419384",
+      "note": "",
+      "question": "Capital of Colorado?"
+    },
+    {
+      "id": "US-CT",
+      "name": "Connecticut",
+      "capital": "Hartford",
+      "region": "Northeast",
+      "subregion": "Northeast",
+      "place_id": "4835797",
+      "note": "",
+      "question": "Capital of Connecticut?"
+    },
+    {
+      "id": "US-DE",
+      "name": "Delaware",
+      "capital": "Dover",
+      "region": "South",
+      "subregion": "South",
+      "place_id": "4142290",
+      "note": "",
+      "question": "Capital of Delaware?"
+    },
+    {
+      "id": "US-FL",
+      "name": "Florida",
+      "capital": "Tallahassee",
+      "region": "South",
+      "subregion": "South",
+      "place_id": "4174715",
+      "note": "",
+      "question": "Capital of Florida?"
+    },
+    {
+      "id": "US-GA",
+      "name": "Georgia",
+      "capital": "Atlanta",
+      "region": "South",
+      "subregion": "South",
+      "place_id": "4180439",
+      "note": "",
+      "question": "Capital of Georgia?"
+    },
+    {
+      "id": "US-HI",
+      "name": "Hawaii",
+      "capital": "Honolulu",
+      "region": "West",
+      "subregion": "West",
+      "place_id": "5856195",
+      "note": "",
+      "question": "Capital of Hawaii?"
+    },
+    {
+      "id": "US-ID",
+      "name": "Idaho",
+      "capital": "Boise",
+      "region": "West",
+      "subregion": "West",
+      "place_id": "5586437",
+      "note": "",
+      "question": "Capital of Idaho?"
+    },
+    {
+      "id": "US-IL",
+      "name": "Illinois",
+      "capital": "Springfield",
+      "region": "Midwest",
+      "subregion": "Midwest",
+      "place_id": "4250542",
+      "note": "",
+      "question": "Capital of Illinois?"
+    },
+    {
+      "id": "US-IN",
+      "name": "Indiana",
+      "capital": "Indianapolis",
+      "region": "Midwest",
+      "subregion": "Midwest",
+      "place_id": "4259418",
+      "note": "",
+      "question": "Capital of Indiana?"
+    },
+    {
+      "id": "US-IA",
+      "name": "Iowa",
+      "capital": "Des Moines",
+      "region": "Midwest",
+      "subregion": "Midwest",
+      "place_id": "4853828",
+      "note": "",
+      "question": "Capital of Iowa?"
+    },
+    {
+      "id": "US-KS",
+      "name": "Kansas",
+      "capital": "Topeka",
+      "region": "Midwest",
+      "subregion": "Midwest",
+      "place_id": "4280539",
+      "note": "",
+      "question": "Capital of Kansas?"
+    },
+    {
+      "id": "US-KY",
+      "name": "Kentucky",
+      "capital": "Frankfort",
+      "region": "South",
+      "subregion": "South",
+      "place_id": "4292188",
+      "note": "",
+      "question": "Capital of Kentucky?"
+    },
+    {
+      "id": "US-LA",
+      "name": "Louisiana",
+      "capital": "Baton Rouge",
+      "region": "South",
+      "subregion": "South",
+      "place_id": "4315588",
+      "note": "",
+      "question": "Capital of Louisiana?"
+    },
+    {
+      "id": "US-ME",
+      "name": "Maine",
+      "capital": "Augusta",
+      "region": "Northeast",
+      "subregion": "Northeast",
+      "place_id": "4957003",
+      "note": "",
+      "question": "Capital of Maine?"
+    },
+    {
+      "id": "US-MD",
+      "name": "Maryland",
+      "capital": "Annapolis",
+      "region": "South",
+      "subregion": "South",
+      "place_id": "4347242",
+      "note": "",
+      "question": "Capital of Maryland?"
+    },
+    {
+      "id": "US-MA",
+      "name": "Massachusetts",
+      "capital": "Boston",
+      "region": "Northeast",
+      "subregion": "Northeast",
+      "place_id": "4930956",
+      "note": "",
+      "question": "Capital of Massachusetts?"
+    },
+    {
+      "id": "US-MI",
+      "name": "Michigan",
+      "capital": "Lansing",
+      "region": "Midwest",
+      "subregion": "Midwest",
+      "place_id": "4998830",
+      "note": "",
+      "question": "Capital of Michigan?"
+    },
+    {
+      "id": "US-MN",
+      "name": "Minnesota",
+      "capital": "Saint Paul",
+      "region": "Midwest",
+      "subregion": "Midwest",
+      "place_id": "5045360",
+      "note": "",
+      "question": "Capital of Minnesota?",
+      "aliases": [
+        "St. Paul",
+        "St Paul"
+      ]
+    },
+    {
+      "id": "US-MS",
+      "name": "Mississippi",
+      "capital": "Jackson",
+      "region": "South",
+      "subregion": "South",
+      "place_id": "4431410",
+      "note": "",
+      "question": "Capital of Mississippi?"
+    },
+    {
+      "id": "US-MO",
+      "name": "Missouri",
+      "capital": "Jefferson City",
+      "region": "Midwest",
+      "subregion": "Midwest",
+      "place_id": "4392388",
+      "note": "",
+      "question": "Capital of Missouri?"
+    },
+    {
+      "id": "US-MT",
+      "name": "Montana",
+      "capital": "Helena",
+      "region": "West",
+      "subregion": "West",
+      "place_id": "5656882",
+      "note": "",
+      "question": "Capital of Montana?"
+    },
+    {
+      "id": "US-NE",
+      "name": "Nebraska",
+      "capital": "Lincoln",
+      "region": "Midwest",
+      "subregion": "Midwest",
+      "place_id": "5072006",
+      "note": "",
+      "question": "Capital of Nebraska?"
+    },
+    {
+      "id": "US-NV",
+      "name": "Nevada",
+      "capital": "Carson City",
+      "region": "West",
+      "subregion": "West",
+      "place_id": "5501344",
+      "note": "",
+      "question": "Capital of Nevada?"
+    },
+    {
+      "id": "US-NH",
+      "name": "New Hampshire",
+      "capital": "Concord",
+      "region": "Northeast",
+      "subregion": "Northeast",
+      "place_id": "5084868",
+      "note": "",
+      "question": "Capital of New Hampshire?"
+    },
+    {
+      "id": "US-NJ",
+      "name": "New Jersey",
+      "capital": "Trenton",
+      "region": "Northeast",
+      "subregion": "Northeast",
+      "place_id": "5105496",
+      "note": "",
+      "question": "Capital of New Jersey?"
+    },
+    {
+      "id": "US-NM",
+      "name": "New Mexico",
+      "capital": "Santa Fe",
+      "region": "West",
+      "subregion": "West",
+      "place_id": "5490263",
+      "note": "",
+      "question": "Capital of New Mexico?"
+    },
+    {
+      "id": "US-NY",
+      "name": "New York",
+      "capital": "Albany",
+      "region": "Northeast",
+      "subregion": "Northeast",
+      "place_id": "5106834",
+      "note": "",
+      "question": "Capital of New York?"
+    },
+    {
+      "id": "US-NC",
+      "name": "North Carolina",
+      "capital": "Raleigh",
+      "region": "South",
+      "subregion": "South",
+      "place_id": "4487042",
+      "note": "",
+      "question": "Capital of North Carolina?"
+    },
+    {
+      "id": "US-ND",
+      "name": "North Dakota",
+      "capital": "Bismarck",
+      "region": "Midwest",
+      "subregion": "Midwest",
+      "place_id": "5688025",
+      "note": "",
+      "question": "Capital of North Dakota?"
+    },
+    {
+      "id": "US-OH",
+      "name": "Ohio",
+      "capital": "Columbus",
+      "region": "Midwest",
+      "subregion": "Midwest",
+      "place_id": "4509177",
+      "note": "",
+      "question": "Capital of Ohio?"
+    },
+    {
+      "id": "US-OK",
+      "name": "Oklahoma",
+      "capital": "Oklahoma City",
+      "region": "South",
+      "subregion": "South",
+      "place_id": "4544349",
+      "note": "",
+      "question": "Capital of Oklahoma?"
+    },
+    {
+      "id": "US-OR",
+      "name": "Oregon",
+      "capital": "Salem",
+      "region": "West",
+      "subregion": "West",
+      "place_id": "5750162",
+      "note": "",
+      "question": "Capital of Oregon?"
+    },
+    {
+      "id": "US-PA",
+      "name": "Pennsylvania",
+      "capital": "Harrisburg",
+      "region": "Northeast",
+      "subregion": "Northeast",
+      "place_id": "5192726",
+      "note": "",
+      "question": "Capital of Pennsylvania?"
+    },
+    {
+      "id": "US-RI",
+      "name": "Rhode Island",
+      "capital": "Providence",
+      "region": "Northeast",
+      "subregion": "Northeast",
+      "place_id": "5224151",
+      "note": "",
+      "question": "Capital of Rhode Island?"
+    },
+    {
+      "id": "US-SC",
+      "name": "South Carolina",
+      "capital": "Columbia",
+      "region": "South",
+      "subregion": "South",
+      "place_id": "4575352",
+      "note": "",
+      "question": "Capital of South Carolina?"
+    },
+    {
+      "id": "US-SD",
+      "name": "South Dakota",
+      "capital": "Pierre",
+      "region": "Midwest",
+      "subregion": "Midwest",
+      "place_id": "5767918",
+      "note": "",
+      "question": "Capital of South Dakota?"
+    },
+    {
+      "id": "US-TN",
+      "name": "Tennessee",
+      "capital": "Nashville",
+      "region": "South",
+      "subregion": "South",
+      "place_id": "4644585",
+      "note": "",
+      "question": "Capital of Tennessee?"
+    },
+    {
+      "id": "US-TX",
+      "name": "Texas",
+      "capital": "Austin",
+      "region": "South",
+      "subregion": "South",
+      "place_id": "4671654",
+      "note": "",
+      "question": "Capital of Texas?"
+    },
+    {
+      "id": "US-UT",
+      "name": "Utah",
+      "capital": "Salt Lake City",
+      "region": "West",
+      "subregion": "West",
+      "place_id": "5780993",
+      "note": "",
+      "question": "Capital of Utah?"
+    },
+    {
+      "id": "US-VT",
+      "name": "Vermont",
+      "capital": "Montpelier",
+      "region": "Northeast",
+      "subregion": "Northeast",
+      "place_id": "5238685",
+      "note": "",
+      "question": "Capital of Vermont?"
+    },
+    {
+      "id": "US-VA",
+      "name": "Virginia",
+      "capital": "Richmond",
+      "region": "South",
+      "subregion": "South",
+      "place_id": "4781708",
+      "note": "",
+      "question": "Capital of Virginia?"
+    },
+    {
+      "id": "US-WA",
+      "name": "Washington",
+      "capital": "Olympia",
+      "region": "West",
+      "subregion": "West",
+      "place_id": "5805687",
+      "note": "",
+      "question": "Capital of Washington?"
+    },
+    {
+      "id": "US-WV",
+      "name": "West Virginia",
+      "capital": "Charleston",
+      "region": "South",
+      "subregion": "South",
+      "place_id": "4801859",
+      "note": "",
+      "question": "Capital of West Virginia?"
+    },
+    {
+      "id": "US-WI",
+      "name": "Wisconsin",
+      "capital": "Madison",
+      "region": "Midwest",
+      "subregion": "Midwest",
+      "place_id": "5261457",
+      "note": "",
+      "question": "Capital of Wisconsin?"
+    },
+    {
+      "id": "US-WY",
+      "name": "Wyoming",
+      "capital": "Cheyenne",
+      "region": "West",
+      "subregion": "West",
+      "place_id": "5821086",
+      "note": "",
+      "question": "Capital of Wyoming?"
+    }
+  ],
+  "territories": [
+    {
+      "id": "US-AS",
+      "name": "American Samoa",
+      "capital": "Pago Pago",
+      "region": "Pacific",
+      "subregion": "Pacific",
+      "place_id": "5881576",
+      "note": "Pago Pago is the historic capital; Fagatogo is the constitutional seat of government.",
+      "question": "Historic capital of American Samoa?"
+    },
+    {
+      "id": "US-GU",
+      "name": "Guam",
+      "capital": "Hagåtña",
+      "region": "Pacific",
+      "subregion": "Pacific",
+      "place_id": "4044012",
+      "note": "U.S. territory; not one of the 50 states.",
+      "question": "Capital of Guam?",
+      "aliases": [
+        "Hagatna",
+        "Agana",
+        "Agaña"
+      ]
+    },
+    {
+      "id": "US-MP",
+      "name": "Northern Mariana Islands",
+      "capital": "Saipan",
+      "region": "Pacific",
+      "subregion": "Pacific",
+      "place_id": "7828758",
+      "note": "Saipan is the capital island; government offices are at Capitol Hill. U.S. territory.",
+      "question": "Capital island of Northern Mariana Islands?"
+    },
+    {
+      "id": "US-PR",
+      "name": "Puerto Rico",
+      "capital": "San Juan",
+      "region": "Caribbean",
+      "subregion": "Caribbean",
+      "place_id": "4568127",
+      "note": "U.S. territory; not one of the 50 states.",
+      "question": "Capital of Puerto Rico?"
+    },
+    {
+      "id": "US-VI",
+      "name": "U.S. Virgin Islands",
+      "capital": "Charlotte Amalie",
+      "region": "Caribbean",
+      "subregion": "Caribbean",
+      "place_id": "4795467",
+      "note": "U.S. territory; not one of the 50 states.",
+      "question": "Capital of U.S. Virgin Islands?"
+    }
+  ],
+  "districts": [
+    {
+      "id": "US-DC",
+      "name": "District of Columbia",
+      "capital": "Washington, D.C.",
+      "region": "Federal district",
+      "subregion": "Federal district",
+      "place_id": "4140963",
+      "note": "Federal district and national capital; not a state or a U.S. territory.",
+      "question": "U.S. federal capital?",
+      "aliases": [
+        "Washington",
+        "Washington DC"
+      ]
+    }
+  ],
+  "places": {
+    "3041563": {
+      "name": "Andorra la Vella",
+      "ascii_name": "Andorra la Vella",
+      "lat": 42.50779,
+      "lon": 1.52109,
+      "feature": "PPLC",
+      "country": "AD",
+      "admin1": "07"
+    },
+    "292968": {
+      "name": "Abu Dhabi",
+      "ascii_name": "Abu Dhabi",
+      "lat": 24.45118,
+      "lon": 54.39696,
+      "feature": "PPLC",
+      "country": "AE",
+      "admin1": "01"
+    },
+    "1138958": {
+      "name": "Kabul",
+      "ascii_name": "Kabul",
+      "lat": 34.52813,
+      "lon": 69.17233,
+      "feature": "PPLC",
+      "country": "AF",
+      "admin1": "13"
+    },
+    "3576022": {
+      "name": "Saint John’s",
+      "ascii_name": "Saint John's",
+      "lat": 17.12096,
+      "lon": -61.84329,
+      "feature": "PPLC",
+      "country": "AG",
+      "admin1": "04"
+    },
+    "3183875": {
+      "name": "Tirana",
+      "ascii_name": "Tirana",
+      "lat": 41.32744,
+      "lon": 19.81866,
+      "feature": "PPLC",
+      "country": "AL",
+      "admin1": "50"
+    },
+    "616052": {
+      "name": "Yerevan",
+      "ascii_name": "Yerevan",
+      "lat": 40.17765,
+      "lon": 44.5126,
+      "feature": "PPLC",
+      "country": "AM",
+      "admin1": "11"
+    },
+    "2240449": {
+      "name": "Luanda",
+      "ascii_name": "Luanda",
+      "lat": -8.83682,
+      "lon": 13.23432,
+      "feature": "PPLC",
+      "country": "AO",
+      "admin1": "20"
+    },
+    "3435910": {
+      "name": "Buenos Aires",
+      "ascii_name": "Buenos Aires",
+      "lat": -34.61315,
+      "lon": -58.37723,
+      "feature": "PPLC",
+      "country": "AR",
+      "admin1": "07"
+    },
+    "2761369": {
+      "name": "Vienna",
+      "ascii_name": "Vienna",
+      "lat": 48.20849,
+      "lon": 16.37208,
+      "feature": "PPLC",
+      "country": "AT",
+      "admin1": "09"
+    },
+    "2172517": {
+      "name": "Canberra",
+      "ascii_name": "Canberra",
+      "lat": -35.28346,
+      "lon": 149.12807,
+      "feature": "PPLC",
+      "country": "AU",
+      "admin1": "01"
+    },
+    "587084": {
+      "name": "Baku",
+      "ascii_name": "Baku",
+      "lat": 40.37767,
+      "lon": 49.89201,
+      "feature": "PPLC",
+      "country": "AZ",
+      "admin1": "09"
+    },
+    "3191281": {
+      "name": "Sarajevo",
+      "ascii_name": "Sarajevo",
+      "lat": 43.84864,
+      "lon": 18.35644,
+      "feature": "PPLC",
+      "country": "BA",
+      "admin1": "01"
+    },
+    "3374036": {
+      "name": "Bridgetown",
+      "ascii_name": "Bridgetown",
+      "lat": 13.10732,
+      "lon": -59.62021,
+      "feature": "PPLC",
+      "country": "BB",
+      "admin1": "08"
+    },
+    "1185241": {
+      "name": "Dhaka",
+      "ascii_name": "Dhaka",
+      "lat": 23.7104,
+      "lon": 90.40744,
+      "feature": "PPLC",
+      "country": "BD",
+      "admin1": "81"
+    },
+    "2800866": {
+      "name": "Brussels",
+      "ascii_name": "Brussels",
+      "lat": 50.85045,
+      "lon": 4.34878,
+      "feature": "PPLC",
+      "country": "BE",
+      "admin1": "BRU"
+    },
+    "2357048": {
+      "name": "Ouagadougou",
+      "ascii_name": "Ouagadougou",
+      "lat": 12.36566,
+      "lon": -1.53388,
+      "feature": "PPLC",
+      "country": "BF",
+      "admin1": "03"
+    },
+    "727011": {
+      "name": "Sofia",
+      "ascii_name": "Sofia",
+      "lat": 42.69751,
+      "lon": 23.32415,
+      "feature": "PPLC",
+      "country": "BG",
+      "admin1": "42"
+    },
+    "290340": {
+      "name": "Manama",
+      "ascii_name": "Manama",
+      "lat": 26.22787,
+      "lon": 50.58565,
+      "feature": "PPLC",
+      "country": "BH",
+      "admin1": "16"
+    },
+    "426272": {
+      "name": "Gitega",
+      "ascii_name": "Gitega",
+      "lat": -3.42708,
+      "lon": 29.92463,
+      "feature": "PPLC",
+      "country": "BI",
+      "admin1": "13"
+    },
+    "2392087": {
+      "name": "Porto-Novo",
+      "ascii_name": "Porto-Novo",
+      "lat": 6.49646,
+      "lon": 2.60359,
+      "feature": "PPLC",
+      "country": "BJ",
+      "admin1": "16"
+    },
+    "1820906": {
+      "name": "Bandar Seri Begawan",
+      "ascii_name": "Bandar Seri Begawan",
+      "lat": 4.89035,
+      "lon": 114.94006,
+      "feature": "PPLC",
+      "country": "BN",
+      "admin1": "02"
+    },
+    "3903987": {
+      "name": "Sucre",
+      "ascii_name": "Sucre",
+      "lat": -19.03332,
+      "lon": -65.26274,
+      "feature": "PPLC",
+      "country": "BO",
+      "admin1": "01"
+    },
+    "3469058": {
+      "name": "Brasília",
+      "ascii_name": "Brasilia",
+      "lat": -15.77972,
+      "lon": -47.92972,
+      "feature": "PPLC",
+      "country": "BR",
+      "admin1": "07"
+    },
+    "3571824": {
+      "name": "Nassau",
+      "ascii_name": "Nassau",
+      "lat": 25.05823,
+      "lon": -77.34306,
+      "feature": "PPLC",
+      "country": "BS",
+      "admin1": "23"
+    },
+    "1252416": {
+      "name": "Thimphu",
+      "ascii_name": "Thimphu",
+      "lat": 27.46609,
+      "lon": 89.64191,
+      "feature": "PPLC",
+      "country": "BT",
+      "admin1": "20"
+    },
+    "933773": {
+      "name": "Gaborone",
+      "ascii_name": "Gaborone",
+      "lat": -24.65451,
+      "lon": 25.90859,
+      "feature": "PPLC",
+      "country": "BW",
+      "admin1": "14"
+    },
+    "625144": {
+      "name": "Minsk",
+      "ascii_name": "Minsk",
+      "lat": 53.90019,
+      "lon": 27.56653,
+      "feature": "PPLC",
+      "country": "BY",
+      "admin1": "04"
+    },
+    "3582672": {
+      "name": "Belmopan",
+      "ascii_name": "Belmopan",
+      "lat": 17.25376,
+      "lon": -88.76401,
+      "feature": "PPLC",
+      "country": "BZ",
+      "admin1": "02"
+    },
+    "6094817": {
+      "name": "Ottawa",
+      "ascii_name": "Ottawa",
+      "lat": 45.41117,
+      "lon": -75.69812,
+      "feature": "PPLC",
+      "country": "CA",
+      "admin1": "08"
+    },
+    "2314302": {
+      "name": "Kinshasa",
+      "ascii_name": "Kinshasa",
+      "lat": -4.32758,
+      "lon": 15.31357,
+      "feature": "PPLC",
+      "country": "CD",
+      "admin1": "06"
+    },
+    "2389853": {
+      "name": "Bangui",
+      "ascii_name": "Bangui",
+      "lat": 4.36122,
+      "lon": 18.55496,
+      "feature": "PPLC",
+      "country": "CF",
+      "admin1": "18"
+    },
+    "2260535": {
+      "name": "Brazzaville",
+      "ascii_name": "Brazzaville",
+      "lat": -4.26613,
+      "lon": 15.28318,
+      "feature": "PPLC",
+      "country": "CG",
+      "admin1": "12"
+    },
+    "2661552": {
+      "name": "Bern",
+      "ascii_name": "Bern",
+      "lat": 46.94809,
+      "lon": 7.44744,
+      "feature": "PPLC",
+      "country": "CH",
+      "admin1": "BE"
+    },
+    "2279755": {
+      "name": "Yamoussoukro",
+      "ascii_name": "Yamoussoukro",
+      "lat": 6.82055,
+      "lon": -5.27674,
+      "feature": "PPLC",
+      "country": "CI",
+      "admin1": "81"
+    },
+    "3871336": {
+      "name": "Santiago",
+      "ascii_name": "Santiago",
+      "lat": -33.45694,
+      "lon": -70.64827,
+      "feature": "PPLC",
+      "country": "CL",
+      "admin1": "12"
+    },
+    "2220957": {
+      "name": "Yaoundé",
+      "ascii_name": "Yaounde",
+      "lat": 3.86667,
+      "lon": 11.51667,
+      "feature": "PPLC",
+      "country": "CM",
+      "admin1": "11"
+    },
+    "1816670": {
+      "name": "Beijing",
+      "ascii_name": "Beijing",
+      "lat": 39.9075,
+      "lon": 116.39723,
+      "feature": "PPLC",
+      "country": "CN",
+      "admin1": "22"
+    },
+    "3688689": {
+      "name": "Bogotá",
+      "ascii_name": "Bogota",
+      "lat": 4.60971,
+      "lon": -74.08175,
+      "feature": "PPLC",
+      "country": "CO",
+      "admin1": "34"
+    },
+    "3621849": {
+      "name": "San José",
+      "ascii_name": "San Jose",
+      "lat": 9.93388,
+      "lon": -84.08489,
+      "feature": "PPLC",
+      "country": "CR",
+      "admin1": "08"
+    },
+    "3553478": {
+      "name": "Havana",
+      "ascii_name": "Havana",
+      "lat": 23.13302,
+      "lon": -82.38304,
+      "feature": "PPLC",
+      "country": "CU",
+      "admin1": "02"
+    },
+    "3374333": {
+      "name": "Praia",
+      "ascii_name": "Praia",
+      "lat": 14.93152,
+      "lon": -23.51254,
+      "feature": "PPLC",
+      "country": "CV",
+      "admin1": "14"
+    },
+    "146268": {
+      "name": "Nicosia",
+      "ascii_name": "Nicosia",
+      "lat": 35.17284,
+      "lon": 33.35397,
+      "feature": "PPLC",
+      "country": "CY",
+      "admin1": "04"
+    },
+    "3067696": {
+      "name": "Prague",
+      "ascii_name": "Prague",
+      "lat": 50.08804,
+      "lon": 14.42076,
+      "feature": "PPLC",
+      "country": "CZ",
+      "admin1": "52"
+    },
+    "2950159": {
+      "name": "Berlin",
+      "ascii_name": "Berlin",
+      "lat": 52.52437,
+      "lon": 13.41053,
+      "feature": "PPLC",
+      "country": "DE",
+      "admin1": "16"
+    },
+    "223817": {
+      "name": "Djibouti",
+      "ascii_name": "Djibouti",
+      "lat": 11.58901,
+      "lon": 43.14503,
+      "feature": "PPLC",
+      "country": "DJ",
+      "admin1": "07"
+    },
+    "2618425": {
+      "name": "Copenhagen",
+      "ascii_name": "Copenhagen",
+      "lat": 55.67594,
+      "lon": 12.56553,
+      "feature": "PPLC",
+      "country": "DK",
+      "admin1": "17"
+    },
+    "3575635": {
+      "name": "Roseau",
+      "ascii_name": "Roseau",
+      "lat": 15.30174,
+      "lon": -61.38808,
+      "feature": "PPLC",
+      "country": "DM",
+      "admin1": "04"
+    },
+    "3492908": {
+      "name": "Santo Domingo",
+      "ascii_name": "Santo Domingo",
+      "lat": 18.47186,
+      "lon": -69.89232,
+      "feature": "PPLC",
+      "country": "DO",
+      "admin1": "34"
+    },
+    "2507480": {
+      "name": "Algiers",
+      "ascii_name": "Algiers",
+      "lat": 36.73225,
+      "lon": 3.08746,
+      "feature": "PPLC",
+      "country": "DZ",
+      "admin1": "01"
+    },
+    "3652462": {
+      "name": "Quito",
+      "ascii_name": "Quito",
+      "lat": -0.22985,
+      "lon": -78.52495,
+      "feature": "PPLC",
+      "country": "EC",
+      "admin1": "18"
+    },
+    "588409": {
+      "name": "Tallinn",
+      "ascii_name": "Tallinn",
+      "lat": 59.43696,
+      "lon": 24.75353,
+      "feature": "PPLC",
+      "country": "EE",
+      "admin1": "01"
+    },
+    "360630": {
+      "name": "Cairo",
+      "ascii_name": "Cairo",
+      "lat": 30.06263,
+      "lon": 31.24967,
+      "feature": "PPLC",
+      "country": "EG",
+      "admin1": "11"
+    },
+    "343300": {
+      "name": "Asmara",
+      "ascii_name": "Asmara",
+      "lat": 15.33805,
+      "lon": 38.93184,
+      "feature": "PPLC",
+      "country": "ER",
+      "admin1": "05"
+    },
+    "3117735": {
+      "name": "Madrid",
+      "ascii_name": "Madrid",
+      "lat": 40.4165,
+      "lon": -3.70256,
+      "feature": "PPLC",
+      "country": "ES",
+      "admin1": "29"
+    },
+    "344979": {
+      "name": "Addis Ababa",
+      "ascii_name": "Addis Ababa",
+      "lat": 9.02497,
+      "lon": 38.74689,
+      "feature": "PPLC",
+      "country": "ET",
+      "admin1": "44"
+    },
+    "658225": {
+      "name": "Helsinki",
+      "ascii_name": "Helsinki",
+      "lat": 60.16952,
+      "lon": 24.93545,
+      "feature": "PPLC",
+      "country": "FI",
+      "admin1": "01"
+    },
+    "2198148": {
+      "name": "Suva",
+      "ascii_name": "Suva",
+      "lat": -18.13683,
+      "lon": 178.42531,
+      "feature": "PPLC",
+      "country": "FJ",
+      "admin1": "01"
+    },
+    "2081986": {
+      "name": "Palikir",
+      "ascii_name": "Palikir",
+      "lat": 6.92477,
+      "lon": 158.16109,
+      "feature": "PPLC",
+      "country": "FM",
+      "admin1": "02"
+    },
+    "2988507": {
+      "name": "Paris",
+      "ascii_name": "Paris",
+      "lat": 48.85341,
+      "lon": 2.3488,
+      "feature": "PPLC",
+      "country": "FR",
+      "admin1": "11"
+    },
+    "2399697": {
+      "name": "Libreville",
+      "ascii_name": "Libreville",
+      "lat": 0.39241,
+      "lon": 9.45356,
+      "feature": "PPLC",
+      "country": "GA",
+      "admin1": "01"
+    },
+    "2643743": {
+      "name": "London",
+      "ascii_name": "London",
+      "lat": 51.50853,
+      "lon": -0.12574,
+      "feature": "PPLC",
+      "country": "GB",
+      "admin1": "ENG"
+    },
+    "3579925": {
+      "name": "Saint George's",
+      "ascii_name": "Saint George's",
+      "lat": 12.05288,
+      "lon": -61.75226,
+      "feature": "PPLC",
+      "country": "GD",
+      "admin1": "03"
+    },
+    "611717": {
+      "name": "Tbilisi",
+      "ascii_name": "Tbilisi",
+      "lat": 41.69143,
+      "lon": 44.83412,
+      "feature": "PPLC",
+      "country": "GE",
+      "admin1": "51"
+    },
+    "2306104": {
+      "name": "Accra",
+      "ascii_name": "Accra",
+      "lat": 5.55602,
+      "lon": -0.1969,
+      "feature": "PPLC",
+      "country": "GH",
+      "admin1": "01"
+    },
+    "2413876": {
+      "name": "Banjul",
+      "ascii_name": "Banjul",
+      "lat": 13.45274,
+      "lon": -16.57803,
+      "feature": "PPLC",
+      "country": "GM",
+      "admin1": "01"
+    },
+    "2422465": {
+      "name": "Conakry",
+      "ascii_name": "Conakry",
+      "lat": 9.53795,
+      "lon": -13.67729,
+      "feature": "PPLC",
+      "country": "GN",
+      "admin1": "04"
+    },
+    "12226438": {
+      "name": "Ciudad de la Paz",
+      "ascii_name": "Ciudad de la Paz",
+      "lat": 1.5925,
+      "lon": 10.82361,
+      "feature": "PPLC",
+      "country": "GQ",
+      "admin1": "10"
+    },
+    "264371": {
+      "name": "Athens",
+      "ascii_name": "Athens",
+      "lat": 37.98376,
+      "lon": 23.72784,
+      "feature": "PPLC",
+      "country": "GR",
+      "admin1": "ESYE31"
+    },
+    "3598132": {
+      "name": "Guatemala City",
+      "ascii_name": "Guatemala City",
+      "lat": 14.64072,
+      "lon": -90.51327,
+      "feature": "PPLC",
+      "country": "GT",
+      "admin1": "07"
+    },
+    "2374775": {
+      "name": "Bissau",
+      "ascii_name": "Bissau",
+      "lat": 11.86357,
+      "lon": -15.59767,
+      "feature": "PPLC",
+      "country": "GW",
+      "admin1": "11"
+    },
+    "3378644": {
+      "name": "Georgetown",
+      "ascii_name": "Georgetown",
+      "lat": 6.80448,
+      "lon": -58.15527,
+      "feature": "PPLC",
+      "country": "GY",
+      "admin1": "12"
+    },
+    "3600949": {
+      "name": "Tegucigalpa",
+      "ascii_name": "Tegucigalpa",
+      "lat": 14.0818,
+      "lon": -87.20681,
+      "feature": "PPLC",
+      "country": "HN",
+      "admin1": "08"
+    },
+    "3186886": {
+      "name": "Zagreb",
+      "ascii_name": "Zagreb",
+      "lat": 45.81444,
+      "lon": 15.97798,
+      "feature": "PPLC",
+      "country": "HR",
+      "admin1": "21"
+    },
+    "3718426": {
+      "name": "Port-au-Prince",
+      "ascii_name": "Port-au-Prince",
+      "lat": 18.54349,
+      "lon": -72.33881,
+      "feature": "PPLC",
+      "country": "HT",
+      "admin1": "11"
+    },
+    "3054643": {
+      "name": "Budapest",
+      "ascii_name": "Budapest",
+      "lat": 47.49835,
+      "lon": 19.04045,
+      "feature": "PPLC",
+      "country": "HU",
+      "admin1": "05"
+    },
+    "1642911": {
+      "name": "Jakarta",
+      "ascii_name": "Jakarta",
+      "lat": -6.21462,
+      "lon": 106.84513,
+      "feature": "PPLC",
+      "country": "ID",
+      "admin1": "04"
+    },
+    "2964574": {
+      "name": "Dublin",
+      "ascii_name": "Dublin",
+      "lat": 53.33306,
+      "lon": -6.24889,
+      "feature": "PPLC",
+      "country": "IE",
+      "admin1": "L"
+    },
+    "281184": {
+      "name": "Jerusalem",
+      "ascii_name": "Jerusalem",
+      "lat": 31.76904,
+      "lon": 35.21633,
+      "feature": "PPLA",
+      "country": "IL",
+      "admin1": "06"
+    },
+    "1261481": {
+      "name": "New Delhi",
+      "ascii_name": "New Delhi",
+      "lat": 28.62137,
+      "lon": 77.2148,
+      "feature": "PPLC",
+      "country": "IN",
+      "admin1": "07"
+    },
+    "98182": {
+      "name": "Baghdad",
+      "ascii_name": "Baghdad",
+      "lat": 33.34058,
+      "lon": 44.40088,
+      "feature": "PPLC",
+      "country": "IQ",
+      "admin1": "07"
+    },
+    "112931": {
+      "name": "Tehran",
+      "ascii_name": "Tehran",
+      "lat": 35.69439,
+      "lon": 51.42151,
+      "feature": "PPLC",
+      "country": "IR",
+      "admin1": "26"
+    },
+    "3413829": {
+      "name": "Reykjavík",
+      "ascii_name": "Reykjavik",
+      "lat": 64.13548,
+      "lon": -21.89541,
+      "feature": "PPLC",
+      "country": "IS",
+      "admin1": "39"
+    },
+    "3169070": {
+      "name": "Rome",
+      "ascii_name": "Rome",
+      "lat": 41.89193,
+      "lon": 12.51133,
+      "feature": "PPLC",
+      "country": "IT",
+      "admin1": "07"
+    },
+    "3489854": {
+      "name": "Kingston",
+      "ascii_name": "Kingston",
+      "lat": 17.99702,
+      "lon": -76.79358,
+      "feature": "PPLC",
+      "country": "JM",
+      "admin1": "17"
+    },
+    "250441": {
+      "name": "Amman",
+      "ascii_name": "Amman",
+      "lat": 31.95522,
+      "lon": 35.94503,
+      "feature": "PPLC",
+      "country": "JO",
+      "admin1": "16"
+    },
+    "1850147": {
+      "name": "Tokyo",
+      "ascii_name": "Tokyo",
+      "lat": 35.6895,
+      "lon": 139.69171,
+      "feature": "PPLC",
+      "country": "JP",
+      "admin1": "40"
+    },
+    "184745": {
+      "name": "Nairobi",
+      "ascii_name": "Nairobi",
+      "lat": -1.28333,
+      "lon": 36.81667,
+      "feature": "PPLC",
+      "country": "KE",
+      "admin1": "05"
+    },
+    "1528675": {
+      "name": "Bishkek",
+      "ascii_name": "Bishkek",
+      "lat": 42.87,
+      "lon": 74.59,
+      "feature": "PPLC",
+      "country": "KG",
+      "admin1": "01"
+    },
+    "1821306": {
+      "name": "Phnom Penh",
+      "ascii_name": "Phnom Penh",
+      "lat": 11.56245,
+      "lon": 104.91601,
+      "feature": "PPLC",
+      "country": "KH",
+      "admin1": "22"
+    },
+    "2110257": {
+      "name": "Tarawa",
+      "ascii_name": "Tarawa",
+      "lat": 1.3278,
+      "lon": 172.97696,
+      "feature": "PPLC",
+      "country": "KI",
+      "admin1": "01"
+    },
+    "921772": {
+      "name": "Moroni",
+      "ascii_name": "Moroni",
+      "lat": -11.70216,
+      "lon": 43.25506,
+      "feature": "PPLC",
+      "country": "KM",
+      "admin1": "02"
+    },
+    "3575551": {
+      "name": "Basseterre",
+      "ascii_name": "Basseterre",
+      "lat": 17.2955,
+      "lon": -62.72499,
+      "feature": "PPLC",
+      "country": "KN",
+      "admin1": "03"
+    },
+    "1871859": {
+      "name": "Pyongyang",
+      "ascii_name": "Pyongyang",
+      "lat": 39.03385,
+      "lon": 125.75432,
+      "feature": "PPLC",
+      "country": "KP",
+      "admin1": "12"
+    },
+    "1835848": {
+      "name": "Seoul",
+      "ascii_name": "Seoul",
+      "lat": 37.566,
+      "lon": 126.9784,
+      "feature": "PPLC",
+      "country": "KR",
+      "admin1": "11"
+    },
+    "285787": {
+      "name": "Kuwait City",
+      "ascii_name": "Kuwait City",
+      "lat": 29.367,
+      "lon": 47.97429,
+      "feature": "PPLC",
+      "country": "KW",
+      "admin1": "02"
+    },
+    "1526273": {
+      "name": "Astana",
+      "ascii_name": "Astana",
+      "lat": 51.1801,
+      "lon": 71.44598,
+      "feature": "PPLC",
+      "country": "KZ",
+      "admin1": "05"
+    },
+    "1651944": {
+      "name": "Vientiane",
+      "ascii_name": "Vientiane",
+      "lat": 17.96667,
+      "lon": 102.6,
+      "feature": "PPLC",
+      "country": "LA",
+      "admin1": "24"
+    },
+    "276781": {
+      "name": "Beirut",
+      "ascii_name": "Beirut",
+      "lat": 33.89332,
+      "lon": 35.50157,
+      "feature": "PPLC",
+      "country": "LB",
+      "admin1": "04"
+    },
+    "3576812": {
+      "name": "Castries",
+      "ascii_name": "Castries",
+      "lat": 13.9957,
+      "lon": -61.00614,
+      "feature": "PPLC",
+      "country": "LC",
+      "admin1": "03"
+    },
+    "3042030": {
+      "name": "Vaduz",
+      "ascii_name": "Vaduz",
+      "lat": 47.14151,
+      "lon": 9.52154,
+      "feature": "PPLC",
+      "country": "LI",
+      "admin1": "11"
+    },
+    "1238992": {
+      "name": "Sri Jayewardenepura Kotte",
+      "ascii_name": "Sri Jayewardenepura Kotte",
+      "lat": 6.88297,
+      "lon": 79.90708,
+      "feature": "PPL",
+      "country": "LK",
+      "admin1": "36"
+    },
+    "2274895": {
+      "name": "Monrovia",
+      "ascii_name": "Monrovia",
+      "lat": 6.30054,
+      "lon": -10.7969,
+      "feature": "PPLC",
+      "country": "LR",
+      "admin1": "14"
+    },
+    "932505": {
+      "name": "Maseru",
+      "ascii_name": "Maseru",
+      "lat": -29.31667,
+      "lon": 27.48333,
+      "feature": "PPLC",
+      "country": "LS",
+      "admin1": "14"
+    },
+    "593116": {
+      "name": "Vilnius",
+      "ascii_name": "Vilnius",
+      "lat": 54.68916,
+      "lon": 25.2798,
+      "feature": "PPLC",
+      "country": "LT",
+      "admin1": "65"
+    },
+    "2960316": {
+      "name": "Luxembourg",
+      "ascii_name": "Luxembourg",
+      "lat": 49.60982,
+      "lon": 6.13268,
+      "feature": "PPLC",
+      "country": "LU",
+      "admin1": "LU"
+    },
+    "456172": {
+      "name": "Riga",
+      "ascii_name": "Riga",
+      "lat": 56.946,
+      "lon": 24.10589,
+      "feature": "PPLC",
+      "country": "LV",
+      "admin1": "25"
+    },
+    "2210247": {
+      "name": "Tripoli",
+      "ascii_name": "Tripoli",
+      "lat": 32.88743,
+      "lon": 13.18733,
+      "feature": "PPLC",
+      "country": "LY",
+      "admin1": "77"
+    },
+    "2538475": {
+      "name": "Rabat",
+      "ascii_name": "Rabat",
+      "lat": 34.01325,
+      "lon": -6.83255,
+      "feature": "PPLC",
+      "country": "MA",
+      "admin1": "04"
+    },
+    "2993458": {
+      "name": "Monaco",
+      "ascii_name": "Monaco",
+      "lat": 43.73718,
+      "lon": 7.42145,
+      "feature": "PPLC",
+      "country": "MC",
+      "admin1": "00"
+    },
+    "618426": {
+      "name": "Chisinau",
+      "ascii_name": "Chisinau",
+      "lat": 47.00902,
+      "lon": 28.85938,
+      "feature": "PPLC",
+      "country": "MD",
+      "admin1": "57"
+    },
+    "3193044": {
+      "name": "Podgorica",
+      "ascii_name": "Podgorica",
+      "lat": 42.44124,
+      "lon": 19.26309,
+      "feature": "PPLC",
+      "country": "ME",
+      "admin1": "16"
+    },
+    "1070940": {
+      "name": "Antananarivo",
+      "ascii_name": "Antananarivo",
+      "lat": -18.91368,
+      "lon": 47.53613,
+      "feature": "PPLC",
+      "country": "MG",
+      "admin1": "11"
+    },
+    "2113779": {
+      "name": "Majuro",
+      "ascii_name": "Majuro",
+      "lat": 7.08971,
+      "lon": 171.38027,
+      "feature": "PPLC",
+      "country": "MH",
+      "admin1": "190"
+    },
+    "785842": {
+      "name": "Skopje",
+      "ascii_name": "Skopje",
+      "lat": 41.99646,
+      "lon": 21.43141,
+      "feature": "PPLC",
+      "country": "MK",
+      "admin1": "F6"
+    },
+    "2460596": {
+      "name": "Bamako",
+      "ascii_name": "Bamako",
+      "lat": 12.60915,
+      "lon": -7.97522,
+      "feature": "PPLC",
+      "country": "ML",
+      "admin1": "01"
+    },
+    "6611854": {
+      "name": "Nay Pyi Taw",
+      "ascii_name": "Nay Pyi Taw",
+      "lat": 19.745,
+      "lon": 96.12972,
+      "feature": "PPLC",
+      "country": "MM",
+      "admin1": "18"
+    },
+    "2028462": {
+      "name": "Ulan Bator",
+      "ascii_name": "Ulan Bator",
+      "lat": 47.90771,
+      "lon": 106.88324,
+      "feature": "PPLC",
+      "country": "MN",
+      "admin1": "20"
+    },
+    "2377450": {
+      "name": "Nouakchott",
+      "ascii_name": "Nouakchott",
+      "lat": 18.08581,
+      "lon": -15.9785,
+      "feature": "PPLC",
+      "country": "MR",
+      "admin1": ""
+    },
+    "2562305": {
+      "name": "Valletta",
+      "ascii_name": "Valletta",
+      "lat": 35.89968,
+      "lon": 14.5148,
+      "feature": "PPLC",
+      "country": "MT",
+      "admin1": "60"
+    },
+    "934154": {
+      "name": "Port Louis",
+      "ascii_name": "Port Louis",
+      "lat": -20.16194,
+      "lon": 57.49889,
+      "feature": "PPLC",
+      "country": "MU",
+      "admin1": "18"
+    },
+    "1282027": {
+      "name": "Male",
+      "ascii_name": "Male",
+      "lat": 4.17521,
+      "lon": 73.50916,
+      "feature": "PPLC",
+      "country": "MV",
+      "admin1": "38"
+    },
+    "927967": {
+      "name": "Lilongwe",
+      "ascii_name": "Lilongwe",
+      "lat": -13.96692,
+      "lon": 33.78725,
+      "feature": "PPLC",
+      "country": "MW",
+      "admin1": "C"
+    },
+    "3530597": {
+      "name": "Mexico City",
+      "ascii_name": "Mexico City",
+      "lat": 19.42847,
+      "lon": -99.12766,
+      "feature": "PPLC",
+      "country": "MX",
+      "admin1": "09"
+    },
+    "1735161": {
+      "name": "Kuala Lumpur",
+      "ascii_name": "Kuala Lumpur",
+      "lat": 3.1412,
+      "lon": 101.68653,
+      "feature": "PPLC",
+      "country": "MY",
+      "admin1": "14"
+    },
+    "1040652": {
+      "name": "Maputo",
+      "ascii_name": "Maputo",
+      "lat": -25.96553,
+      "lon": 32.58322,
+      "feature": "PPLC",
+      "country": "MZ",
+      "admin1": "11"
+    },
+    "3352136": {
+      "name": "Windhoek",
+      "ascii_name": "Windhoek",
+      "lat": -22.55941,
+      "lon": 17.08323,
+      "feature": "PPLC",
+      "country": "NA",
+      "admin1": "21"
+    },
+    "2440485": {
+      "name": "Niamey",
+      "ascii_name": "Niamey",
+      "lat": 13.51366,
+      "lon": 2.1098,
+      "feature": "PPLC",
+      "country": "NE",
+      "admin1": "08"
+    },
+    "2352778": {
+      "name": "Abuja",
+      "ascii_name": "Abuja",
+      "lat": 9.05785,
+      "lon": 7.49508,
+      "feature": "PPLC",
+      "country": "NG",
+      "admin1": "11"
+    },
+    "3617763": {
+      "name": "Managua",
+      "ascii_name": "Managua",
+      "lat": 12.13282,
+      "lon": -86.2504,
+      "feature": "PPLC",
+      "country": "NI",
+      "admin1": "10"
+    },
+    "2759794": {
+      "name": "Amsterdam",
+      "ascii_name": "Amsterdam",
+      "lat": 52.37403,
+      "lon": 4.88969,
+      "feature": "PPLC",
+      "country": "NL",
+      "admin1": "07"
+    },
+    "3143244": {
+      "name": "Oslo",
+      "ascii_name": "Oslo",
+      "lat": 59.91273,
+      "lon": 10.74609,
+      "feature": "PPLC",
+      "country": "NO",
+      "admin1": "12"
+    },
+    "1283240": {
+      "name": "Kathmandu",
+      "ascii_name": "Kathmandu",
+      "lat": 27.70169,
+      "lon": 85.3206,
+      "feature": "PPLC",
+      "country": "NP",
+      "admin1": "3"
+    },
+    "7626461": {
+      "name": "Yaren",
+      "ascii_name": "Yaren",
+      "lat": -0.55085,
+      "lon": 166.9252,
+      "feature": "PPLC",
+      "country": "NR",
+      "admin1": "14"
+    },
+    "2179537": {
+      "name": "Wellington",
+      "ascii_name": "Wellington",
+      "lat": -41.28664,
+      "lon": 174.77557,
+      "feature": "PPLC",
+      "country": "NZ",
+      "admin1": "G2"
+    },
+    "287286": {
+      "name": "Muscat",
+      "ascii_name": "Muscat",
+      "lat": 23.58413,
+      "lon": 58.40778,
+      "feature": "PPLC",
+      "country": "OM",
+      "admin1": "06"
+    },
+    "3703443": {
+      "name": "Panama City",
+      "ascii_name": "Panama City",
+      "lat": 8.9936,
+      "lon": -79.51973,
+      "feature": "PPLC",
+      "country": "PA",
+      "admin1": "08"
+    },
+    "3936456": {
+      "name": "Lima",
+      "ascii_name": "Lima",
+      "lat": -12.04318,
+      "lon": -77.02824,
+      "feature": "PPLC",
+      "country": "PE",
+      "admin1": "LMA"
+    },
+    "2088122": {
+      "name": "Port Moresby",
+      "ascii_name": "Port Moresby",
+      "lat": -9.47723,
+      "lon": 147.15089,
+      "feature": "PPLC",
+      "country": "PG",
+      "admin1": "20"
+    },
+    "1701668": {
+      "name": "Manila",
+      "ascii_name": "Manila",
+      "lat": 14.6042,
+      "lon": 120.9822,
+      "feature": "PPLC",
+      "country": "PH",
+      "admin1": "NCR"
+    },
+    "1176615": {
+      "name": "Islamabad",
+      "ascii_name": "Islamabad",
+      "lat": 33.72148,
+      "lon": 73.04329,
+      "feature": "PPLC",
+      "country": "PK",
+      "admin1": "08"
+    },
+    "756135": {
+      "name": "Warsaw",
+      "ascii_name": "Warsaw",
+      "lat": 52.22977,
+      "lon": 21.01178,
+      "feature": "PPLC",
+      "country": "PL",
+      "admin1": "78"
+    },
+    "7303419": {
+      "name": "East Jerusalem",
+      "ascii_name": "East Jerusalem",
+      "lat": 31.78336,
+      "lon": 35.23388,
+      "feature": "PPLX",
+      "country": "PS",
+      "admin1": "WE"
+    },
+    "2267057": {
+      "name": "Lisbon",
+      "ascii_name": "Lisbon",
+      "lat": 38.72509,
+      "lon": -9.1498,
+      "feature": "PPLC",
+      "country": "PT",
+      "admin1": "14"
+    },
+    "8063361": {
+      "name": "Ngerulmud",
+      "ascii_name": "Ngerulmud",
+      "lat": 7.50077,
+      "lon": 134.6238,
+      "feature": "PPLC",
+      "country": "PW",
+      "admin1": "07"
+    },
+    "3439389": {
+      "name": "Asunción",
+      "ascii_name": "Asuncion",
+      "lat": -25.28646,
+      "lon": -57.647,
+      "feature": "PPLC",
+      "country": "PY",
+      "admin1": "22"
+    },
+    "290030": {
+      "name": "Doha",
+      "ascii_name": "Doha",
+      "lat": 25.28545,
+      "lon": 51.53096,
+      "feature": "PPLC",
+      "country": "QA",
+      "admin1": "01"
+    },
+    "683506": {
+      "name": "Bucharest",
+      "ascii_name": "Bucharest",
+      "lat": 44.43225,
+      "lon": 26.10626,
+      "feature": "PPLC",
+      "country": "RO",
+      "admin1": "10"
+    },
+    "792680": {
+      "name": "Belgrade",
+      "ascii_name": "Belgrade",
+      "lat": 44.80401,
+      "lon": 20.46513,
+      "feature": "PPLC",
+      "country": "RS",
+      "admin1": "SE"
+    },
+    "524901": {
+      "name": "Moscow",
+      "ascii_name": "Moscow",
+      "lat": 55.75204,
+      "lon": 37.61781,
+      "feature": "PPLC",
+      "country": "RU",
+      "admin1": "48"
+    },
+    "202061": {
+      "name": "Kigali",
+      "ascii_name": "Kigali",
+      "lat": -1.94995,
+      "lon": 30.05885,
+      "feature": "PPLC",
+      "country": "RW",
+      "admin1": "12"
+    },
+    "108410": {
+      "name": "Riyadh",
+      "ascii_name": "Riyadh",
+      "lat": 24.68773,
+      "lon": 46.72185,
+      "feature": "PPLC",
+      "country": "SA",
+      "admin1": "10"
+    },
+    "2108502": {
+      "name": "Honiara",
+      "ascii_name": "Honiara",
+      "lat": -9.43333,
+      "lon": 159.95,
+      "feature": "PPLC",
+      "country": "SB",
+      "admin1": "14"
+    },
+    "241131": {
+      "name": "Victoria",
+      "ascii_name": "Victoria",
+      "lat": -4.62001,
+      "lon": 55.45501,
+      "feature": "PPLC",
+      "country": "SC",
+      "admin1": "26"
+    },
+    "379252": {
+      "name": "Khartoum",
+      "ascii_name": "Khartoum",
+      "lat": 15.55177,
+      "lon": 32.53241,
+      "feature": "PPLC",
+      "country": "SD",
+      "admin1": "29"
+    },
+    "2673730": {
+      "name": "Stockholm",
+      "ascii_name": "Stockholm",
+      "lat": 59.32938,
+      "lon": 18.06871,
+      "feature": "PPLC",
+      "country": "SE",
+      "admin1": "26"
+    },
+    "1880252": {
+      "name": "Singapore",
+      "ascii_name": "Singapore",
+      "lat": 1.28967,
+      "lon": 103.85007,
+      "feature": "PPLC",
+      "country": "SG",
+      "admin1": ""
+    },
+    "3196359": {
+      "name": "Ljubljana",
+      "ascii_name": "Ljubljana",
+      "lat": 46.05108,
+      "lon": 14.50513,
+      "feature": "PPLC",
+      "country": "SI",
+      "admin1": "61"
+    },
+    "3060972": {
+      "name": "Bratislava",
+      "ascii_name": "Bratislava",
+      "lat": 48.14816,
+      "lon": 17.10674,
+      "feature": "PPLC",
+      "country": "SK",
+      "admin1": "02"
+    },
+    "2409306": {
+      "name": "Freetown",
+      "ascii_name": "Freetown",
+      "lat": 8.48714,
+      "lon": -13.2356,
+      "feature": "PPLC",
+      "country": "SL",
+      "admin1": "04"
+    },
+    "3168070": {
+      "name": "San Marino",
+      "ascii_name": "San Marino",
+      "lat": 43.93667,
+      "lon": 12.44639,
+      "feature": "PPLC",
+      "country": "SM",
+      "admin1": "07"
+    },
+    "2253354": {
+      "name": "Dakar",
+      "ascii_name": "Dakar",
+      "lat": 14.6937,
+      "lon": -17.44406,
+      "feature": "PPLC",
+      "country": "SN",
+      "admin1": "01"
+    },
+    "53654": {
+      "name": "Mogadishu",
+      "ascii_name": "Mogadishu",
+      "lat": 2.03711,
+      "lon": 45.34375,
+      "feature": "PPLC",
+      "country": "SO",
+      "admin1": "02"
+    },
+    "3383330": {
+      "name": "Paramaribo",
+      "ascii_name": "Paramaribo",
+      "lat": 5.86638,
+      "lon": -55.16682,
+      "feature": "PPLC",
+      "country": "SR",
+      "admin1": "16"
+    },
+    "373303": {
+      "name": "Juba",
+      "ascii_name": "Juba",
+      "lat": 4.85165,
+      "lon": 31.58247,
+      "feature": "PPLC",
+      "country": "SS",
+      "admin1": "01"
+    },
+    "2410763": {
+      "name": "São Tomé",
+      "ascii_name": "Sao Tome",
+      "lat": 0.33756,
+      "lon": 6.7299,
+      "feature": "PPLC",
+      "country": "ST",
+      "admin1": "02"
+    },
+    "3583361": {
+      "name": "San Salvador",
+      "ascii_name": "San Salvador",
+      "lat": 13.68935,
+      "lon": -89.18718,
+      "feature": "PPLC",
+      "country": "SV",
+      "admin1": "10"
+    },
+    "170654": {
+      "name": "Damascus",
+      "ascii_name": "Damascus",
+      "lat": 33.5102,
+      "lon": 36.29128,
+      "feature": "PPLC",
+      "country": "SY",
+      "admin1": "13"
+    },
+    "934985": {
+      "name": "Mbabane",
+      "ascii_name": "Mbabane",
+      "lat": -26.31667,
+      "lon": 31.13333,
+      "feature": "PPLC",
+      "country": "SZ",
+      "admin1": "01"
+    },
+    "2427123": {
+      "name": "N'Djamena",
+      "ascii_name": "N'Djamena",
+      "lat": 12.10672,
+      "lon": 15.0444,
+      "feature": "PPLC",
+      "country": "TD",
+      "admin1": "21"
+    },
+    "2365267": {
+      "name": "Lomé",
+      "ascii_name": "Lome",
+      "lat": 6.12874,
+      "lon": 1.22154,
+      "feature": "PPLC",
+      "country": "TG",
+      "admin1": "24"
+    },
+    "1609350": {
+      "name": "Bangkok",
+      "ascii_name": "Bangkok",
+      "lat": 13.75398,
+      "lon": 100.50144,
+      "feature": "PPLC",
+      "country": "TH",
+      "admin1": "40"
+    },
+    "1221874": {
+      "name": "Dushanbe",
+      "ascii_name": "Dushanbe",
+      "lat": 38.53575,
+      "lon": 68.77905,
+      "feature": "PPLC",
+      "country": "TJ",
+      "admin1": "04"
+    },
+    "1645457": {
+      "name": "Dili",
+      "ascii_name": "Dili",
+      "lat": -8.55861,
+      "lon": 125.57361,
+      "feature": "PPLC",
+      "country": "TL",
+      "admin1": "DI"
+    },
+    "162183": {
+      "name": "Ashgabat",
+      "ascii_name": "Ashgabat",
+      "lat": 37.95,
+      "lon": 58.38333,
+      "feature": "PPLC",
+      "country": "TM",
+      "admin1": "S"
+    },
+    "2464470": {
+      "name": "Tunis",
+      "ascii_name": "Tunis",
+      "lat": 36.81897,
+      "lon": 10.16579,
+      "feature": "PPLC",
+      "country": "TN",
+      "admin1": "36"
+    },
+    "4032402": {
+      "name": "Nuku‘alofa",
+      "ascii_name": "Nuku'alofa",
+      "lat": -21.13683,
+      "lon": -175.20114,
+      "feature": "PPLC",
+      "country": "TO",
+      "admin1": "02"
+    },
+    "323786": {
+      "name": "Ankara",
+      "ascii_name": "Ankara",
+      "lat": 39.91987,
+      "lon": 32.85427,
+      "feature": "PPLC",
+      "country": "TR",
+      "admin1": "68"
+    },
+    "3573890": {
+      "name": "Port of Spain",
+      "ascii_name": "Port of Spain",
+      "lat": 10.66668,
+      "lon": -61.51889,
+      "feature": "PPLC",
+      "country": "TT",
+      "admin1": "05"
+    },
+    "2110394": {
+      "name": "Funafuti",
+      "ascii_name": "Funafuti",
+      "lat": -8.52425,
+      "lon": 179.19417,
+      "feature": "PPLC",
+      "country": "TV",
+      "admin1": "FUN"
+    },
+    "160196": {
+      "name": "Dodoma",
+      "ascii_name": "Dodoma",
+      "lat": -6.17221,
+      "lon": 35.73947,
+      "feature": "PPLC",
+      "country": "TZ",
+      "admin1": "03"
+    },
+    "703448": {
+      "name": "Kyiv",
+      "ascii_name": "Kyiv",
+      "lat": 50.45466,
+      "lon": 30.5238,
+      "feature": "PPLC",
+      "country": "UA",
+      "admin1": "12"
+    },
+    "232422": {
+      "name": "Kampala",
+      "ascii_name": "Kampala",
+      "lat": 0.31628,
+      "lon": 32.58219,
+      "feature": "PPLC",
+      "country": "UG",
+      "admin1": "C"
+    },
+    "4140963": {
+      "name": "Washington",
+      "ascii_name": "Washington",
+      "lat": 38.89511,
+      "lon": -77.03637,
+      "feature": "PPLC",
+      "country": "US",
+      "admin1": "DC"
+    },
+    "3441575": {
+      "name": "Montevideo",
+      "ascii_name": "Montevideo",
+      "lat": -34.90328,
+      "lon": -56.18816,
+      "feature": "PPLC",
+      "country": "UY",
+      "admin1": "10"
+    },
+    "1512569": {
+      "name": "Tashkent",
+      "ascii_name": "Tashkent",
+      "lat": 41.26465,
+      "lon": 69.21627,
+      "feature": "PPLC",
+      "country": "UZ",
+      "admin1": "13"
+    },
+    "6691831": {
+      "name": "Vatican City",
+      "ascii_name": "Vatican City",
+      "lat": 41.90268,
+      "lon": 12.45414,
+      "feature": "PPLC",
+      "country": "VA",
+      "admin1": ""
+    },
+    "3577887": {
+      "name": "Kingstown",
+      "ascii_name": "Kingstown",
+      "lat": 13.15527,
+      "lon": -61.22742,
+      "feature": "PPLC",
+      "country": "VC",
+      "admin1": "04"
+    },
+    "3646738": {
+      "name": "Caracas",
+      "ascii_name": "Caracas",
+      "lat": 10.48801,
+      "lon": -66.87919,
+      "feature": "PPLC",
+      "country": "VE",
+      "admin1": "25"
+    },
+    "1581130": {
+      "name": "Hanoi",
+      "ascii_name": "Hanoi",
+      "lat": 21.0245,
+      "lon": 105.84117,
+      "feature": "PPLC",
+      "country": "VN",
+      "admin1": "01"
+    },
+    "2135171": {
+      "name": "Port-Vila",
+      "ascii_name": "Port-Vila",
+      "lat": -17.73648,
+      "lon": 168.31366,
+      "feature": "PPLC",
+      "country": "VU",
+      "admin1": "18"
+    },
+    "4035413": {
+      "name": "Apia",
+      "ascii_name": "Apia",
+      "lat": -13.83333,
+      "lon": -171.76666,
+      "feature": "PPLC",
+      "country": "WS",
+      "admin1": "10"
+    },
+    "71137": {
+      "name": "Sanaa",
+      "ascii_name": "Sanaa",
+      "lat": 15.35452,
+      "lon": 44.20646,
+      "feature": "PPLC",
+      "country": "YE",
+      "admin1": "26"
+    },
+    "964137": {
+      "name": "Pretoria",
+      "ascii_name": "Pretoria",
+      "lat": -25.74486,
+      "lon": 28.18783,
+      "feature": "PPLC",
+      "country": "ZA",
+      "admin1": "06"
+    },
+    "909137": {
+      "name": "Lusaka",
+      "ascii_name": "Lusaka",
+      "lat": -15.40669,
+      "lon": 28.28713,
+      "feature": "PPLC",
+      "country": "ZM",
+      "admin1": "09"
+    },
+    "890299": {
+      "name": "Harare",
+      "ascii_name": "Harare",
+      "lat": -17.82772,
+      "lon": 31.05337,
+      "feature": "PPLC",
+      "country": "ZW",
+      "admin1": "10"
+    },
+    "4076784": {
+      "name": "Montgomery",
+      "ascii_name": "Montgomery",
+      "lat": 32.36681,
+      "lon": -86.29997,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "AL"
+    },
+    "5554072": {
+      "name": "Juneau",
+      "ascii_name": "Juneau",
+      "lat": 58.30194,
+      "lon": -134.41972,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "AK"
+    },
+    "5308655": {
+      "name": "Phoenix",
+      "ascii_name": "Phoenix",
+      "lat": 33.44838,
+      "lon": -112.07404,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "AZ"
+    },
+    "4119403": {
+      "name": "Little Rock",
+      "ascii_name": "Little Rock",
+      "lat": 34.74648,
+      "lon": -92.28959,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "AR"
+    },
+    "5389489": {
+      "name": "Sacramento",
+      "ascii_name": "Sacramento",
+      "lat": 38.58157,
+      "lon": -121.4944,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "CA"
+    },
+    "5419384": {
+      "name": "Denver",
+      "ascii_name": "Denver",
+      "lat": 39.73915,
+      "lon": -104.9847,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "CO"
+    },
+    "4835797": {
+      "name": "Hartford",
+      "ascii_name": "Hartford",
+      "lat": 41.76371,
+      "lon": -72.68509,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "CT"
+    },
+    "4142290": {
+      "name": "Dover",
+      "ascii_name": "Dover",
+      "lat": 39.15817,
+      "lon": -75.52437,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "DE"
+    },
+    "4174715": {
+      "name": "Tallahassee",
+      "ascii_name": "Tallahassee",
+      "lat": 30.43826,
+      "lon": -84.28073,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "FL"
+    },
+    "4180439": {
+      "name": "Atlanta",
+      "ascii_name": "Atlanta",
+      "lat": 33.749,
+      "lon": -84.38798,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "GA"
+    },
+    "5856195": {
+      "name": "Honolulu",
+      "ascii_name": "Honolulu",
+      "lat": 21.30694,
+      "lon": -157.85833,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "HI"
+    },
+    "5586437": {
+      "name": "Boise",
+      "ascii_name": "Boise",
+      "lat": 43.6135,
+      "lon": -116.20345,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "ID"
+    },
+    "4250542": {
+      "name": "Springfield",
+      "ascii_name": "Springfield",
+      "lat": 39.80172,
+      "lon": -89.64371,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "IL"
+    },
+    "4259418": {
+      "name": "Indianapolis",
+      "ascii_name": "Indianapolis",
+      "lat": 39.76838,
+      "lon": -86.15804,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "IN"
+    },
+    "4853828": {
+      "name": "Des Moines",
+      "ascii_name": "Des Moines",
+      "lat": 41.60054,
+      "lon": -93.60911,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "IA"
+    },
+    "4280539": {
+      "name": "Topeka",
+      "ascii_name": "Topeka",
+      "lat": 39.04833,
+      "lon": -95.67804,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "KS"
+    },
+    "4292188": {
+      "name": "Frankfort",
+      "ascii_name": "Frankfort",
+      "lat": 38.20091,
+      "lon": -84.87328,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "KY"
+    },
+    "4315588": {
+      "name": "Baton Rouge",
+      "ascii_name": "Baton Rouge",
+      "lat": 30.44332,
+      "lon": -91.18747,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "LA"
+    },
+    "4957003": {
+      "name": "Augusta",
+      "ascii_name": "Augusta",
+      "lat": 44.31062,
+      "lon": -69.77949,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "ME"
+    },
+    "4347242": {
+      "name": "Annapolis",
+      "ascii_name": "Annapolis",
+      "lat": 38.97859,
+      "lon": -76.49184,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "MD"
+    },
+    "4930956": {
+      "name": "Boston",
+      "ascii_name": "Boston",
+      "lat": 42.35843,
+      "lon": -71.05977,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "MA"
+    },
+    "4998830": {
+      "name": "Lansing",
+      "ascii_name": "Lansing",
+      "lat": 42.73253,
+      "lon": -84.55553,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "MI"
+    },
+    "5045360": {
+      "name": "Saint Paul",
+      "ascii_name": "Saint Paul",
+      "lat": 44.94441,
+      "lon": -93.09327,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "MN"
+    },
+    "4431410": {
+      "name": "Jackson",
+      "ascii_name": "Jackson",
+      "lat": 32.29876,
+      "lon": -90.18481,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "MS"
+    },
+    "4392388": {
+      "name": "Jefferson City",
+      "ascii_name": "Jefferson City",
+      "lat": 38.5767,
+      "lon": -92.17352,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "MO"
+    },
+    "5656882": {
+      "name": "Helena",
+      "ascii_name": "Helena",
+      "lat": 46.59271,
+      "lon": -112.03611,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "MT"
+    },
+    "5072006": {
+      "name": "Lincoln",
+      "ascii_name": "Lincoln",
+      "lat": 40.8,
+      "lon": -96.66696,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "NE"
+    },
+    "5501344": {
+      "name": "Carson City",
+      "ascii_name": "Carson City",
+      "lat": 39.1638,
+      "lon": -119.7674,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "NV"
+    },
+    "5084868": {
+      "name": "Concord",
+      "ascii_name": "Concord",
+      "lat": 43.20814,
+      "lon": -71.53757,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "NH"
+    },
+    "5105496": {
+      "name": "Trenton",
+      "ascii_name": "Trenton",
+      "lat": 40.21705,
+      "lon": -74.74294,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "NJ"
+    },
+    "5490263": {
+      "name": "Santa Fe",
+      "ascii_name": "Santa Fe",
+      "lat": 35.68698,
+      "lon": -105.9378,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "NM"
+    },
+    "5106834": {
+      "name": "Albany",
+      "ascii_name": "Albany",
+      "lat": 42.65258,
+      "lon": -73.75623,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "NY"
+    },
+    "4487042": {
+      "name": "Raleigh",
+      "ascii_name": "Raleigh",
+      "lat": 35.7721,
+      "lon": -78.63861,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "NC"
+    },
+    "5688025": {
+      "name": "Bismarck",
+      "ascii_name": "Bismarck",
+      "lat": 46.80833,
+      "lon": -100.78374,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "ND"
+    },
+    "4509177": {
+      "name": "Columbus",
+      "ascii_name": "Columbus",
+      "lat": 39.96118,
+      "lon": -82.99879,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "OH"
+    },
+    "4544349": {
+      "name": "Oklahoma City",
+      "ascii_name": "Oklahoma City",
+      "lat": 35.46756,
+      "lon": -97.51643,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "OK"
+    },
+    "5750162": {
+      "name": "Salem",
+      "ascii_name": "Salem",
+      "lat": 44.9429,
+      "lon": -123.0351,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "OR"
+    },
+    "5192726": {
+      "name": "Harrisburg",
+      "ascii_name": "Harrisburg",
+      "lat": 40.2737,
+      "lon": -76.88442,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "PA"
+    },
+    "5224151": {
+      "name": "Providence",
+      "ascii_name": "Providence",
+      "lat": 41.82399,
+      "lon": -71.41283,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "RI"
+    },
+    "4575352": {
+      "name": "Columbia",
+      "ascii_name": "Columbia",
+      "lat": 34.00071,
+      "lon": -81.03481,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "SC"
+    },
+    "5767918": {
+      "name": "Pierre",
+      "ascii_name": "Pierre",
+      "lat": 44.36832,
+      "lon": -100.35097,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "SD"
+    },
+    "4644585": {
+      "name": "Nashville",
+      "ascii_name": "Nashville",
+      "lat": 36.16589,
+      "lon": -86.78444,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "TN"
+    },
+    "4671654": {
+      "name": "Austin",
+      "ascii_name": "Austin",
+      "lat": 30.26715,
+      "lon": -97.74306,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "TX"
+    },
+    "5780993": {
+      "name": "Salt Lake City",
+      "ascii_name": "Salt Lake City",
+      "lat": 40.76078,
+      "lon": -111.89105,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "UT"
+    },
+    "5238685": {
+      "name": "Montpelier",
+      "ascii_name": "Montpelier",
+      "lat": 44.26006,
+      "lon": -72.57539,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "VT"
+    },
+    "4781708": {
+      "name": "Richmond",
+      "ascii_name": "Richmond",
+      "lat": 37.55376,
+      "lon": -77.46026,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "VA"
+    },
+    "5805687": {
+      "name": "Olympia",
+      "ascii_name": "Olympia",
+      "lat": 47.04491,
+      "lon": -122.90169,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "WA"
+    },
+    "4801859": {
+      "name": "Charleston",
+      "ascii_name": "Charleston",
+      "lat": 38.34982,
+      "lon": -81.63262,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "WV"
+    },
+    "5261457": {
+      "name": "Madison",
+      "ascii_name": "Madison",
+      "lat": 43.07305,
+      "lon": -89.40123,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "WI"
+    },
+    "5821086": {
+      "name": "Cheyenne",
+      "ascii_name": "Cheyenne",
+      "lat": 41.13998,
+      "lon": -104.82025,
+      "feature": "PPLA",
+      "country": "US",
+      "admin1": "WY"
+    },
+    "5881576": {
+      "name": "Pago Pago",
+      "ascii_name": "Pago Pago",
+      "lat": -14.27806,
+      "lon": -170.7025,
+      "feature": "PPLC",
+      "country": "AS",
+      "admin1": "010"
+    },
+    "4044012": {
+      "name": "Hagåtña",
+      "ascii_name": "Hagatna",
+      "lat": 13.47567,
+      "lon": 144.74886,
+      "feature": "PPLC",
+      "country": "GU",
+      "admin1": "AN"
+    },
+    "7828758": {
+      "name": "Saipan",
+      "ascii_name": "Saipan",
+      "lat": 15.21233,
+      "lon": 145.7545,
+      "feature": "PPLC",
+      "country": "MP",
+      "admin1": "110"
+    },
+    "4568127": {
+      "name": "San Juan",
+      "ascii_name": "San Juan",
+      "lat": 18.46633,
+      "lon": -66.10572,
+      "feature": "PPLC",
+      "country": "PR",
+      "admin1": "127"
+    },
+    "4795467": {
+      "name": "Charlotte Amalie",
+      "ascii_name": "Charlotte Amalie",
+      "lat": 18.3419,
+      "lon": -64.9307,
+      "feature": "PPLC",
+      "country": "VI",
+      "admin1": "030"
+    }
+  },
+  "sources": [
+    {
+      "url": "https://download.geonames.org/export/dump/countryInfo.txt",
+      "retrieved": "2026-10-29",
+      "sha256": "5c710efde90ee4cca15001c9f6a97ae7a74c7020b365504913ddc3afeb6d3671",
+      "license": "CC BY 4.0"
+    },
+    {
+      "url": "https://download.geonames.org/export/dump/cities5000.zip",
+      "retrieved": "2026-10-29",
+      "sha256": "68417d6b09cda480278c916a0b54cf636c44bb5845f322697654314c70e69764",
+      "license": "CC BY 4.0"
+    },
+    {
+      "url": "https://unstats.un.org/unsd/methodology/m49/overview/",
+      "retrieved": "2026-10-29",
+      "sha256": "b9048114f6e7f2abda83bf03d4263c9d7cd1bd7230e3d0461025ee7839a7a1fb",
+      "license": "UN statistical identifiers/groupings; factual extraction"
+    },
+    {
+      "url": "https://www.un.org/en/about-us/member-states",
+      "retrieved": "2026-10-29",
+      "sha256": "2bd736079adc1ac34052ce49dde36101808c2804fa99d12c713c20c30c481975",
+      "license": "UN member names; factual extraction"
+    }
+  ]
+}
