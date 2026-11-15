@@ -111,7 +111,7 @@ p + p { margin-top: 1rem; }
 .site-footer { display: flex; align-items: center; justify-content: space-between; gap: 1rem 2rem; padding-block: 2.7rem; font-size: .76rem; color: var(--muted); }
 .site-footer a, .breadcrumbs a { display: inline-flex; align-items: center; min-height: 44px; }
 .footer-divider { margin-inline: .5rem; color: #8ca3b1; }
-.breadcrumbs { display: flex; gap: .7rem; flex-wrap: wrap; font-size: .8rem; margin-top: 2rem; color: var(--muted); }
+.breadcrumbs { display: flex; align-items: center; gap: .7rem; flex-wrap: wrap; font-size: .8rem; margin-top: 2rem; color: var(--muted); }
 .case-hero { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; padding-block: 2.5rem 3.5rem; }
 .case-hero h1 { max-width: 13ch; }
 .case-hero .lead { max-width: 45ch; }

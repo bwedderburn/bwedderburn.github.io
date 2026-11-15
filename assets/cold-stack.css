@@ -1,0 +1,66 @@
+.cold-hero h1 { max-width: 16ch; }
+.cold-hero .lead { max-width: 48ch; }
+.cold-hero .case-figure { padding: 0; overflow: hidden; }
+.cold-hero figcaption { padding: 0 1rem 1rem; }
+.research-status { display: inline-block; margin-top: 1.3rem; color: var(--muted); font-size: .82rem; border-left: 3px solid var(--copper); padding-left: .8rem; }
+.research-intro { padding-block: 3.5rem 1rem; }
+.research-intro h2 { max-width: 24ch; }
+.research-intro > p { max-width: 70ch; margin-top: 1rem; }
+.stack-explorer { display: grid; grid-template-columns: 1.4fr 1fr; gap: 2.5rem; padding: 2rem; margin-block: 2rem 0; border: 1px solid var(--line); border-radius: 8px; background: var(--fog); }
+.stack-drawing { align-self: center; min-width: 0; }
+.stack-drawing svg { display: block; width: 100%; height: auto; }
+.stack-notes { align-self: center; }
+.stack-notes h3 { margin-bottom: 1rem; }
+.stack-notes p { font-size: .91rem; }
+.stack-controls { margin-top: 1.5rem; }
+.stack-controls label { display: flex; justify-content: space-between; gap: 1rem; font-weight: 600; font-size: .9rem; color: var(--ink); }
+.stack-controls input { width: 100%; min-height: 44px; accent-color: var(--teal); cursor: pointer; }
+.stack-controls input:focus-visible, .calc-field input:focus-visible { outline: 3px solid var(--teal); outline-offset: 4px; }
+.stack-control-ends { display: flex; justify-content: space-between; color: var(--muted); font-size: .76rem; }
+.layer-key { margin: 1.5rem 0 0; padding-left: 1.2rem; font-size: .85rem; }
+.layer-key li + li { margin-top: .4rem; }
+.layer-key strong { color: var(--ink); }
+.research-note { margin-top: 1.5rem; padding: 1.1rem 1.3rem; border-left: 3px solid var(--copper); background: var(--fog); font-size: .87rem; }
+.source-links { margin-top: 1rem; display: flex; flex-wrap: wrap; gap: .4rem 1.4rem; }
+.source-links a { display: inline-flex; align-items: center; min-height: 44px; font-size: .85rem; }
+.heat-equation { margin-block: 1.4rem; padding-block: 1.2rem; border-block: 1px solid var(--line); font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 600; color: var(--ink); }
+.heat-equation sub { font-size: .65em; }
+.calc-section { padding-block: 3.5rem; border-bottom: 1px solid var(--line); }
+.calc-heading { display: grid; grid-template-columns: 1fr 1.3fr; gap: 5rem; }
+.calc-heading h2 { max-width: 19ch; }
+.calc-heading p { max-width: 65ch; }
+.clamp-calc { margin-top: 2rem; display: grid; grid-template-columns: 1.3fr 1fr; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.calc-inputs { padding: 2rem; }
+.calc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+.calc-field { display: flex; flex-direction: column; gap: .4rem; min-width: 0; }
+.calc-field label { font-size: .85rem; font-weight: 600; color: var(--ink); }
+.calc-field input { width: 100%; min-height: 46px; border: 1px solid #8ba4b3; border-radius: 4px; background: var(--paper); color: var(--ink); font: inherit; padding: .45rem .7rem; }
+.calc-field input[aria-invalid="true"] { border-color: var(--copper-deep); }
+.calc-inputs button { margin-top: 1.5rem; font-family: inherit; cursor: pointer; }
+.calc-results { padding: 2rem; background: var(--ink); color: #d7e5ed; display: flex; flex-direction: column; justify-content: center; }
+.calc-results h3 { color: #fff; font-size: 1.1rem; }
+.calc-results .torque-value { font-family: "Bahnschrift", "Aptos Display", "Segoe UI", sans-serif; font-size: 2.5rem; color: #fff; line-height: 1.2; margin-top: 1rem; }
+.calc-results .torque-value span { font: 400 1rem "Segoe UI", sans-serif; }
+.calc-secondary { color: var(--copper-bright); margin-top: .25rem; }
+.calc-results dl { font-size: .84rem; margin-block: 1.6rem 0; }
+.calc-results dl > div { display: flex; justify-content: space-between; gap: 1rem; padding-block: .6rem; border-top: 1px solid #426071; }
+.calc-results dt { color: #d7e5ed; }
+.calc-results dd { margin: 0; color: #fff; text-align: right; }
+.calc-error { color: #f3b77c; margin-top: 1rem; font-size: .9rem; }
+.calc-equation { margin-top: 1.5rem; font-size: 1rem; color: var(--ink); }
+.calc-limits { margin-top: .75rem; max-width: 85ch; color: var(--muted); font-size: .85rem; }
+.evidence-list { padding-left: 1.2rem; margin: 1rem 0 0; }
+.evidence-list li + li { margin-top: .65rem; }
+.research-sources { padding-block: 3.5rem; }
+.research-sources h2 { max-width: 24ch; }
+.research-sources > p { max-width: 75ch; margin-top: 1rem; }
+.research-sources ol { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 3rem; margin: 2rem 0 0; padding-left: 1.3rem; }
+.research-sources li { padding-left: .3rem; font-size: .9rem; }
+.research-sources li a { display: inline-flex; align-items: center; min-height: 44px; color: var(--ink); font-weight: 600; }
+.research-sources li p { font-size: .83rem; color: var(--muted); margin-top: .2rem; }
+.research-footer-note { font-size: .82rem; color: var(--muted); padding-top: 1.5rem; border-top: 1px solid var(--line); margin-top: 2rem; }
+[hidden] { display: none !important; }
+@media (max-width: 1000px) { .calc-heading { gap: 2.5rem; } .stack-explorer { gap: 1.5rem; padding: 1.5rem; } }
+@media (max-width: 760px) { .stack-explorer, .clamp-calc, .calc-heading { grid-template-columns: 1fr; } .calc-heading { gap: 1.5rem; } .stack-explorer { padding: 1rem; gap: 0; } .stack-notes { padding: 1rem .5rem; } .research-sources ol { grid-template-columns: 1fr; gap: 1rem; } .calc-section, .research-sources, .research-intro { padding-block: 3rem; } .research-intro { padding-bottom: 0; } }
+@media (max-width: 460px) { .calc-inputs, .calc-results { padding: 1.3rem; } .calc-grid { gap: 1rem; } .calc-field label { font-size: .8rem; } .calc-results .torque-value { font-size: 2.2rem; } .cold-hero h1 { font-size: 2.6rem; } }
+@media print { .stack-controls, .calc-inputs button { display: none; } .stack-explorer, .clamp-calc { break-inside: avoid; } .calc-results { color: var(--ink); background: var(--fog); } .calc-results h3, .calc-results .torque-value, .calc-results dd, .calc-results dt { color: var(--ink); } .calc-secondary { color: var(--copper-deep); } }

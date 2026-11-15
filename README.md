@@ -3,7 +3,7 @@
 Live site: https://bwedderburn.github.io/
 
 An informational portfolio covering controls, embedded software and instrument
-automation, featuring BM83, Amp Bench Kit and World Capitals.
+automation, featuring BM83, Amp Bench Kit, World Capitals and The Cold Stack.
 
 The two interactive demos retain the actual GitHub Universe badge model,
 including its existing artwork, five physical buttons and eight touch pads.
@@ -41,6 +41,16 @@ Localhost progress does not migrate to the live site. Resetting browser
 progress does not affect the physical badge or the BM83 demo.
 
 ## Sources and licensing
+
+The Cold Stack (`projects/cold-stack/`) is a research case study on Peltier
+assembly sealing, clamping and thermal cycling. Its new diagrams, summaries
+and illustrative calculator use the portfolio design and link to manufacturer
+guidance and a published study. The calculator checks arithmetic under assumed
+inputs; it does not select a safe preload or validate an assembly. No physical
+TEC assembly, humidity test, endurance result or product qualification is claimed.
+The original Claude artifact export remains local and is not redistributed.
+Linked source documents retain their owners' rights; public availability is
+not a blanket permission to copy them. See the page's source and scope notes.
 
 See [sources and credits](credits/index.html), [third-party notices](THIRD_PARTY_NOTICES.txt),
 the [portfolio software license](LICENSE.txt), and retained full dependency notices.

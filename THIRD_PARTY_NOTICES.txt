@@ -3,6 +3,15 @@ Portfolio sources and notices
 Original portfolio code, diagrams and BM83 demo adaptations:
 Copyright (c) 2026 Brian Wedderburn. See LICENSE.txt.
 
+The Cold Stack research case study:
+New portfolio explanations, conceptual diagrams and illustrative calculations
+were prepared with AI assistance and checked against the linked sources.
+Manufacturer guides and research papers are linked, not redistributed here.
+Their text, figures, product names and marks remain subject to their respective
+owners' rights and are not relicensed under this portfolio's MIT grant.
+The original Claude artifact export is not included in this repository.
+No vendor sponsorship, physical assembly validation or qualified design is claimed.
+
 GitHub Universe 2026 badge model and existing printed artwork:
 Public asset host: https://badger.github.io/simulator/models/github-mona-badge.glb
 Original showcase: https://leereilly.net/h4x0r3d-badge/#hardware
