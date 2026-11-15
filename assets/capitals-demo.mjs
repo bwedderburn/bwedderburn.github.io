@@ -1,6 +1,10 @@
 import { createBadgeModel } from './capitals-model.mjs';
 import { createCapitalsRuntime } from './capitals-runtime/runtime.mjs';
 
+if (new URLSearchParams(location.search).get('embed') === '1') {
+  document.body.classList.add('demo-is-embedded');
+}
+
 const byId = id => document.getElementById(id);
 const canvas = byId('capitals-screen');
 const controls = [...document.querySelectorAll('[data-control]')];

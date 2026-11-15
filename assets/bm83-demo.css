@@ -80,6 +80,7 @@
 .demo-active .demo-illustration, .demo-active .demo-intro { display: none; }
 .demo-embed-top { display: flex; gap: 1rem; justify-content: space-between; align-items: center; padding: .5rem .5rem 1rem; }
 .demo-embed-top h2 { margin: 0; font-size: 1.4rem; }
+.demo-embed-top h2:focus { outline: 3px solid #147f84; outline-offset: 5px; border-radius: 2px; }
 .demo-embed-top .text-link { margin: 0; }
 .demo-embed-top[hidden] { display: none; }
 .demo-is-embedded .demo-page-header, .demo-is-embedded .demo-back-link, .demo-is-embedded .demo-title-row, .demo-is-embedded > .skip-link { display: none; }
