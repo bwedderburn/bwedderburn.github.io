@@ -8,7 +8,8 @@ if (explorer) {
     const value = Number(range.value);
     drawings.forEach(drawing => {
       const minimumGap = Number(drawing.dataset.stackMinGap || 24);
-      drawing.querySelectorAll('[data-stack-layer]').forEach((layer, index) => {
+      drawing.querySelectorAll('[data-stack-level]').forEach(layer => {
+        const index = Number(layer.dataset.stackLevel);
         const y = 85 + index * (minimumGap + value * (82 - minimumGap) / 100);
         layer.setAttribute('transform', `translate(0 ${y})`);
       });
