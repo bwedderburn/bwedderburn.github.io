@@ -13,8 +13,8 @@
       <path d="m150 350 235-35 97 40-235 35Z" fill="#f3b77c"/>
       <path d="m135 409 260-39 108 45-260 39Z" fill="#b8cdd8"/><path d="m135 409 108 45 260-39v23l-260 39-108-45Z" fill="#143348"/>
     </g>
-    <g fill="none" stroke="#506676" stroke-width="1.2"><path d="m480 125 45-7h31M479 212l46-7h31M461 293l64-8h31M482 356l43-6h31M503 427l22-7h31"/></g>
-    <g font-size="16"><text x="567" y="123">Cold plate</text><text x="567" y="210">Thin interface</text><text x="567" y="290">Peltier module</text><text x="567" y="355">Thin interface</text><text x="567" y="425">Hot-side path</text></g>
+    <g fill="none" stroke="#506676" stroke-width="1.2"><path d="m480 125 45-7h10M479 212l46-7h10M461 293l64-8h10M482 356l43-6h10M503 427l22-7h10"/></g>
+    <g font-size="30"><text x="550" y="123">Cold plate</text><text x="550" y="210">Thin interface</text><text x="550" y="290">Peltier module</text><text x="550" y="355">Thin interface</text><text x="550" y="425">Hot-side path</text></g>
     <path d="M78 127V212" fill="none" stroke="#147f84" stroke-width="2" marker-end="url(#arrow)"/>
     <text x="35" y="244" font-size="15">Cold-side</text><text x="35" y="264" font-size="15">load Qc</text>
     <path d="M65 330h72" fill="none" stroke="#147f84" stroke-width="2" marker-end="url(#arrow)"/>

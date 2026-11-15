@@ -2,13 +2,16 @@ const explorer = typeof document === 'undefined' ? null : document.querySelector
 if (explorer) {
   const range = explorer.querySelector('#stack-separation');
   const separation = explorer.querySelector('#separation-value');
-  const layers = explorer.querySelectorAll('[data-stack-layer]');
+  const drawings = explorer.querySelectorAll('[data-stack-drawing]');
   const controls = explorer.querySelector('.stack-controls');
   const updateStack = () => {
     const value = Number(range.value);
-    layers.forEach((layer, index) => {
-      const y = 85 + index * (24 + value * 0.58);
-      layer.setAttribute('transform', `translate(0 ${y})`);
+    drawings.forEach(drawing => {
+      const minimumGap = Number(drawing.dataset.stackMinGap || 24);
+      drawing.querySelectorAll('[data-stack-layer]').forEach((layer, index) => {
+        const y = 85 + index * (minimumGap + value * (82 - minimumGap) / 100);
+        layer.setAttribute('transform', `translate(0 ${y})`);
+      });
     });
     separation.value = `${value}%`;
     range.setAttribute('aria-valuetext', `${value}% separation; schematic only`);
