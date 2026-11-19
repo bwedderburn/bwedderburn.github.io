@@ -27,11 +27,14 @@ function addControlSymbols(host) {
 
 // Physical presses become logical actions here, including inversion. Consumers
 // should deliver these logical actions without swapping them again.
-export async function createBadgeModel({container,screenCanvas,onAction=()=>{},onPoseChange=()=>{},onOrientationChange=()=>{},onZoomChange=()=>{}}, profile) {
+export async function createBadgeModel({container,screenCanvas,onAction=()=>{},onPoseChange=()=>{},onOrientationChange=()=>{},onZoomChange=()=>{},onError=()=>{},signal}, profile) {
   if (!(container instanceof HTMLElement) || !(screenCanvas instanceof HTMLCanvasElement)) throw new TypeError('A model container and screen canvas are required.');
   const PHYSICAL = profile.physical;
   const ACTIONS = new Map(profile.actions);
+  signal?.throwIfAborted();
   const abort = new AbortController();
+  const abortLoad = () => abort.abort(signal.reason);
+  signal?.addEventListener('abort', abortLoad, {once:true});
   const symbols = addControlSymbols(container);
   const screenControl = document.createElement('button');
   screenControl.setAttribute('aria-pressed','false');
@@ -96,15 +99,19 @@ export async function createBadgeModel({container,screenCanvas,onAction=()=>{},o
   const originalTouchAction=container.style.touchAction;
   container.style.touchAction='none';
   try {
-    view=initBadgeModel(container,screenCanvas,physicalInput,abort.signal,()=>{}, {
+    view=initBadgeModel(container,screenCanvas,physicalInput,abort.signal,onError, {
       screen:screenControl,full:fullControl,status,displayFit:'contain',idleRotation:false,capture:false,
       modelURL:document.documentElement.dataset.badgeModelSrc,
       canvasLabel:profile.canvasLabel ?? 'Actual GitHub Universe 2026 badge model. Drag to orbit, scroll to zoom, and press its physical buttons or touch pads.',
       onOrbitStart:()=>onPoseChange({...pose}),onZoomChange,
     });
-    await view.ready; setPose(DEFAULT_POSE);
+    await view.ready;
+    abort.signal.throwIfAborted();
+    setPose(DEFAULT_POSE);
   } catch(error) {
     abort.abort(); view?.dispose(); symbols.remove(); container.style.touchAction=originalTouchAction; throw error;
+  } finally {
+    signal?.removeEventListener('abort', abortLoad);
   }
   const observer=new IntersectionObserver(([entry])=>{ visible=entry.isIntersecting; if(!visible)releaseAll(); else view.updateFrame(); });
   observer.observe(container);

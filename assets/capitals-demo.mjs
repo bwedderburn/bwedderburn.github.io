@@ -1,4 +1,3 @@
-import { createBadgeModel } from './capitals-model.mjs';
 import { createCapitalsRuntime } from './capitals-runtime/runtime.mjs';
 
 if (new URLSearchParams(location.search).get('embed') === '1') {
@@ -17,7 +16,9 @@ let runtime;
 let model;
 let running = false;
 let modelFailed = false;
+let displayReady = false;
 let flat = false;
+const modelLoad = new AbortController();
 let motion = false;
 let inverted = false;
 let motionFrame;
@@ -42,7 +43,10 @@ function reportStatus(value) {
   byId('runtime-error-text').textContent=status.state==='error'?(status.message||'No additional details are available.'):'';
   running = status.state === 'running';
   enableControls(running);
-  if(status.state==='error')byId('reopen-app').disabled=!runtime;
+  if(status.state==='error') {
+    byId('reopen-app').disabled=!runtime;
+    if(!displayReady)byId('model-loading').textContent='World Capitals could not start.';
+  }
 }
 function renderSnapshot(value) {
   if (!value) return;
@@ -163,14 +167,37 @@ window.addEventListener('blur',releaseAll);
 
 function setFlat(next) {
   flat=Boolean(next)||modelFailed;
-  byId('model-stage').classList.toggle('screen-only',flat);
-  canvas.hidden=!flat;
-  byId('model-host').hidden=flat;
-  byId('flat-toggle').setAttribute('aria-pressed',String(flat));
-  byId('flat-toggle').textContent=flat&&!modelFailed?'3D view':'Screen view';
-  byId('view-status').textContent=modelFailed?'Screen view · 3D unavailable':flat?'Screen view':'3D view';
-  if(!flat)requestAnimationFrame(()=>model?.resize());
+  const showScreen=flat||!model||!displayReady;
+  byId('model-stage').classList.toggle('screen-only',showScreen);
+  canvas.hidden=!showScreen||!displayReady;
+  // Keep the loading host measurable for the renderer without showing it.
+  byId('model-host').hidden=modelFailed||(flat&&Boolean(model));
+  const toggle=byId('flat-toggle');
+  toggle.disabled=modelFailed;
+  toggle.setAttribute('aria-pressed',String(flat));
+  toggle.textContent=flat&&!modelFailed?'3D view':'Screen view';
+  byId('view-status').textContent=modelFailed?'Screen view · 3D unavailable':!model?'Screen view · loading 3D…':showScreen?'Screen view':'3D view';
+  byId('view-hint').textContent=showScreen?'Use the on-page controls to navigate.':'Press the badge buttons or touch pads. Drag to rotate; scroll to zoom.';
+  if(!showScreen)requestAnimationFrame(()=>model?.resize());
   reportHeight();
+}
+function showModelFailure() {
+  if(disposed||modelFailed)return;
+  modelFailed=true;
+  modelLoad.abort();
+  releaseAll();
+  stopMotion();
+  const failedModel=model;
+  model=undefined;
+  failedModel?.dispose();
+  for(const id of viewControls)byId(id).disabled=true;
+  setFlat(true);
+}
+function showDisplayFrame() {
+  if(displayReady)return;
+  displayReady=true;
+  byId('model-loading').hidden=true;
+  setFlat(flat);
 }
 function setPose(next) {
   for(const axis of ['pitch','roll','yaw']) if(Number.isFinite(next[axis]))pose[axis]=next[axis];
@@ -212,33 +239,42 @@ function updateVisibility(){if(!runtime)return;if(document.hidden||!inView){rele
 document.addEventListener('visibilitychange',updateVisibility);
 const heightObserver=new ResizeObserver(reportHeight);heightObserver.observe(byId('main'));
 
+async function loadModel() {
+  const deadline=setTimeout(showModelFailure,15000);
+  try {
+    const {createBadgeModel}=await import('./capitals-model.mjs');
+    if(disposed||modelFailed)return;
+    const next=await createBadgeModel({container:byId('model-host'),screenCanvas:canvas,
+      signal:modelLoad.signal,onError:showModelFailure,
+      onAction:(action,phase)=>phase==='press'?press(action,`model:${action}`):release(`model:${action}`),
+      onPoseChange:next=>{stopMotion();setPose(next);},
+      onOrientationChange:value=>{releaseAll();inverted=value;},
+      onZoomChange:value=>{byId('zoom').value=String(Math.round(value*100));byId('zoom-value').textContent=`${Math.round(value*100)}%`;}
+    });
+    if(disposed||modelFailed){next.dispose();return;}
+    model=next;
+    enableControls(running);
+    setFlat(flat);
+  } catch {
+    showModelFailure();
+  } finally {
+    clearTimeout(deadline);
+  }
+}
 async function boot() {
   for(const id of viewControls)byId(id).disabled=true;
-  const runtimeTask=(async()=>{
-    runtime=await createCapitalsRuntime({canvas,onStatus:reportStatus,onSnapshot:renderSnapshot});
+  setFlat(flat);
+  try {
+    runtime=createCapitalsRuntime({canvas,onStatus:reportStatus,onSnapshot:renderSnapshot,onFrame:showDisplayFrame});
+    void loadModel();
     await runtime.ready;
     renderSnapshot(runtime.getSnapshot());
     updateVisibility();
-  })();
-  const modelTask=(async()=>{
-    try {
-      model=await createBadgeModel({container:byId('model-host'),screenCanvas:canvas,
-        onAction:(action,phase)=>phase==='press'?press(action,`model:${action}`):release(`model:${action}`),
-        onPoseChange:next=>{stopMotion();setPose(next);},
-        onOrientationChange:value=>{releaseAll();inverted=value;},
-        onZoomChange:value=>{byId('zoom').value=String(Math.round(value*100));byId('zoom-value').textContent=`${Math.round(value*100)}%`;}
-      });
-      for(const id of viewControls)byId(id).disabled=false;
-      if(matchMedia('(prefers-reduced-motion: reduce)').matches)byId('motion-toggle').disabled=true;
-      setFlat(flat);
-    } catch(error) { modelFailed=true;byId('flat-toggle').disabled=true;setFlat(true); }
-    finally {byId('model-loading').hidden=true;}
-  })();
-  try {await runtimeTask;}
-  catch(error) {reportStatus({state:'error',message:`The app could not start. Reload this page to try again. ${error.message||''}`});}
-  await modelTask;
+  } catch(error) {
+    reportStatus({state:'error',message:error.message});
+  }
 }
-window.__capitalsDemo=Object.freeze({getSnapshot:()=>runtime?.getSnapshot()??snapshot??null,getModelState:()=>model?.getDebugState()??null,getRuntimeStatus:()=>runtime?.getStatus()??null,getStatus:()=>({running,modelReady:Boolean(model),modelFailed,flat,motion,inverted}),getCoverage:()=>snapshot?.counts??null});
-window.addEventListener('pagehide',event=>{releaseAll();stopMotion();if(event.persisted){runtime?.pause();return;}disposed=true;observer.disconnect();heightObserver.disconnect();runtime?.dispose();model?.dispose();});
+window.__capitalsDemo=Object.freeze({getSnapshot:()=>runtime?.getSnapshot()??snapshot??null,getModelState:()=>model?.getDebugState()??null,getRuntimeStatus:()=>runtime?.getStatus()??null,getStatus:()=>({running,modelReady:Boolean(model),modelFailed,flat:flat||!model||!displayReady,motion,inverted}),getCoverage:()=>snapshot?.counts??null});
+window.addEventListener('pagehide',event=>{releaseAll();stopMotion();if(event.persisted){runtime?.pause();return;}disposed=true;modelLoad.abort();observer.disconnect();heightObserver.disconnect();runtime?.dispose();model?.dispose();});
 window.addEventListener('pageshow',event=>{if(event.persisted)updateVisibility();});
 boot();
