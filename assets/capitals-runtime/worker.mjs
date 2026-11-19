@@ -23,7 +23,8 @@ function lazyFile(name,url,size){
   }
 }
 const boot=(async()=>{
-  const {loadMicroPython}=await import('./asyncify/micropython.mjs');
+  const useJSPI=new URL(import.meta.url).searchParams.get('backend')==='jspi';
+  const {loadMicroPython}=useJSPI?await import('./jspi/micropython.mjs'):await import('./asyncify/micropython.mjs');
   mp=await loadMicroPython({heapsize:7*1024*1024,linebuffer:true,stdout:line=>self.postMessage({stdout:String(line)}),stderr:line=>self.postMessage({stdout:String(line)})});
   self.blitrgba=(pointer,width,height)=>{const pixels=globalThis.Module.HEAPU8.slice(pointer,pointer+width*height*4);self.postMessage({frame:{width,height,buffer:pixels.buffer}},[pixels.buffer]);};
   const response=await fetch(new URL('./filesystem.json',import.meta.url));if(!response.ok)throw new Error('Bundled firmware manifest unavailable');

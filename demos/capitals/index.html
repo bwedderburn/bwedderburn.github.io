@@ -10,8 +10,8 @@
   <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../../assets/styles.css">
   <link rel="stylesheet" href="../../assets/bm83-demo.css">
-  <link rel="stylesheet" href="../../assets/capitals-demo.css?v=7b348fc">
-  <script type="module" src="../../assets/capitals-demo.mjs?v=7b348fc"></script>
+  <link rel="stylesheet" href="../../assets/capitals-demo.css?v=startup-retry">
+  <script type="module" src="../../assets/capitals-demo.mjs?v=startup-retry"></script>
   <meta property="og:type" content="website">
   <meta property="og:title" content="World Capitals — interactive badge atlas | Brian Wedderburn">
   <meta property="og:description" content="Explore the atlas and play a quiz in Brian Wedderburn&#x27;s functional 3D Universe badge demo. The existing Python app runs in MicroPython WebAssembly.">
@@ -33,6 +33,7 @@
   <main id="main" class="demo-shell wrap" tabindex="-1">
     <div class="demo-title-row"><div><p class="section-context">A world to explore</p><h1>World Capitals</h1><p>A working atlas and quiz on the Universe badge.</p></div><a class="text-link demo-back-link" href="../../projects/world-capitals/">About this project</a></div>
     <p id="runtime-status" class="capitals-runtime-status" role="status">Loading the badge app…</p>
+    <div id="runtime-recovery" class="capitals-recovery" hidden><button type="button" class="button secondary" id="retry-runtime">Try again</button><p>On iPhone, if this link opened in Messenger or another app, use its menu to open the page in Safari.</p></div>
     <details id="runtime-error" class="capitals-error" hidden><summary>Startup details</summary><pre id="runtime-error-text"></pre></details>
     <noscript><p>JavaScript is required for the interactive atlas. You can still read the <a href="../../projects/world-capitals/">project description</a>.</p></noscript>
     <div class="capitals-app" id="capitals-app">

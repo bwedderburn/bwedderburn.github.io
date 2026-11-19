@@ -24,9 +24,12 @@ erase any physical badge state. The app's own Reset quiz passes command retains
 its best-score and completed-round fields, as in the canonical app.
 
 Runtime sources come from the existing reviewed standalone simulator's
-`public/simulator/asyncify` and allowlisted firmware support files. The original
-runtime `LICENSE`, `THIRD_PARTY.md` and full compiled-dependency notices are
-retained. No 3D model is copied in this package. Catalog/map sources and terms
+`public/simulator/asyncify` and `public/simulator/jspi` builds and allowlisted
+firmware support files. If Asyncify exhausts the browser's call stack at startup,
+the demo tries the upstream JSPI build once when the browser supports it. Both
+builds run the same verified Python and atlas files. The original runtime
+`LICENSE`, `THIRD_PARTY.md` and full compiled-dependency notices are retained.
+No 3D model is copied in this package. Catalog/map sources and terms
 are retained in `app/DATA-SOURCES.md` and `app/MAP-ATTRIBUTION.md`.
 
 These are browser/runtime checks, not physical badge validation. The canonical

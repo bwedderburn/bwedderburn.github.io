@@ -1,4 +1,4 @@
-import { createCapitalsRuntime } from './capitals-runtime/runtime.mjs';
+import { createCapitalsRuntime } from './capitals-runtime/runtime.mjs?v=startup-retry';
 
 if (new URLSearchParams(location.search).get('embed') === '1') {
   document.body.classList.add('demo-is-embedded');
@@ -14,6 +14,7 @@ const releaseTimers = new Set();
 const pose = {pitch:-8, roll:-5, yaw:-16};
 let runtime;
 let model;
+let modelRequested = false;
 let running = false;
 let modelFailed = false;
 let displayReady = false;
@@ -36,17 +37,21 @@ function enableControls(enabled) {
 }
 function reportStatus(value) {
   const status = typeof value === 'string' ? {state:'loading',message:value} : value;
-  const messages={running:status.persistenceAvailable===false?'World Capitals is ready. Progress is kept for this visit.':'World Capitals is ready. Progress is saved in this browser.',paused:'Paused while the demo is not visible.',loading:'Opening World Capitals and its offline atlas…',error:'The badge app could not start. Reload this page to try again.'};
+  const messages={running:status.persistenceAvailable===false?'World Capitals is ready. Progress is kept for this visit.':'World Capitals is ready. Progress is saved in this browser.',paused:'Paused while the demo is not visible.',loading:'Opening World Capitals and its offline atlas…',error:'World Capitals could not run in this browser.'};
   statusElement.textContent = messages[status.state] || status.message || 'Opening World Capitals…';
   statusElement.dataset.state = status.state;
   byId('runtime-error').hidden=status.state!=='error';
+  byId('runtime-recovery').hidden=status.state!=='error';
   byId('runtime-error-text').textContent=status.state==='error'?(status.message||'No additional details are available.'):'';
   running = status.state === 'running';
   enableControls(running);
   if(status.state==='error') {
-    byId('reopen-app').disabled=!runtime;
-    if(!displayReady)byId('model-loading').textContent='World Capitals could not start.';
+    releaseAll();
+    stopMotion();
+    byId('model-loading').textContent='World Capitals could not run.';
+    byId('model-loading').hidden=false;
   }
+  setFlat(flat);
 }
 function renderSnapshot(value) {
   if (!value) return;
@@ -168,15 +173,16 @@ window.addEventListener('blur',releaseAll);
 function setFlat(next) {
   flat=Boolean(next)||modelFailed;
   const showScreen=flat||!model||!displayReady;
+  const error=statusElement.dataset.state==='error';
   byId('model-stage').classList.toggle('screen-only',showScreen);
   canvas.hidden=!showScreen||!displayReady;
   // Keep the loading host measurable for the renderer without showing it.
   byId('model-host').hidden=modelFailed||(flat&&Boolean(model));
   const toggle=byId('flat-toggle');
-  toggle.disabled=modelFailed;
+  toggle.disabled=modelFailed||error;
   toggle.setAttribute('aria-pressed',String(flat));
   toggle.textContent=flat&&!modelFailed?'3D view':'Screen view';
-  byId('view-status').textContent=modelFailed?'Screen view · 3D unavailable':!model?'Screen view · loading 3D…':showScreen?'Screen view':'3D view';
+  byId('view-status').textContent=error?'App unavailable':modelFailed?'Screen view · 3D unavailable':!displayReady?'Opening World Capitals…':!model?'Screen view · loading 3D…':showScreen?'Screen view':'3D view';
   byId('view-hint').textContent=showScreen?'Use the on-page controls to navigate.':'Press the badge buttons or touch pads. Drag to rotate; scroll to zoom.';
   if(!showScreen)requestAnimationFrame(()=>model?.resize());
   reportHeight();
@@ -198,6 +204,7 @@ function showDisplayFrame() {
   displayReady=true;
   byId('model-loading').hidden=true;
   setFlat(flat);
+  if(!modelRequested){modelRequested=true;void loadModel();}
 }
 function setPose(next) {
   for(const axis of ['pitch','roll','yaw']) if(Number.isFinite(next[axis]))pose[axis]=next[axis];
@@ -261,20 +268,24 @@ async function loadModel() {
     clearTimeout(deadline);
   }
 }
-async function boot() {
-  for(const id of viewControls)byId(id).disabled=true;
-  setFlat(flat);
+async function startRuntime(reloadAssets=false) {
+  runtime?.dispose();
+  displayReady=false;
+  byId('model-loading').textContent='Opening World Capitals…';
+  byId('model-loading').hidden=false;
+  reportStatus({state:'loading'});
   try {
-    runtime=createCapitalsRuntime({canvas,onStatus:reportStatus,onSnapshot:renderSnapshot,onFrame:showDisplayFrame});
-    void loadModel();
+    runtime=createCapitalsRuntime({canvas,onStatus:reportStatus,onSnapshot:renderSnapshot,onFrame:showDisplayFrame,reloadAssets});
     await runtime.ready;
     renderSnapshot(runtime.getSnapshot());
     updateVisibility();
   } catch(error) {
-    reportStatus({state:'error',message:error.message});
+    if(!disposed&&statusElement.dataset.state!=='error')reportStatus({state:'error',message:error.message});
   }
 }
 window.__capitalsDemo=Object.freeze({getSnapshot:()=>runtime?.getSnapshot()??snapshot??null,getModelState:()=>model?.getDebugState()??null,getRuntimeStatus:()=>runtime?.getStatus()??null,getStatus:()=>({running,modelReady:Boolean(model),modelFailed,flat:flat||!model||!displayReady,motion,inverted}),getCoverage:()=>snapshot?.counts??null});
 window.addEventListener('pagehide',event=>{releaseAll();stopMotion();if(event.persisted){runtime?.pause();return;}disposed=true;modelLoad.abort();observer.disconnect();heightObserver.disconnect();runtime?.dispose();model?.dispose();});
 window.addEventListener('pageshow',event=>{if(event.persisted)updateVisibility();});
-boot();
+for(const id of viewControls)byId(id).disabled=true;
+byId('retry-runtime').addEventListener('click',()=>startRuntime(true));
+startRuntime();

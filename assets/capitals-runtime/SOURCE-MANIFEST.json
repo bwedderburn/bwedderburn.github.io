@@ -59,6 +59,18 @@
       "kind": "runtime"
     },
     {
+      "path": "jspi/micropython.mjs",
+      "bytes": 82373,
+      "sha256": "dfebdf53540f5cfbeac85a4ae0784d0054218d11e6cf7b4483a355b115ab6e23",
+      "kind": "runtime"
+    },
+    {
+      "path": "jspi/micropython.wasm",
+      "bytes": 734736,
+      "sha256": "a6f8ea74c9003f3d485ff536856e7c0a1337fe6464a8d7f952118a88da43918e",
+      "kind": "runtime"
+    },
+    {
       "path": "LICENSE",
       "bytes": 2332,
       "sha256": "8e5acd7835bc605171b1d039383c4e874575ec7570e39c96fac26774eee63451",

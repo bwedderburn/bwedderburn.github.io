@@ -6,6 +6,8 @@
 .capitals-stage.screen-only #model-host { visibility: hidden; pointer-events: none; }
 .capitals-runtime-status { padding: 12px 16px; background: #e7f1ef; border-left: 4px solid #15817d; color: #143348; margin: 0 0 24px; }
 .capitals-runtime-status[data-state="error"] { border-color: #a34c24; background: #fff0e8; }
+.capitals-recovery { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin: -8px 0 24px; }
+.capitals-recovery p { max-width: 38rem; margin: 0; font-size: .9rem; }
 .capitals-error { margin: -12px 0 24px; color: #674638; }.capitals-error pre { white-space: pre-wrap; overflow-wrap: anywhere; font-size: .85rem; }
 .capitals-console { min-width: 0; }
 .capitals-screen-heading { border-bottom: 2px solid #18837e; padding: 4px 0 18px; margin-bottom: 16px; }
