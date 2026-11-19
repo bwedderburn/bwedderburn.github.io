@@ -1,4 +1,4 @@
-import { createBadgeModel as createSharedBadgeModel } from './badge-model.mjs';
+import { createBadgeModel as createSharedBadgeModel } from './badge-model.mjs?v=7b348fc';
 
 // Five physical buttons plus all eight capacitive controls. The shared adapter
 // applies orientation once before delivering these logical navigation actions.

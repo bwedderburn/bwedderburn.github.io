@@ -242,7 +242,7 @@ const heightObserver=new ResizeObserver(reportHeight);heightObserver.observe(byI
 async function loadModel() {
   const deadline=setTimeout(showModelFailure,15000);
   try {
-    const {createBadgeModel}=await import('./capitals-model.mjs');
+    const {createBadgeModel}=await import('./capitals-model.mjs?v=7b348fc');
     if(disposed||modelFailed)return;
     const next=await createBadgeModel({container:byId('model-host'),screenCanvas:canvas,
       signal:modelLoad.signal,onError:showModelFailure,
