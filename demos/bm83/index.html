@@ -9,8 +9,8 @@
   <title>BM83 badge remote — interactive demo | Brian Wedderburn</title>
   <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../../assets/styles.css">
-  <link rel="stylesheet" href="../../assets/bm83-demo.css">
-  <script type="module" src="../../assets/bm83-demo.mjs"></script>
+  <link rel="stylesheet" href="../../assets/bm83-demo.css?v=screen-controls">
+  <script type="module" src="../../assets/bm83-demo.mjs?v=screen-controls"></script>
   <meta property="og:type" content="website">
   <meta property="og:title" content="BM83 badge remote — interactive demo | Brian Wedderburn">
   <meta property="og:description" content="Try Brian Wedderburn&#x27;s 3D BM83 badge remote: rotate the model, use simulated playback controls and explore five fictional tracks with original AI-generated artwork.">
@@ -40,17 +40,20 @@
           <canvas id="flat-screen" width="640" height="480" role="img" aria-label="BM83 display with the current track, artwork, volume, and playback state" hidden></canvas>
           <p id="model-loading" class="model-loading">Loading the studio remote…</p>
         </div>
-        <p class="stage-hint">Drag to rotate. Scroll to zoom. Press the badge buttons or use the controls alongside it.</p>
-        <div class="view-actions"><button type="button" id="front-view">Front</button><button type="button" id="rear-view">Rear</button><button type="button" id="flip-view">Turn upside down</button><button type="button" id="motion-toggle" aria-pressed="false">Start motion</button><button type="button" id="capture-screen">Save screen image</button></div>
-        <details class="pose-settings"><summary>Adjust the pose</summary><div class="pose-grid"><label>Pitch <output aria-live="off" id="pitch-value" for="pitch">0°</output><input id="pitch" type="range" min="-85" max="85" value="0" step="1"></label><label>Roll <output aria-live="off" id="roll-value" for="roll">0°</output><input id="roll" type="range" min="-180" max="180" value="0" step="1"></label><label>Yaw <output aria-live="off" id="yaw-value" for="yaw">0°</output><input id="yaw" type="range" min="-180" max="180" value="0" step="1"></label><label>Zoom <output aria-live="off" id="zoom-value" for="zoom">100%</output><input id="zoom" type="range" min="70" max="145" value="100" step="1"></label></div></details>
+        <div id="screen-playback-controls" class="screen-view-controls" role="group" aria-label="Screen view controls" hidden></div>
+        <div id="model-view-controls">
+          <p class="stage-hint">Drag to rotate. Scroll to zoom. Press the badge buttons or use the controls alongside it.</p>
+          <div class="view-actions" id="model-view-actions"><button type="button" id="front-view">Front</button><button type="button" id="rear-view">Rear</button><button type="button" id="flip-view">Turn upside down</button><button type="button" id="motion-toggle" aria-pressed="false">Start motion</button><button type="button" id="capture-screen">Save screen image</button></div>
+          <details class="pose-settings"><summary>Adjust the pose</summary><div class="pose-grid"><label>Pitch <output aria-live="off" id="pitch-value" for="pitch">0°</output><input id="pitch" type="range" min="-85" max="85" value="0" step="1"></label><label>Roll <output aria-live="off" id="roll-value" for="roll">0°</output><input id="roll" type="range" min="-180" max="180" value="0" step="1"></label><label>Yaw <output aria-live="off" id="yaw-value" for="yaw">0°</output><input id="yaw" type="range" min="-180" max="180" value="0" step="1"></label><label>Zoom <output aria-live="off" id="zoom-value" for="zoom">100%</output><input id="zoom" type="range" min="70" max="145" value="100" step="1"></label></div></details>
+        </div>
       </section>
       <section class="demo-player" aria-labelledby="track-title">
         <div class="now-playing-art"><img id="track-artwork" alt="" width="1024" height="1024"><span class="cover-caption">Original AI-generated artwork</span></div>
         <div class="track-heading"><p id="track-album">Conference Sessions</p><h2 id="track-title">Control Loop</h2><p id="track-artist">BM83 Demo</p></div>
-        <label class="seek-control" for="position">Track position <output aria-live="off" id="position-label" for="position">1:11 / 3:15</output><input id="position" type="range" min="0" max="195" value="71" step="1"></label>
-        <div class="transport" aria-label="Playback controls"><button type="button" data-action="previous">Previous</button><button type="button" data-action="play" id="play-button" class="transport-play">Play</button><button type="button" data-action="next">Next</button></div>
-        <div class="volume-controls"><label for="volume">Volume <output aria-live="off" id="volume-value" for="volume">55%</output></label><div><button type="button" data-action="volume-down" aria-label="Hold to lower volume">−</button><input id="volume" type="range" min="0" max="100" value="55" step="1"><button type="button" data-action="volume-up" aria-label="Hold to raise volume">+</button><button type="button" data-action="mute" id="mute-button" aria-pressed="false">Mute</button></div></div>
-        <div class="player-utilities"><button type="button" data-action="settings" id="settings-button" aria-expanded="false" aria-controls="demo-settings">Settings</button><button type="button" data-action="home">Home</button><button type="button" data-action="power" id="power-button" aria-pressed="true">Power off</button><button type="button" id="reset-demo">Reset demo</button></div>
+        <label class="seek-control" id="track-position-control" for="position">Track position <output aria-live="off" id="position-label" for="position">1:11 / 3:15</output><input id="position" type="range" min="0" max="195" value="71" step="1"></label>
+        <div class="transport" id="playback-transport" role="group" aria-label="Playback controls"><button type="button" data-action="previous">Previous</button><button type="button" data-action="play" id="play-button" class="transport-play">Play</button><button type="button" data-action="next">Next</button></div>
+        <div class="volume-controls" id="playback-volume"><label for="volume">Volume <output aria-live="off" id="volume-value" for="volume">55%</output></label><div><button type="button" data-action="volume-down" aria-label="Hold to lower volume">−</button><input id="volume" type="range" min="0" max="100" value="55" step="1"><button type="button" data-action="volume-up" aria-label="Hold to raise volume">+</button><button type="button" data-action="mute" id="mute-button" aria-pressed="false">Mute</button></div></div>
+        <div class="player-utilities" id="player-utilities"><button type="button" data-action="settings" id="settings-button" aria-expanded="false" aria-controls="demo-settings">Settings</button><button type="button" data-action="home">Home</button><button type="button" data-action="power" id="power-button" aria-pressed="true">Power off</button><button type="button" id="reset-demo">Reset demo</button></div>
         <div id="demo-settings" class="demo-settings" hidden><label for="equalizer">Demo equalizer</label><select id="equalizer"><option value="FLAT">Flat</option><option value="ROCK">Rock</option><option value="POP">Pop</option><option value="JAZZ">Jazz</option><option value="CLASSICAL">Classical</option></select><p>Changes the displayed setting. Playback and volume are simulated.</p></div>
         <p id="demo-announcement" class="demo-announcement" role="status" aria-live="polite">Control Loop selected. Playback is paused.</p>
       </section>

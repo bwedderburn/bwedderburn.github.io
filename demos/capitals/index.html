@@ -9,9 +9,9 @@
   <title>World Capitals — interactive badge atlas | Brian Wedderburn</title>
   <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../../assets/styles.css">
-  <link rel="stylesheet" href="../../assets/bm83-demo.css">
-  <link rel="stylesheet" href="../../assets/capitals-demo.css?v=startup-retry">
-  <script type="module" src="../../assets/capitals-demo.mjs?v=startup-retry"></script>
+  <link rel="stylesheet" href="../../assets/bm83-demo.css?v=screen-controls">
+  <link rel="stylesheet" href="../../assets/capitals-demo.css?v=screen-controls">
+  <script type="module" src="../../assets/capitals-demo.mjs?v=screen-controls"></script>
   <meta property="og:type" content="website">
   <meta property="og:title" content="World Capitals — interactive badge atlas | Brian Wedderburn">
   <meta property="og:description" content="Explore the atlas and play a quiz in Brian Wedderburn&#x27;s functional 3D Universe badge demo. The existing Python app runs in MicroPython WebAssembly.">
@@ -40,9 +40,12 @@
       <section class="demo-stage-section" aria-label="Badge model and display">
         <div class="demo-stage-toolbar"><span id="view-status" role="status">Opening World Capitals…</span><div><button id="flat-toggle" type="button" aria-pressed="false">Screen view</button><button id="reset-view" type="button">Reset view</button></div></div>
         <div class="demo-stage capitals-stage" id="model-stage"><div id="model-host" aria-label="Actual Universe badge. Drag to rotate, scroll to zoom, and press its controls."></div><canvas id="capitals-screen" width="320" height="240" role="img" aria-label="World Capitals badge display. The current screen is also described alongside the badge." hidden></canvas><p id="model-loading" class="model-loading">Opening World Capitals…</p></div>
+        <div id="screen-controls" class="screen-view-controls" hidden></div>
         <p id="view-hint" class="stage-hint">Press the badge buttons or touch pads. Drag to rotate; scroll to zoom.</p>
-        <div class="view-actions"><button type="button" id="front-view">Front</button><button type="button" id="rear-view">Rear</button><button type="button" id="flip-view">Turn upside down</button><button type="button" id="motion-toggle" aria-pressed="false">Start motion</button></div>
-        <details class="pose-settings"><summary>Adjust the pose</summary><div class="pose-grid"><label>Pitch <output id="pitch-value" for="pitch">−8°</output><input id="pitch" type="range" min="-85" max="85" value="-8" step="1"></label><label>Roll <output id="roll-value" for="roll">−5°</output><input id="roll" type="range" min="-180" max="180" value="-5" step="1"></label><label>Yaw <output id="yaw-value" for="yaw">−16°</output><input id="yaw" type="range" min="-180" max="180" value="-16" step="1"></label><label>Zoom <output id="zoom-value" for="zoom">100%</output><input id="zoom" type="range" min="70" max="145" value="100" step="1"></label></div></details>
+        <div id="capitals-view-controls">
+          <div class="view-actions"><button type="button" id="front-view">Front</button><button type="button" id="rear-view">Rear</button><button type="button" id="flip-view">Turn upside down</button><button type="button" id="motion-toggle" aria-pressed="false">Start motion</button></div>
+          <details class="pose-settings"><summary>Adjust the pose</summary><div class="pose-grid"><label>Pitch <output id="pitch-value" for="pitch">−8°</output><input id="pitch" type="range" min="-85" max="85" value="-8" step="1"></label><label>Roll <output id="roll-value" for="roll">−5°</output><input id="roll" type="range" min="-180" max="180" value="-5" step="1"></label><label>Yaw <output id="yaw-value" for="yaw">−16°</output><input id="yaw" type="range" min="-180" max="180" value="-16" step="1"></label><label>Zoom <output id="zoom-value" for="zoom">100%</output><input id="zoom" type="range" min="70" max="145" value="100" step="1"></label></div></details>
+        </div>
       </section>
       <section class="capitals-console" aria-labelledby="screen-title">
         <div class="capitals-screen-heading"><p id="screen-context">Atlas and quiz</p><h2 id="screen-title">Opening World Capitals</h2><p id="screen-summary">195 World entries. 50 states, five territories, and Washington, D.C.</p></div>
@@ -50,14 +53,18 @@
         <div id="screen-options" class="capitals-options" aria-label="Current screen options"></div>
         <p id="screen-feedback" class="capitals-feedback" role="status" hidden></p>
         <p id="screen-hint" class="capitals-hint">Use Up and Down to choose, then Select.</p>
-        <div class="capitals-navigation" aria-label="Badge navigation">
-          <button type="button" data-control="up" class="capitals-up" disabled>Up</button>
-          <button type="button" data-control="left" class="capitals-left" disabled>Left</button>
-          <button type="button" data-control="select" class="capitals-select" disabled>Select</button>
-          <button type="button" data-control="right" class="capitals-right" disabled>Right</button>
-          <button type="button" data-control="down" class="capitals-down" disabled>Down</button>
+        <div id="console-controls">
+          <div id="capitals-keypad">
+            <div class="capitals-navigation" role="group" aria-label="Badge navigation">
+              <button type="button" data-control="up" class="capitals-up" disabled>Up</button>
+              <button type="button" data-control="left" class="capitals-left" disabled>Left</button>
+              <button type="button" data-control="select" class="capitals-select" disabled>Select</button>
+              <button type="button" data-control="right" class="capitals-right" disabled>Right</button>
+              <button type="button" data-control="down" class="capitals-down" disabled>Down</button>
+            </div>
+            <div class="capitals-utilities"><button type="button" data-control="back" disabled>Back</button><button type="button" data-control="home" disabled>Home</button><button type="button" id="reopen-app" disabled>Reopen app</button></div>
+          </div>
         </div>
-        <div class="capitals-utilities"><button type="button" data-control="back" disabled>Back</button><button type="button" data-control="home" disabled>Home</button><button type="button" id="reopen-app" disabled>Reopen app</button></div>
         <p class="capitals-input-help">Arrow keys navigate. Enter selects. Escape goes back; H returns home. You can also tap a screen option above.</p>
       </section>
     </div>

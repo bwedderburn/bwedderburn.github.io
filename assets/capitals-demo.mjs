@@ -7,6 +7,7 @@ if (new URLSearchParams(location.search).get('embed') === '1') {
 const byId = id => document.getElementById(id);
 const canvas = byId('capitals-screen');
 const controls = [...document.querySelectorAll('[data-control]')];
+const keypad = byId('capitals-keypad');
 const viewControls = ['front-view', 'rear-view', 'flip-view', 'motion-toggle', 'reset-view', 'pitch', 'roll', 'yaw', 'zoom'];
 const statusElement = byId('runtime-status');
 const held = new Map();
@@ -150,7 +151,7 @@ function tap(action) { const source=Symbol(action);press(action,source);release(
 for (const button of controls) {
   button.addEventListener('pointerdown',event=>{
     if (event.button!==0) return;
-    event.preventDefault(); button.focus();button.setPointerCapture(event.pointerId);
+    event.preventDefault(); button.focus({preventScroll:true});button.setPointerCapture(event.pointerId);
     press(button.dataset.control,`pointer:${event.pointerId}`);
   });
   for (const eventName of ['pointerup','pointercancel','lostpointercapture']) button.addEventListener(eventName,event=>release(`pointer:${event.pointerId}`));
@@ -170,12 +171,26 @@ window.addEventListener('keydown',keyDown);
 window.addEventListener('keyup',keyUp);
 window.addEventListener('blur',releaseAll);
 
+function placeKeypad(byScreen) {
+  const screenControls = byId('screen-controls');
+  const destination = byScreen ? screenControls : byId('console-controls');
+  if (keypad.parentElement === destination) return;
+  const focus = document.activeElement;
+  destination.hidden = false;
+  destination.append(keypad);
+  screenControls.hidden = !byScreen;
+  if (keypad.contains(focus)) focus.focus({preventScroll:true});
+}
+
 function setFlat(next) {
   flat=Boolean(next)||modelFailed;
   const showScreen=flat||!model||!displayReady;
   const error=statusElement.dataset.state==='error';
-  byId('model-stage').classList.toggle('screen-only',showScreen);
-  canvas.hidden=!showScreen||!displayReady;
+  const showCanvas=showScreen&&displayReady;
+  const stage=byId('model-stage');
+  stage.classList.toggle('screen-only',showScreen);
+  stage.classList.toggle('screen-fit',showCanvas);
+  canvas.hidden=!showCanvas;
   // Keep the loading host measurable for the renderer without showing it.
   byId('model-host').hidden=modelFailed||(flat&&Boolean(model));
   const toggle=byId('flat-toggle');
@@ -183,7 +198,11 @@ function setFlat(next) {
   toggle.setAttribute('aria-pressed',String(flat));
   toggle.textContent=flat&&!modelFailed?'3D view':'Screen view';
   byId('view-status').textContent=error?'App unavailable':modelFailed?'Screen view · 3D unavailable':!displayReady?'Opening World Capitals…':!model?'Screen view · loading 3D…':showScreen?'Screen view':'3D view';
-  byId('view-hint').textContent=showScreen?'Use the on-page controls to navigate.':'Press the badge buttons or touch pads. Drag to rotate; scroll to zoom.';
+  byId('view-hint').hidden=showScreen;
+  byId('reset-view').hidden=showScreen;
+  byId('capitals-view-controls').hidden=showScreen;
+  if (showScreen&&motion) stopMotion();
+  placeKeypad(showCanvas);
   if(!showScreen)requestAnimationFrame(()=>model?.resize());
   reportHeight();
 }

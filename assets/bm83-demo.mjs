@@ -12,6 +12,16 @@ const images = new Map();
 const heldKeys = new Map();
 const actionButtons = [...document.querySelectorAll('[data-action]')];
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+const stackedLayout = matchMedia('(max-width: 700px)');
+const screenControls = element('screen-playback-controls');
+const transport = element('playback-transport');
+const volumeControls = element('playback-volume');
+const seekControl = element('track-position-control');
+const utilities = element('player-utilities');
+const settings = element('demo-settings');
+const viewControls = element('model-view-controls');
+const captureScreen = element('capture-screen');
+const flatToggle = element('flat-toggle');
 let model;
 let flat = false;
 let modelFailed = false;
@@ -269,17 +279,55 @@ element('motion-toggle').addEventListener('click', () => {
 });
 element('reset-demo').addEventListener('click', () => { releaseAll(); stopMotion(); state.reset(); model?.resetView(); element('zoom').value = 100; element('zoom-value').textContent = '100%'; });
 
+function placePlaybackControls() {
+  const compact = flat && stackedLayout.matches;
+  if (compact === !screenControls.hidden) return;
+
+  const focus = document.activeElement;
+  const focusedControl = [transport, volumeControls, seekControl, utilities, settings].some((group) => group.contains(focus));
+  releaseAll();
+  if (compact) {
+    screenControls.hidden = false;
+    screenControls.append(transport, volumeControls, seekControl, utilities, settings);
+  } else {
+    element('demo-announcement').before(seekControl, transport, volumeControls, utilities, settings);
+    screenControls.hidden = true;
+  }
+  if (focusedControl) focus.focus({ preventScroll: true });
+}
+stackedLayout.addEventListener('change', placePlaybackControls);
+
 function showFlat(force) {
   flat = force;
+  const focus = document.activeElement;
+  const resetView = element('reset-view');
+  if (flat) stopMotion();
+
+  const captureTarget = flat ? utilities : element('model-view-actions');
+  if (captureScreen.parentElement !== captureTarget) captureTarget.append(captureScreen);
+  placePlaybackControls();
+
   flatScreen.hidden = !flat;
   element('model-host').hidden = flat;
-  element('flat-toggle').textContent = flat ? '3D view' : 'Screen view';
-  element('flat-toggle').setAttribute('aria-pressed', String(flat));
-  element('view-status').textContent = flat ? 'Screen view' : inverted ? '3D view / screen flipped' : '3D view';
+  element('model-loading').hidden = flat || Boolean(model) || modelFailed;
+  viewControls.hidden = flat;
+  resetView.hidden = flat;
+  const stage = element('model-stage');
+  stage.classList.toggle('screen-fit', flat);
+  stage.setAttribute('aria-label', flat ? 'Badge screen' : '3D remote. Drag to rotate, scroll to zoom, or use the view controls below.');
+  flatToggle.textContent = flat ? '3D view' : 'Screen view';
+  flatToggle.setAttribute('aria-pressed', String(flat));
+  element('view-status').textContent = flat ? 'Screen view' : !model ? 'Preparing 3D view…' : inverted ? '3D view / screen flipped' : '3D view';
+  if (flat && (viewControls.contains(focus) || focus === resetView)) {
+    const visibleControl = modelFailed ? element('power-button') : flatToggle;
+    visibleControl.focus({ preventScroll: true });
+  } else if (focus === captureScreen) {
+    captureScreen.focus({ preventScroll: true });
+  }
   if (!flat) model?.resize();
 }
-element('flat-toggle').addEventListener('click', () => showFlat(!flat));
-element('capture-screen').addEventListener('click', () => {
+flatToggle.addEventListener('click', () => showFlat(!flat));
+captureScreen.addEventListener('click', () => {
   screen.toBlob((blob) => {
     if (!blob) return;
     const url = URL.createObjectURL(blob);
@@ -316,13 +364,11 @@ try {
       if (!flat) element('view-status').textContent = value ? '3D view / screen flipped' : '3D view';
     },
   });
-  element('model-loading').hidden = true;
-  element('view-status').textContent = '3D view';
+  showFlat(flat);
 } catch {
   modelFailed = true;
-  element('model-loading').hidden = true;
   showFlat(true);
-  element('flat-toggle').disabled = true;
+  flatToggle.disabled = true;
   for (const id of ['front-view', 'rear-view', 'flip-view', 'motion-toggle', 'reset-view', 'pitch', 'roll', 'yaw', 'zoom']) element(id).disabled = true;
   announce('3D is unavailable in this browser. The screen view and all playback controls remain available.');
 }
