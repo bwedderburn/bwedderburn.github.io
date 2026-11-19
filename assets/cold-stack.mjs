@@ -2,21 +2,39 @@ const explorer = typeof document === 'undefined' ? null : document.querySelector
 if (explorer) {
   const range = explorer.querySelector('#stack-separation');
   const separation = explorer.querySelector('#separation-value');
-  const drawings = explorer.querySelectorAll('[data-stack-drawing]');
+  const drawings = [...explorer.querySelectorAll('[data-stack-drawing]')].map(drawing => ({
+    drawing,
+    compactX: drawing.viewBox.baseVal.x,
+    width: drawing.viewBox.baseVal.width,
+    compactHeight: drawing.viewBox.baseVal.height,
+    labels: drawing.querySelector('[data-stack-labels]'),
+    layers: [...drawing.querySelectorAll('[data-stack-level]')].map(layer => ({
+      layer,
+      level: Number(layer.dataset.stackLevel),
+      assembledY: layer.transform.baseVal.getItem(0).matrix.f,
+    })),
+  }));
   const controls = explorer.querySelector('.stack-controls');
+  // Inline leaders need enough room for the two thinnest adjacent layers' labels.
+  const labelThreshold = 0.4;
   const updateStack = () => {
     const value = Number(range.value);
-    drawings.forEach(drawing => {
-      const minimumGap = Number(drawing.dataset.stackMinGap || 24);
-      drawing.querySelectorAll('[data-stack-level]').forEach(layer => {
-        const index = Number(layer.dataset.stackLevel);
-        const y = 85 + index * (minimumGap + value * (82 - minimumGap) / 100);
+    const fraction = value / 100;
+    for (const { drawing, compactX, width, compactHeight, labels, layers } of drawings) {
+      const x = compactX * (1 - Math.min(fraction / labelThreshold, 1));
+      const height = compactHeight + (580 - compactHeight) * fraction;
+      drawing.setAttribute('viewBox', `${x} 0 ${width} ${height}`);
+      for (const { layer, level, assembledY } of layers) {
+        const explodedY = 85 + level * 82;
+        const y = assembledY + (explodedY - assembledY) * fraction;
         layer.setAttribute('transform', `translate(0 ${y})`);
-      });
-    });
+      }
+      labels.setAttribute('visibility', fraction < labelThreshold ? 'hidden' : 'visible');
+    }
     separation.value = `${value}%`;
-    range.setAttribute('aria-valuetext', `${value}% separation; schematic only`);
+    range.setAttribute('aria-valuetext', value === 0 ? '0% separation, assembled' : `${value}% separation`);
   };
+  range.value = range.defaultValue;
   range.addEventListener('input', updateStack);
   updateStack();
   controls.hidden = false;
